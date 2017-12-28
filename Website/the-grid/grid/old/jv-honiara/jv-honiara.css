@@ -1,0 +1,230 @@
+.jv-honiara a,
+.jv-honiara a:active,
+.jv-honiara a:focus,
+.jv-honiara .tg-item-title,
+.jv-honiara .tg-button-holder,
+.jv-honiara .tg-item-media-holder,
+.jv-honiara .tg-item-skin-name,
+.jv-honiara .tg-item-content-holder {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.4s ease, color 0.25s ease, -webkit-transform 0.2s ease-in-out;
+	-moz-transition: opacity 0.4s ease, color 0.25s ease, -moz-transform 0.2s ease-in-out;
+	-ms-transition: opacity 0.4s ease, color 0.25s ease, -ms-transform 0.2s ease-in-out;
+	-o-transition: opacity 0.4s ease, color 0.25s ease, -o-transform 0.2s ease-in-out;
+	transition: opacity 0.4s ease, color 0.25s ease, transform 0.2s ease-in-out;
+}
+.tg-grid-holder .jv-honiara {
+    -webkit-transition-property: z-index;
+    -webkit-transition-duration: 0;
+    -webkit-transition-delay:0.2s;
+	-moz-transition-property: z-index;
+    -moz-transition-duration: 0;
+    -moz-transition-delay:0.2s;
+	transition-property: z-index;
+    transition-duration: 0;
+    transition-delay:0.18s;
+}
+.tg-grid-holder .jv-honiara:hover {
+	z-index: 2;
+	-webkit-transition-property: z-index;
+    -webkit-transition-duration: 0;
+    -webkit-transition-delay: 0s;
+	-moz-transition-property: z-index;
+    -moz-transition-duration: 0;
+    -moz-transition-delay: 0s;
+	transition-property: z-index;
+    transition-duration: 0;
+    transition-delay: 0s;
+}
+.jv-honiara .tg-item-content-holder,
+.jv-honiara .tg-item-overlay {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.jv-honiara .tg-item-overlay {
+	border-radius: 50%;
+}
+.jv-honiara .tg-item-content-holder {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	padding: 0;
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	-moz-transition: -moz-transform 0.2s ease-in-out;
+	-ms-transition: -ms-transform 0.2s ease-in-out;
+	-o-transition: -o-transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
+}
+.jv-honiara .tg-center-outer {
+	padding: 30px;
+}
+.jv-honiara:hover .tg-item-content-holder {
+	-webkit-transform: translateY(60px);
+	-moz-transform: translateY(60px);
+	-ms-transform: translateY(60px);
+	-o-transform: translateY(60px);
+	transform: translateY(60px);
+	-webkit-transition: -webkit-transform 0.2s ease-in-out 0.1s;
+	-moz-transition: -moz-transform 0.2s ease-in-out 0.1s;
+	-ms-transition: -ms-transform 0.2s ease-in-out 0.1s;
+	-o-transition: -o-transform 0.2s ease-in-out 0.1s;
+	transition: transform 0.2s ease-in-out 0.1s;
+}
+.jv-honiara:hover .tg-item-skin-name,
+.jv-honiara:hover .tg-item-media-holder {
+	-webkit-transform: translateY(-60px);
+	-moz-transform: translateY(-60px);
+	-ms-transform: translateY(-60px);
+	-o-transform: translateY(-60px);
+	transform: translateY(-60px);
+}
+.jv-honiara .tg-item-title,
+.jv-honiara .tg-item-title a {
+	position: relative;
+    font-size: 18px !important;
+	line-height: 20px !important;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.jv-honiara .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 4px 0 0 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 18px;
+	font-style: italic;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.jv-honiara .tg-button-holder {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	bottom: -20px;
+	left: 50%;
+	height: 40px;
+	width: 40px;
+	margin: 0 0 0 -20px;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transform: translateY(-50px) scale3d(0.7,0.7,0.7);
+	-moz-transform: translateY(-50px) scale3d(0.7,0.7,0.7);
+	-ms-transform: translateY(-50px) scale3d(0.7,0.7,0.7);
+	-o-transform: translateY(-50px) scale3d(0.7,0.7,0.7);
+	transform: translateY(-50px) scale3d(0.7,0.7,0.7);
+}
+.jv-honiara:hover .tg-button-holder {
+	opacity: 1;
+	-webkit-transform: translateY(0) scale3d(1,1,1);
+	-moz-transform: translateY(0) scale3d(1,1,1);
+	-ms-transform: translateY(0) scale3d(1,1,1);
+	-o-transform: translateY(0) scale3d(1,1,1);
+	transform: translateY(0) scale3d(1,1,1);
+}
+.jv-honiara .tg-link-button,
+.jv-honiara .tg-media-button {
+    position: absolute;
+    display: block;
+    margin: 0 !important;
+	padding: 0 !important;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+.jv-honiara .tg-link-button i,
+.jv-honiara .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+    font-size: 18px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.jv-honiara .tg-media-button .tg-icon-add {
+    font-size: 20px;
+}
+.jv-honiara .tg-item-title:hover,
+.jv-honiara .tg-link-button a:hover,
+.jv-honiara .tg-cats-holder a:hover,
+.jv-honiara .tg-button-holder:hover {
+	opacity: 0.75;
+}
+.jv-honiara .tg-item-link {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.jv-honiara .mejs-overlay-play {
+	display: none !important;
+}
+
+/* Javo Taxonomy */
+.jv-honiara .tg-jv-category,
+.jv-honiara .tg-jv-location{
+	position:relative;
+	top:5px;
+}
+/** Javo Rating average **/
+.jv-honiara .tg-jv-meta-rating-wrap {
+    position: absolute;
+    top: 0;
+    left: auto;
+    left: 0;
+    margin: 14px 10px;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.jv-honiara .tg-jv-meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.jv-honiara .tg-jv-meta-rating {
+    position: relative;
+    z-index: 1;
+	background-position: -3px -15px;
+	background-image: url('/wp-content/themes/javo-spot/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}
+.jv-honiara .tg-center-outer{padding-top:15px;}
+.jv-honiara:hover .tg-jv-meta-rating{
+	height:100%;
+}
+
+/** Javo category icons **/
+.jv-honiara .tg-jv-tax-wrap {padding:15px 0 0 0;}
+.jv-honiara .tg-jv-category i.glyphicon, .tg-jv-location i.glyphicon {font-size: 0.85em; color:#999; !important; letter-spacing:0.5em;}
+.jv-honiara .tg-jv-category {margin-right:15px;}

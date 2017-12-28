@@ -1,0 +1,265 @@
+/*------------------------------------------------------------------
+[Theme Settings Extend Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Theme Settings Extends Style
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - TS > Item Field
+ - TS > Inline Lists
+*/
+
+
+/*
+*
+**	TS > Item Field
+*/
+
+.javo-sortable-container{}
+.javo-sortable-container .javo-custom-field-forms{}
+.javo-sortable-container .javo-custom-field-forms h3:before{
+	display: inline-block;
+	vertical-align:middle;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	color:#fff;
+	text-shadow: -1px -1px 2px #ccc;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+
+	content:"\f214";
+}
+.javo-sortable-container .javo-custom-field-forms h3{
+	vertical-align:middle;
+	background-color:#f7f7f7;
+	cursor:move;
+	padding:10px;
+	margin:0px;
+	border:none;
+}
+.javo-sortable-place-holder{
+	background-color:#ccc;
+	padding:20px;
+}
+
+
+/*
+*
+**	TS > Inline Lists
+*/
+form#jvfrm_home_ts_form{ position:relative; }
+form#jvfrm_home_ts_form:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index:-1;
+	background-color: rgba( 255, 255, 255, 0.8 );
+	opacity:0;
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-o-transition:all .5s;
+}
+form#jvfrm_home_ts_form.disabled:after{
+	opacity:1;
+	z-index:1;
+}
+
+form#jvfrm_home_ts_form .jvfrm-home-ts-message{
+
+	visibility:hidden;
+	opacity:0;
+
+	position:absolute;
+	top:10%;
+	left:0;
+	right:0;
+	text-align:center;
+	z-index:5;
+
+	transform:translate( 0, -50% );
+	-webkit-transform:translate( 0, -50% );
+	-moz-transform:translate( 0, -50% );
+	-o-transform:translate( 0, -50% );
+	-ms-transform:translate( 0, -50% );
+
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+}
+
+form#jvfrm_home_ts_form.process .jvfrm-home-ts-message,
+form#jvfrm_home_ts_form.saved .jvfrm-home-ts-message,
+form#jvfrm_home_ts_form.failed .jvfrm-home-ts-message{
+	visibility:visible;
+	opacity:1;
+
+	transform:translate( 0, 0 );
+	-webkit-transform:translate( 0, 0 );
+	-moz-transform:translate( 0, 0 );
+	-o-transform:translate( 0, 0 );
+	-ms-transform:translate( 0, 0 );
+
+}
+
+form#jvfrm_home_ts_form .jvfrm-home-ts-message > .message-content{
+	display:inline-block;
+	padding: 20px 50px;
+	text-align:center;
+	background-color:#ff5a5f;
+	box-shadow:0 0 20px rgba( 0, 0, 0, .5 );
+}
+
+form#jvfrm_home_ts_form .jvfrm-home-ts-message > .message-content > .jvfrm-home-message{
+	display:none;
+	visibility:hidden;
+}
+form#jvfrm_home_ts_form .jvfrm-home-ts-message > .message-content > .jvfrm-home-message > span{
+	display:inline-block;
+	vertical-align:middle;
+	text-transform:uppercase;
+	line-height:1;
+	color:#fff;
+}
+
+form#jvfrm_home_ts_form.process .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-process,
+form#jvfrm_home_ts_form.saved .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-ok,
+form#jvfrm_home_ts_form.failed .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-fail{
+	display:block;
+	visibility:visible;
+}
+
+form#jvfrm_home_ts_form.process .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-process > span{
+	float:none;
+	opacity:1;
+	visibility:visible;
+}
+
+form#jvfrm_home_ts_form.saved .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-ok > span.icon:before,
+form#jvfrm_home_ts_form.failed .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-fail > span.icon:before{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 1;
+	font-family: dashicons;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: top;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+form#jvfrm_home_ts_form.saved .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-ok > span.icon:before{
+	content: "\f147";
+	color:#FFD65A
+}
+form#jvfrm_home_ts_form.failed .jvfrm-home-ts-message > .message-content > .jvfrm-home-message.status-fail > span.icon:before{
+	content: "\f158";
+	color:#FA8A8E;
+}
+
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab h3{ font-size:1.0em; }
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dl{
+	display:block;
+	box-shadow:0 1px 0px rgba( 215, 215, 215, 0.13 );
+}
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dl.hidden{ display:none; }
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dt{
+	display:inline-block;
+	width:20%;
+	text-align:right;
+	text-transform:uppercase;
+	vertical-align:middle;
+}
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dt:after{
+	content: ">";
+	display:inline-block;
+	font-size:0.8em;
+	font-weight:bold;
+	margin-left:10px;
+	font-family:Impact, Charcoal, sans-serif;
+	font-weight:bold;
+
+}
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dd{
+	display:inline-block;
+	vertical-align:middle;
+}
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab div.description:before{
+	display:inline-block;
+	font-style:normal;
+	font-family:"dashicons";
+	content:"\f147";
+	font-weight:bold;
+	font-size:10pt;
+	color:#999;
+}
+
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab div.description{
+	font-family: sans-serif;
+	font-size:10pt;
+	color:#aaa;
+	word-break:break-word;
+	max-width:500px;
+}
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab div.description.long-text:before{ content:none; }
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab div.description.long-text{
+	line-height:1.4;
+}
+
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab[tar="priceplan"] input[name^='javo_ts']{
+	box-shadow:inset 2px 2px 2px rgba(230, 230, 230, .5);
+	text-align:center;
+}
+
+form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab .postbox h3 label [type="checkbox"]:checked:before{
+	content:"\f158";
+}
+
+@media( max-width:768px ){
+	form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dt{ width:100%; text-align:inherit; }
+	form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dt:before{ content:none; }
+	form#jvfrm_home_ts_form .jvfrm_home_ts_tab.javo-opts-group-tab dd{ display:block; }
+}
+
+.updated.green-bg{ background: #E9F9DD; }
+
+.javo-graphic-icon{
+	display:inline-block;
+	width:38px;
+	height:38px;
+}
+
+.javo-graphic-icon.warning{
+	background-image:url( ../images/icon-warning.png );
+}
+
+fieldset#jv-theme-settings-footer-top-bg-color > span,
+fieldset#jv-theme-settings-footer-middle-bg-color > span,
+fieldset#jv-theme-settings-footer-bottom-bg-color > span{
+	width:10%;
+	display:inline-block;
+}

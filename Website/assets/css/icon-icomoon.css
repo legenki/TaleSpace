@@ -1,0 +1,206 @@
+/*------------------------------------------------------------------
+
+
+
+[Icon Icommon]
+
+
+
+
+
+
+Project:	Javo Themes
+
+
+
+Version:	1.0
+
+
+
+Last change:	09/03/15 [Organize CSS Structure]
+
+
+
+Assigned to:	Javo
+
+
+
+Primary use:	Icons Font
+
+
+
+-------------------------------------------------------------------*/
+
+
+
+
+
+
+@font-face {
+
+
+
+	font-family: 'icomoon';
+
+
+
+	src:url('../fonts/icomoon-main-icon/icomoon.eot?kcsc0o');
+
+
+
+	src:url('../fonts/icomoon-main-icon/icomoon.eot?#iefixkcsc0o') format('embedded-opentype'),
+
+
+
+		url('../fonts/icomoon-main-icon/icomoon.ttf?kcsc0o') format('truetype'),
+
+
+
+		url('../fonts/icomoon-main-icon/icomoon.woff?kcsc0o') format('woff'),
+
+
+
+		url('../fonts/icomoon-main-icon/icomoon.svg?kcsc0o#icomoon') format('svg');
+
+
+
+	font-weight: normal;
+
+
+
+	font-style: normal;
+
+
+
+}
+
+
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+
+
+
+	font-family: 'icomoon';
+
+
+
+	speak: none;
+
+
+
+	font-style: normal;
+
+
+
+	font-weight: normal;
+
+
+
+	font-variant: normal;
+
+
+
+	text-transform: none;
+
+
+
+	line-height: 1;
+
+
+
+
+
+
+	/* Better Font Rendering =========== */
+
+
+
+	-webkit-font-smoothing: antialiased;
+
+
+
+	-moz-osx-font-smoothing: grayscale;
+
+
+
+}
+
+
+
+
+
+
+.icon-icon-bath:before {
+
+
+
+	content: "\e600";
+
+
+
+}
+
+
+
+.icon-icon-bed:before {
+
+
+
+	content: "\e601";
+
+
+
+}
+
+
+
+.icon-icon-garage:before {
+
+
+
+	content: "\e602";
+
+
+
+}
+
+
+
+.icon-icon-price:before {
+
+
+
+	content: "\e603";
+
+
+
+}
+
+
+
+.icon-icon-size:before {
+
+
+
+	content: "\e604";
+
+
+
+}
+
+
+
+.icon-icon-status:before {
+
+
+
+	content: "\e605";
+
+
+
+}
+
+

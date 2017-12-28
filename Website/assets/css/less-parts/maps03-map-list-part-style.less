@@ -1,0 +1,559 @@
+/*------------------------------------------------------------------
+[Map.3. Map List Part]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Map Template Listing Type
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+3. Map list part style - use listing switcher
+*/
+
+//========================================
+// 3. Map list part style - use listing switcher
+//========================================
+	#javo-listings-wrap{
+
+		& > .row{ margin:0; }
+
+		#map-list-style-wrap {
+			padding-top:40px;
+				.jvfrm_home_map_list_sidebar_wrap{
+					.javo-noUISlider;
+					.panel-heading {
+						background-color:#666;
+						border:none;
+						border-top-right-radius:3px;
+						border-top-left-radius:3px;
+						position: relative;
+						.panel-title {
+							color:#fff;
+							text-transform: uppercase;
+							font-weight: 700;
+							font-size: 13px;
+							letter-spacing: 2px;
+						}
+						&::after {
+							position: absolute;
+							top:50%;
+							right:0;
+							bottom:0;
+							margin:-6px 15px 0;
+							font-family: FontAwesome;
+							content: "\f077";
+							font-size: 12px;
+							line-height: 13px;
+							text-align: center;
+							color:#fff;
+						}
+						&.collapsed::after {
+							content: "\f078";
+						}
+					}
+					.form-group{
+						.form-control{
+							box-shadow: none;
+							border: 1px solid #e9e9e9;
+							border-radius: 3px;
+							-moz-border-radius: 3px;
+							-webkit-border-radius: 3px;
+							text-align: left;
+							color:#646464;
+							font-size:13px;
+						}
+						&:last-child{
+							margin-bottom:0px;
+						}
+					}
+
+					div#filter-price{
+						.form-group{
+							.input-group{
+								.input-group-addon{
+									border:none;
+									color:#646464;
+								}
+							}
+						}
+					}
+				}
+
+			#results {
+				h2 {
+					margin: 0 0 20px 0;
+				}
+				#filter-results-pager {
+					margin-bottom: 20px;
+					#filter-results-wrap {
+						@media @phone-strict {
+							display:none;
+						}
+
+						.filter-results{
+							list-style: none;
+							padding: 0;
+							li {
+								float: left;
+								border: 1px solid #e9e9e9;
+								padding: 4px 8px;
+								height:32px;
+								margin-right: 5px;
+								margin-bottom:5px;
+								border-radius: 3px;
+								a {
+									color:@title-color;
+									font-size:11px;
+
+									i {
+										margin-left: 5px;
+									}
+								}
+								&:hover {
+									background:darken(@main-color, 5%);
+									border-color:darken(@main-color, 5%);
+
+									a{
+										color:#fff;
+									}
+								}
+							}
+						}
+					}
+					#pager {
+
+						text-align: right;
+						.btn-group {
+							vertical-align: inherit;
+							label {
+								.border-radius;
+								box-shadow:none;
+								background:none;
+								border: #e9e9e9 1px solid;
+								color: @title-color;
+								font-size: 12px;
+								height: 32px;
+								margin-right: 5px;
+								padding: 7px 15px;
+								&:hover, &:active {
+									background:darken(@main-color, 5%);
+									border-color:darken(@main-color, 5%);
+									color:#fff;
+								}
+
+								i {
+									margin-left:5px;
+								}
+							}
+						}
+						.pagination {
+							margin:0;
+
+							a {
+								color:@title-color;
+								&:hover, &:active {
+									background:darken(@main-color, 5%);
+									border-color:darken(@main-color, 5%);
+									color:#fff;
+								}
+							}
+						}
+					}
+				}
+				#spaces {
+					margin-bottom: 20px;
+					box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+
+					padding: 15px;
+					background-color: #fff;
+					border-radius: 5px;
+
+					.space {
+
+						#javo-multiple-listing-listType-container {
+							.message-dismiss {
+								background: #666;
+								color: #fff;
+								padding: 50px;
+								font-size: 13px;
+								font-weight: 700;
+								letter-spacing: 2px;
+								border-radius: 3px;
+								-moz-border-radius:3px;
+								-webkit-border-radius:3px;
+								text-transform: uppercase;
+							}
+							&>.col-md-12 {
+
+								border-bottom:1px solid #e9e9e9;
+								padding:15px;
+
+								.featured-item{
+									margin-bottom:15px;
+									background:#ddd;
+									border-radius: 3px;
+									box-shadow: 4px 4px 0px 0px rgba(66, 66, 66, 0.3);
+
+									&:hover {
+										background:#999;
+										.content {
+											&:after {
+												border-color: transparent #fff #666 transparent;
+
+											}
+											&:before {
+												border-color: transparent #666 #fff transparent;
+
+											}
+										}
+									}
+									.data {
+										span {
+											color: #333;
+											&:nth-child(3) {
+												color:#fff;
+											}
+										}
+									}
+								}
+
+
+
+								&:hover {
+									background:#aaa;
+
+									-webkit-transition: all 0.3s ease-in-out;
+									-moz-transition: all 0.3s ease-in-out;
+									-o-transition: all 0.3s ease-in-out;
+									transition: all 0.3s ease-in-out;
+
+									.data {
+
+										span {
+
+											&:nth-child(3) {
+												  background:@main-color;
+
+
+											}
+											&:nth-child(4) {
+												display:none
+											}
+											.social-wrap {
+												display:inline-block !important;
+												visibility: visible !important;
+												padding-top: 0;
+												vertical-align: middle;
+												margin-right: 0;
+											}
+										}
+										.jvfrm_home_button {
+											span {
+												&:first-child {
+													display: block;
+													float: left;
+												}
+											}
+										}
+
+									}
+
+								}
+							}
+						}
+						#javo-listings-wrapType-container{
+							&>div{
+								.module{
+									margin-bottom:15px;
+								}
+								&.col-md-6{
+									margin-bottom: 15px;
+									&:last-of-type, &:nth-child(odd){
+										margin-bottom:0px;
+									}
+									&:nth-child(odd){
+										clear:both;
+									 }
+									.thumbnail{
+										margin-bottom:0px;
+									}
+								}
+								/*
+								&.col-md-12{
+									.module{
+										a{
+											img{
+												max-width:150px;
+												max-height:150px;
+											}
+										}
+									}
+								} */
+
+								/* 2 Column */
+								&.col-md-6{
+									padding-right:0;
+									&:nth-child(2n){
+										padding-right:15px;
+									}
+								}
+
+								/* 3 Column */
+								&.col-md-4{
+									padding-right:0;
+									&:nth-child(3n){
+										padding-right:15px;
+									}
+									&:nth-child(4), &:nth-child(3n+4){
+										clear:both;
+									}
+								}
+
+								&:last-child{
+									.javo-module14{
+										margin-bottom:0px;
+									}
+								}
+								.javo-module1{
+									.media-body{
+										p:last-child{
+											display:none;
+										}
+									}
+								}
+							}
+						}
+
+						.photo {
+							.javo-thb{
+								border-radius:100%;
+								height: 60px;
+								width: 60px;
+								margin: 0 auto;
+								background-position: center center;
+								background-size: cover;
+							}
+
+						}
+						.title {
+							h3 {
+								margin:0;
+								height:60px;
+								overflow:hidden;
+
+								a {
+									font-size: 13px;
+									color: #666;
+									line-height:60px;
+									font-weight: 600;
+									word-break: break-all;
+								}
+							}
+
+						}
+						.data {
+							span {
+								margin-right:20px;
+								line-height:60px;
+								color: #999;
+								font-size: 12px;
+								text-transform: uppercase;
+								letter-spacing: 0px;
+								font-weight: 600;
+
+
+
+
+							}
+							.jvfrm_home_author {
+								overflow: hidden;
+								height: 60px;
+								word-break: break-all;
+								padding-left: 0;
+								span {
+									margin-right:0;
+								}
+
+							}
+							.jvfrm_home_category {
+								overflow: hidden;
+								height: 60px;
+								word-break: break-all;
+								padding-left: 0;
+								span {
+									margin-right:0;
+								}
+							}
+							.jvfrm_home_type {
+								padding-left:0;
+								span {
+									background:@main-color;
+									color: #fff;
+									padding: 5px 13px;
+									border-radius: 3px;
+									margin-right: 0;
+									font-size: 11px;
+
+								}
+							}
+							.jvfrm_home_button {
+								text-align: right;
+								padding:0;
+								padding-right:10px;
+								.social-wrap {
+									padding-top: 0px;
+									vertical-align: middle;
+									i {
+										&:first-child {
+											a {
+												margin-left:0;
+
+											}
+										}
+										a {
+											span {
+												color:#fff;
+												text-transform: uppercase;
+												letter-spacing: 1px;
+												font-weight: 600;
+												font-size: 11px;
+											}
+										}
+									}
+								}
+
+								span {
+									margin-right:0;
+									button {
+										padding: 3px 8px;
+										background-color: #666;
+										border-color: #666;
+										.jv-button-transition;
+										&.tooltips{
+											&:hover{
+												span{
+													  visibility: visible;
+													  opacity: 0.8;
+													  bottom: 40px;
+													  left: 50%;
+													  margin-left: -50px;
+													  z-index: 999;
+													  line-height: 26px !important;
+													  font-size: 11px;
+													  font-weight: 600;
+													  letter-spacing: 2px;
+												  }
+											}
+											span {
+												color:#fff;
+												 position: absolute;
+												  width: 100px;
+												  color: #FFFFFF;
+												  background: #666;
+												  height: 26px;
+												  line-height: 30px;
+												  text-align: center;
+												  visibility: hidden;
+												  border-radius: 6px;
+												  font-style: normal;
+												  &:after{
+													content: '';
+													  position: absolute;
+													  top: 100%;
+													  left: 50%;
+													  margin-left: -8px;
+													  width: 0;
+													  height: 0;
+													  border-top: 8px solid #666;
+													  border-right: 8px solid transparent;
+													  border-left: 8px solid transparent;
+												  }
+											}
+										}
+									}
+								}
+								span {
+									&:first-child {
+										display:none;
+										float: left;
+									}
+									&:last-child {
+										float: right;
+									}
+								}
+
+							}
+
+
+						}
+					}
+				}
+				#paginator {
+					.pages {
+						text-align:center;
+
+						.pagination {
+
+							 li {
+
+								a {
+									border:1px solid #e9e9e9;
+								}
+								&.active {
+									span  {
+										background-color:@main-color;
+										border-color:@main-color;
+										color:#fff;
+									}
+								}
+								span, a {
+									color:@title-color;
+									&:hover, &:focus {
+										color:#fff;
+										background-color:darken(@main-color,5%);
+										border-color:darken(@main-color,5%);
+									}
+								}
+
+							}
+						}
+					}
+				}
+				.javo-map-box-morebutton {
+					/* padding: 15px; */
+					padding: 13px;
+					margin-bottom: 30px;
+					background-color:darken(@main-color,5%);
+					border-color:darken(@main-color,5%);
+					text-transform: uppercase;
+					font-weight: 600;
+					letter-spacing: 1px;
+					i {
+						margin-right:10px;
+					}
+
+				}
+			}
+			&.hide-listing-filter{
+				.jvfrm_home_map_list_sidebar_wrap{
+					display:none !important;
+					visibility:hidden;
+				}
+			}
+		}
+
+		@media only screen and( max-width:@xs-max ){
+			body.mobile-ajax-top & {
+				display:none !important;
+				visibility:hidden !important;
+			}
+		}
+
+	}//	End 3. Map list part style
+//========================================
+//	End 3. Map list part style - use listing switcher
+//========================================

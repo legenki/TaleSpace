@@ -1,0 +1,188 @@
+.jv-brasilia a,
+.jv-brasilia a:active,
+.jv-brasilia a:focus,
+.jv-brasilia .tg-media-button {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+}
+.jv-brasilia .tg-item-content,
+.jv-brasilia .tg-item-media-holder,
+.jv-brasilia .tg-item-overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.jv-brasilia .tg-item-link {
+	position: absolute;
+	display: block;
+	top: -22px;
+    left: -28px;
+    right: -28px;
+    bottom: -22px;
+}
+.jv-brasilia .tg-item-content {
+	margin: 22px 28px;
+}
+.jv-brasilia .tg-item-content,
+.jv-brasilia .tg-item-overlay {
+	opacity: 0;
+}
+.jv-brasilia:hover .tg-item-content,
+.jv-brasilia:hover .tg-item-overlay {
+	opacity: 1;
+}
+.jv-brasilia .tg-cats-holder,
+.jv-brasilia .tg-item-title,
+.jv-brasilia .tg-item-footer {
+	-webkit-transition: -webkit-transform 0.25s ease;
+	-moz-transition: -moz-transform 0.25s ease;
+	-ms-transition: -ms-transform 0.25s ease;
+	-o-transition: -o-transform 0.25s ease;
+	transition: transform 0.25s ease;
+}
+.jv-brasilia .tg-item-title,
+.jv-brasilia .tg-item-title a {
+	position: relative;
+	display: inline-block;
+    font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+    text-transform: uppercase;
+}
+.tg-layout-justified .jv-brasilia .tg-item-title,
+.tg-layout-justified .jv-brasilia .tg-item-title a {
+    font-size: 15px;
+	line-height: 18px;
+}
+.jv-brasilia .tg-item-title {
+	margin: 0 20px 0 0 !important;
+}
+.jv-brasilia .tg-item-title  {
+	-webkit-transform: translate3d(0,22px,0);
+	-moz-transform: translate3d(0,22px,0);
+	-ms-transform: translate3d(0,22px,0);
+	-o-transform: translate3d(0,22px,0);
+	transform: translate3d(0,22px,0);
+}
+.jv-brasilia .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+.jv-brasilia .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	line-height: 18px;
+	-webkit-transform: translate3d(0,-22px,0);
+	-moz-transform: translate3d(0,-22px,0);
+	-ms-transform: translate3d(0,-22px,0);
+	-o-transform: translate3d(0,-22px,0);
+	transform: translate3d(0,-22px,0);
+}
+.jv-brasilia .tg-item-footer {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.jv-brasilia:hover .tg-cats-holder,
+.jv-brasilia:hover .tg-item-title {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-brasilia .tg-item-author {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+    font-size: 13px;
+	line-height: 13px;
+	font-weight: 600;
+}
+.jv-brasilia .tg-media-button {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-brasilia h2 a:hover,
+.jv-brasilia .tg-cats-holder a:hover,
+.jv-brasilia .tg-media-button:hover {
+	opacity: 0.75;
+}
+.jv-brasilia .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+    font-size: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.jv-brasilia .tg-media-button .tg-icon-add {
+    font-size: 28px;
+}
+.jv-brasilia .mejs-overlay-play {
+	display: none !important;
+}
+
+/** Javo Rating average **/
+.jv-brasilia .tg-jv-meta-rating-wrap {
+    position: relative;
+    top: 6px;
+    left: auto;
+    right: 0;
+    margin: 8px 0;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.jv-brasilia .tg-jv-meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.jv-brasilia .tg-jv-meta-rating {
+    position: relative;
+    z-index: 1;
+	height: 100%;
+	background-position: -3px -15px;
+	background-image: url('/wp-content/themes/javo-directory/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}
+
+/** Javo category icons **/
+.jv-brasilia .tg-jv-tax-wrap {padding:10px 0 0 0;}
+.jv-brasilia .tg-jv-category i.glyphicon, .tg-jv-location i.glyphicon {font-size: 0.85em; color:#ffffff !important; letter-spacing:0.5em;}
+.jv-brasilia .tg-jv-category {margin-right:15px;}

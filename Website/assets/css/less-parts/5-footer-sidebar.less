@@ -1,0 +1,501 @@
+/*------------------------------------------------------------------
+[5. Footer Sidebar Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Footer Sidebar
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+6. Footer & Sidebar
+	- footer
+	- sidebar
+	- widget
+		- recent photos widget
+		- recent post widget
+		- Tag cloud widget
+		- Search widget
+		- contact info widget
+		- lava featured widget
+		- rss widget
+		- text widget
+	- Back to Top Button
+	- Site Contact Button
+	- Widget-woocommerce-currency-switcher
+	- Footer menu
+*/
+
+
+// 6. Footer & Sidebar
+// footer
+.footer-bottom-full-wrap{
+	body.page-template-lava_property_map & {
+		.footer-bottom{
+			#footer-bottom{
+				>.row{
+					>.col-md-12{
+						min-height:0;
+					}
+				}
+			}
+		}
+	}
+}
+.footer-top-full-wrap,
+.footer-bottom-full-wrap{
+	background-color:@main-footer-outside-color;
+	div.latest-posts{
+		div.col-md-12:hover{
+			a,
+			a > span{
+				color:@main-text-color !important;
+			}
+		}
+	}
+	h5{
+		color:#fff;
+		letter-spacing: 3px;
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.latest-posts{
+		.col-md-12{
+			h3 a{color:#fff;}
+			a span{color:#999;}
+		}
+	}
+}
+.footer-background-wrap{
+	background-color:@main-footer-color;
+	body.page-template-lava_property_map & {
+		display:none;
+	}
+	div.latest-posts{
+		div.col-md-12:hover{
+			a,
+			a > span{
+				color:@main-text-color !important;
+			}
+		}
+	}
+	position:relative;
+	.footer-wrap{
+		width:100%;
+		overflow:visible;
+		padding:50px 0 30px;
+		position:relative;
+		background-size:100% 100%;
+		.footer-sidebar-wrap{
+			.row{
+				.col-md-3{
+					.widgets-wraps{
+						.lava-featured-widget{
+							margin-bottom:0;
+							.latest-posts{
+								margin-bottom:0;
+							}
+						}
+						.widgettitle_wrap{
+							.widgettitle{
+								span{
+									 text-transform:uppercase;
+									 position:relative;
+								}
+							}// .widgettitle
+						}// .widgettitle_wrap
+						.widget_posts_wrap{
+							.posts{
+								.col-md-12{
+									h3{
+										a{
+											color:#999;
+										}
+									}
+								}
+							}// .posts
+						}// .widget_posts_wrap
+					}// .widgets-wraps
+				}// .col-md-3
+			}// .row
+
+			.footer-copyright{
+				color:#aaaaa1;
+				.text-center{
+					letter-spacing:1px;
+				}
+			}
+			// footer menu
+			.pull-right{
+				#menu-new-menu{
+					.menu-item{
+						float:left;
+						padding: 0px 18px;
+						&:last-child{
+							padding-right:0;
+						}
+						a{
+							color:#fff;
+						}
+						&:hover a{
+							color:#fff;
+						}
+					}
+				}
+			} // .pull-right (footer menu)
+		}// .footer-sidebar-wrap
+
+		li{list-style-type: none;}
+		a{color:#aaaaa1;}
+
+	}// .footer-wrap
+	.footer-bottom {
+		background:#333;
+		color:#fff;
+		padding: 30px 0;
+		border-top:1px solid #484848;
+	}
+}// .footer-background-wrap
+
+.footer-top-full-wrap,
+.footer-bottom-full-wrap,
+.footer-background-wrap{
+	.widget{
+		&.widgets-wraps{
+			.javo-shortcode{
+				&.shortcode-jvfrm_home_slider2{
+					.shortcode-container{
+						.shortcode-output{
+							.flexslider{
+								border-color:transparent;
+								.module{
+									&.javo-module3{
+										.section-header{
+											a:hover{ color:#ccc;}
+										}
+										.section-meta{
+											.lava_favorite{
+												display:none;
+											}
+										}
+									}
+								}
+								ol.flex-control-nav.flex-control-paging{
+									li{
+										a{
+											background-color:rgba( 255, 255, 255, .3 );
+											&.flex-active{
+												background-color:rgba( 255, 255, 255, .8 );
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&.shortcode-jvfrm_home_slider4{
+					.shortcode-output{
+						.slider-wrap.flexslider{
+							min-height:200px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* footer 3 column*/
+.footer-background-wrap{
+	footer.footer-wrap{
+		.footer-sidebar-wrap{
+			.jv-footer-separator{
+				border-top:1px solid #484848;
+			}
+			.jv-footer-column{
+				&.col-md-4{
+					.widgets-wraps{
+						@media( max-width:992px ){
+							width:100%;
+						}
+
+						.widgettitle_wrap{ // widget title
+							.widgettitle{
+								margin-bottom:40px;
+								span{
+									font-size:18px;
+								}
+								&:after{
+									border:none;
+								}
+								&:before{
+									border:none;
+								}
+							}
+						}
+						.widget_posts_wrap{ // widget content
+							.latest-posts{
+								.col-md-12{
+									.thumb{
+										width:auto;
+										height:auto;
+										margin-right:20px;
+										a{
+											img{
+												height:70px;
+												width:128px;
+											}
+										}
+									}
+								}
+							}// .latest-posts
+							&.type-post{
+								.latest-posts{
+									.col-md-12{
+										a{
+											span{
+												width:auto;
+												max-width:320px;
+											}
+										}
+									}
+								}
+							}// .widget_posts_wrap.type-post
+						}// .widget_posts_wrap
+					}
+					.lava-recent-widget{
+						.lava-recent-widget-title{
+							border:none;
+							margin-bottom:40px;
+							h3{
+								margin-top:0;
+								font-size:18px;
+							}
+						}
+					}// .lava-recent-widget
+				}// .jv-footer-column.col-md-4
+				.shortcode-jvfrm_home_slider2{
+					.meta-location{
+						padding-left:5px;
+					}
+				}
+			}
+		}// .footer-sidebar-wrap
+		// footer infomation (3column bottom area)
+		.jv-footer-info{
+			@media( max-width:992px ){
+				& {
+					margin-left:15px;
+					margin-right:15px;
+					& > div{
+						margin-bottom:30px;
+					}
+				}
+			}
+			color:#ccc;
+			font-size: 13px;
+			line-height: 20px;
+			margin-bottom:30px;
+			padding-top:50px;
+			.jv-footer-info-logo-wrap{
+				& > div{
+
+					margin:3px 0;
+
+					&.jv-footer-logo-text-title{
+						margin:0 0 30px 0;
+						font-size: 18px;
+						font-weight: bold;
+						text-transform: uppercase;
+						color: #e7e7e7;
+					}
+
+					&.jv-footer-info-text-title{
+						margin-top:0;
+					}
+
+					&.jv-footer-info-logo{
+						margin: 0 0 5px 0;
+						padding-top:7px;
+						p{
+							text-align:center;
+							margin-bottom:0;
+							&.contact_us_detail{
+								text-align:left;
+							}
+						}
+					}
+
+					&.jv-footer-info-social-icon-wrap{
+						/* margin-top: 22px; */
+						margin-top:14px;
+						display:table;
+						width:100%;
+						& > .jv-footer-info-social{
+							display:table-cell;
+							text-align:center;
+							vertical-align:middle;
+							font-size:20px;
+							float:left;
+							margin:0 10px;
+							&:first-child{
+								text-align:left;
+								margin-left:0;
+							}
+						}
+					}// .jv-footer-info-social-icon-wrap
+
+					&.jv-footer-info-email{
+						font-size:13px;
+						line-height:20px;
+						margin:17px 0 5px;
+						letter-spacing:1px;
+						a{color:#ccc;}
+						i{margin-right:5px;}
+					}
+
+					&.jv-footer-info-working-hour{
+						font-size:13px;
+						line-height:20px;
+						letter-spacing:1px;
+						margin:11px 0;
+						i{
+							margin-right:3px;
+						}
+					}
+
+					&.jv-footer-info-address{
+						font-size:15px;
+						line-height:20px;
+						.fa-map-marker{
+							margin:0 2px;
+						}
+					}
+
+				}
+
+			}// .jv-footer-info-logo-wrap
+			.jv-footer-info-text-wrap{
+				.jv-footer-info-text-title{
+					margin-bottom: 30px;
+					font-size: 18px;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: #e7e7e7;
+				}
+				.jv-footer-info-text{
+					margin-bottom:20px;
+					font-size:13px;
+					letter-spacing:1px;
+					line-height:24px;
+				}
+			}// .jv-footer-info-text-wrap
+			.jv-footer-info-image-wrap{
+				.jv-footer-info-image-title{
+					margin-bottom:30px;
+					font-size: 18px;
+					font-weight: bold;
+					color: #e7e7e7;
+				}
+				.jv-footer-info-image{
+					    img{
+							width:100%;
+							height:auto;
+					    }
+				}
+			}// .jv-footer-info-image-wrap
+		}// .jv-footer-info
+	}
+}// .footer-background-wrap
+
+
+body.disable-footer{
+	.footer-top-full-wrap,
+	.footer-background-wrap{
+		display:none !important;
+		visibility:hidden !important;
+	}
+
+}
+
+/* boxed */
+body.footer-boxed{
+	.footer-background-wrap{
+		.footer-wrap{
+			.footer-sidebar-wrap{
+				padding:0 40px;
+				.jv-footer-column{
+					.widgets-wraps{
+						.widget_posts_wrap{
+							.latest-posts{
+								.col-md-12{
+									a{
+										span{
+											max-width:200px !important;
+										}
+									}
+								}
+							}// .latest-posts
+						}
+					}// .widgets-wraps
+				}// .jv-footer-column
+			}// .footer-sidebar-wrap
+		}// .footer-wrap
+	}// .footer-background-wrap
+}// body.footer-boxed
+/* boxed - end */
+
+/*
+* - sidebar
+*/
+.sidebar-right{
+	.javo-shortcode{
+		.shortcode-container{
+			.shortcode-output{
+				.flexslider{
+					background: transparent none repeat scroll 0% 0%;
+					border-radius: 4px;
+					border: 0px solid rgb(255, 255, 255);
+				}
+			}// .shortcode-output
+		}// .shortcode-container
+	}// .javo-shortcode
+}// .sidebar-right
+
+#javo-single-sidebar{
+	.widget_jvfrm_home_recent_posts{
+		.widget_posts_wrap{
+			.latest-posts{
+				.thumb{
+					a{
+						img{
+							width:100%;
+							height:auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}// #javo-single-sidebar
+
+/* Footer menu */
+.footer-background-wrap{
+	.footer-wrap{
+		.footer-sidebar-wrap{
+			.pull-right{
+				ul{
+					.menu-item{
+						float:left;
+						margin-right:10px;
+					}
+				}
+			}
+		}// .footer-sidebar-wrap
+	}
+}// .footer-background-wrap

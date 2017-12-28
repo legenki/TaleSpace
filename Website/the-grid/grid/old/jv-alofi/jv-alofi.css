@@ -1,0 +1,68 @@
+.jv-alofi a,
+.jv-alofi a:active,
+.jv-alofi a:focus,
+.jv-alofi .tg-item-overlay,
+.jv-alofi .tg-media-button {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.3s ease-in-out;
+}
+.jv-alofi .tg-item-link {
+	position: absolute;
+	display: block;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/** Javo Meta **/
+.jv-alofi .tg-jv-tax-wrap{
+	text-align:center; 
+	position:absolute; 
+	width:100%;
+	top:50%;
+}
+.jv-alofi .tg-jv-tax-wrap .tg-jv-category,
+.jv-alofi .tg-jv-tax-wrap .tg-jv-location{position:relative; z-index:1;}
+
+/** Javo Rating average **/
+.jv-alofi .tg-jv-meta-rating-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px 10px;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.jv-alofi .tg-jv-meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.jv-alofi .tg-jv-meta-rating {
+    position: relative;
+    z-index: 1;
+	height: 100%;
+	background-position: -3px -15px;
+	background-image: url('/wp-content/themes/javo-spot/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}
+
+/** Javo category icons **/
+.jv-alofi .tg-jv-category i.glyphicon, .tg-jv-location i.glyphicon {font-size: 0.85em; color:#999999 !important; letter-spacing:0.5em;}
+.jv-alofi .tg-jv-category {margin-right:15px;}

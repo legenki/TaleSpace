@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------
+[8. Pagination Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Common Pagination Style
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+8. Pagination
+*/
+
+// 8. Pagination
+.jvfrm_home_pagination{
+	clear: both;
+	text-align: center;
+	padding: 10px 0 0 0;
+
+	&:after{
+		content:' ';
+		display:block;
+		clear:both;
+	}// .jvfrm_home_pagination:after
+	a{
+		display:inline-block;
+		padding:10px;
+		background:#fcfcfc;
+		border:solid 1px #eee;
+		border-radius: 5px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+
+		&:hover{
+			background:#fff !important;
+			transform:scale(1.2);
+			-webkit-transform:scale(1.2);
+			-moz-transform:scale(1.2);
+			-o-transform:scale(1.2);
+			-ms-transform:scale(1.2);
+		}// .jvfrm_home_pagination a:hover
+	}
+	span.current{
+		display:inline-block;
+		font-size:10pt;
+		padding:10px;
+		background:#14b5f6;
+		border:solid 1px #ccc;
+		border-radius: 2px;
+		color:#fff;
+	}
+}// .jvfrm_home_pagination

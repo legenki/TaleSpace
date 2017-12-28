@@ -1,0 +1,251 @@
+.jv-tokyo a,
+.jv-tokyo a:active,
+.jv-tokyo a:focus,
+.jv-tokyo .tg-item-image,
+.jv-tokyo.tg-item .tg-item-audio-poster,
+.jv-tokyo .tg-item-overlay,
+.jv-tokyo .tg-item-media-holder,
+.jv-tokyo .tg-item-content-holder,
+.jv-tokyo .jv-meta-holder,
+.jv-tokyo .tg-item-title,
+.jv-tokyo .to-post-like,
+.jv-panama .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.jv-tokyo .tg-center-holder {
+	text-align: center;
+}
+.jv-tokyo .tg-item-link {
+	position: absolute;
+    display: block;
+    top: -1000%;
+    left: 0;
+    width: 100%;
+    height: 2000%;
+}
+.jv-tokyo .tg-item-content-holder,
+.jv-tokyo .tg-item-media-holder,
+.jv-tokyo .tg-item-overlay {
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.jv-tokyo .tg-item-inner {
+	overflow: hidden;
+}
+.jv-tokyo .tg-item-content-holder {
+	background: none !important;
+	padding: 22px;
+	opacity: 0;
+}
+.jv-tokyo:hover .tg-item-content-holder {
+	opacity: 1;
+}
+.jv-tokyo.tg-is-playing .tg-item-content-holder,
+.jv-tokyo.tg-force-play .tg-item-content-holder {
+	opacity: 0;
+	z-index: -1;
+}
+.jv-tokyo .tg-item-title,
+.jv-tokyo .tg-item-title a {
+	position: relative;
+	display: block;
+    font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.tg-layout-justified .jv-tokyo .tg-item-title,
+.tg-layout-justified .jv-tokyo .tg-item-title a {
+    font-size: 16px;
+	line-height: 18px;
+}
+.jv-tokyo .tg-item-title {
+	padding: 0 30px !important;
+}
+.tg-layout-justified .jv-tokyo .tg-item-title {
+    padding: 0 15px !important;
+}
+.jv-tokyo .tg-item-title  {
+	-webkit-transform: translate3d(0,-34px,0);
+	-moz-transform: translate3d(0,-34px,0);
+	-ms-transform: translate3d(0,-34px,0);
+	-o-transform: translate3d(0,-34px,0);
+	transform: translate3d(0,-34px,0);
+}
+.jv-tokyo:not(.tg-is-playing):not(.tg-force-play):hover .tg-item-image,
+.jv-tokyo:not(.tg-is-playing):not(.tg-force-play):hover .tg-item-audio-poster,
+.jv-tokyo:not(.tg-is-playing):not(.tg-force-play):hover .tg-item-media-poster {
+	-webkit-transform: perspective(500px)  scale3d(1.15,1.15,1.15);
+    -moz-transform: perspective(500px) scale3d(1.15,1.15,1.15);
+    -ms-transform: perspective(500px) scale3d(1.15,1.15,1.15);
+    -o-transform: perspective(500px) scale3d(1.15,1.15,1.15);
+    transform: perspective(500px) scale3d(1.15,1.15,1.15);
+}
+.jv-tokyo .jv-meta-holder {
+	position: relative;
+	display: block;
+	margin: 10px 0 0 0;
+	padding: 0 30px;
+	font-size: 13px;
+	line-height: 18px;
+	-webkit-transform: translate3d(0,34px,0);
+	-moz-transform: translate3d(0,34px,0);
+	-ms-transform: translate3d(0,34px,0);
+	-o-transform: translate3d(0,34px,0);
+	transform: translate3d(0,34px,0);
+}
+.jv-tokyo:hover .jv-meta-holder,
+.jv-tokyo:hover .tg-item-title {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-tokyo .tg-link-button,
+.jv-tokyo .tg-media-button {
+    position: absolute;
+    display: block;
+    margin: 0;
+    top: 22px;
+    right: 22px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;;
+}
+.jv-tokyo .tg-media-button:hover {
+	opacity: 0.75;
+}
+.jv-tokyo .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+    font-size: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.jv-tokyo .tg-media-button .tg-icon-arrows-diagonal {
+	font-weight: 600;
+}
+.jv-tokyo .to-post-like {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+	margin: 0;
+    font-size: 14px; 
+	line-height: 14px; 
+}
+
+/** Social **/
+.jv-tokyo .tg-dark .tg-share-icons i,
+.jv-tokyo .tg-dark .tg-media-button,
+.jv-tokyo .tg-dark .tg-link-button {
+	background: rgba(255,255,255,0.5);
+}
+.jv-tokyo .tg-dark .tg-share-icons i:hover,
+.jv-tokyo .tg-dark .tg-media-button:hover,
+.jv-tokyo .tg-dark .tg-link-button:hover {
+	background: rgba(255,255,255,0.85);
+}
+.jv-tokyo .tg-light .tg-share-icons i,
+.jv-tokyo .tg-light .tg-media-button,
+.jv-tokyo .tg-light .tg-link-button {
+	background: rgba(0,0,0,0.15);
+}
+.jv-tokyo .tg-light .tg-share-icons i:hover,
+.jv-tokyo .tg-light .tg-media-button:hover,
+.jv-tokyo .tg-light .tg-link-button:hover {
+	background: rgba(0,0,0,0.35);
+}
+
+.jv-tokyo .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+}
+.jv-tokyo .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+}
+.jv-tokyo .tg-share-icons a,
+.jv-tokyo .tg-share-icons i {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+	font-size: 14px;
+    line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-tokyo:hover .tg-share-icons a:nth-child(2){
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.jv-tokyo:hover .tg-share-icons a:nth-child(3){
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.jv-tokyo:hover .tg-share-icons a:nth-child(4){
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.jv-tokyo .tg-share-icons a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,30px,0);
+	-moz-transform: translate3d(0,30px,0);
+	-ms-transform: translate3d(0,30px,0);
+	-o-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+.jv-tokyo .tg-share-icons a,
+.jv-tokyo .tg-share-icons i {
+	-webkit-transition: -webkit-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-moz-transition: -moz-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-ms-transition: -ms-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-o-transition: -o-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	transition: transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+}
+.jv-tokyo:hover .tg-share-icons a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+/** overlay **/
+.tg-item-media-inner {
+position: absolute;
+top: 0%;
+width: 100%;
+height: 100%;
+background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(0,0,0,0)),to(rgba(0,0,0,.65)));
+background-image: -moz-linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.65));
+}

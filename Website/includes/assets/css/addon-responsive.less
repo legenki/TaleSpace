@@ -1,0 +1,539 @@
+// 0. Color 
+// 1. Single Property page - A type
+// 2. Single Property page - LT - type
+// 3. Single Property page - A Block - type
+// 4. Single Property page - B - type
+// 5. Single Property page - Half - type
+// 6. Single Property page - tap - menu
+// 7. Single Property page - sidebar
+// 8. Single Property page - TT - type
+//------------------------------------------------------------------
+//		0. Color 
+//------------------------------------------------------------------
+	@icon-color:#686868;
+	@item-text-color:#999;
+//------------------------------------------------------------------
+//		1. Single Property page - A type
+//------------------------------------------------------------------
+.single-property.type-a{
+	#page-style{
+		@media (max-width:1199px){// <=1199
+			.property{
+				>.container{
+					#javo-single-content{
+						>.row{
+							margin-left:0;	
+						}
+					}
+					#javo-single-sidebar{
+						padding-right:10px;
+					}
+				}
+			}// .property
+		}
+		@media(max-width:991px){
+			.property{
+				.container{
+					#javo-single-content{
+						>.row{
+							margin-left:-15px;
+						}
+					}
+					#javo-single-sidebar{
+						display:block;
+						float:left;
+						padding-left:15px;
+						padding-right:15px;
+						width:100%;
+						.lava-single-sidebar{
+							>li{
+								top:0;
+								width:49%;
+								float:left;
+								margin-bottom:25px;
+								&:nth-child(even){
+									float:right;
+								}
+								&.widget_lava_contact_single_page{
+									.lava-wg-author-contact-form{
+										top:0;
+										.sticky-wrapper{
+											.panel-default{
+												position:static !important;
+												.panel-body{
+													.list-group-item{
+														.author-thumb-wrap{
+															width:30%;
+															float:left;
+															a{
+																display:table;
+																margin:0 auto;
+															}
+														}
+														.author-meta-wrap{
+															width:70%;
+															float:left;
+														}
+													}
+													&.author-contact-button-wrap{
+														.share{
+															.col-md-6{
+																width:50%;
+																float:left;
+															}
+														}
+													}
+												}// .panel-body
+											}
+										}
+									}
+								}// .widget_lava_contact_single_page
+							}
+						}
+					}// #javo-single-sidebar
+				}
+			}
+		}// max-width:991px
+
+		@media(max-width:600px){
+			.property{
+				.container{
+					#javo-single-sidebar{
+						.lava-single-sidebar{
+							>li{
+								width:100%;
+							}
+						}
+					}// #javo-single-sidebar
+					
+				}		
+			}
+		}// max-width:600px
+		
+		@media(max-width:350px){
+
+		}// max-width:350px
+
+	}// #page-style
+}// .single-property.type-a
+//------------------------------------------------------------------
+//		1. Single Property page - A type - end
+//------------------------------------------------------------------
+
+
+//------------------------------------------------------------------
+//		2. Single Property page - LT - type
+//------------------------------------------------------------------
+.single-property.type-left-tab{
+	@media (max-width:767px){
+		.property{
+			.tab-singles{
+				#javo-single-content{
+					padding-left:0 !important;
+					.jv-left-tab-content{
+						padding:0;
+					}
+				}
+			}
+		}
+		.footer-background-wrap{
+			display:none;
+		}
+	}
+}
+//------------------------------------------------------------------
+//		2. Single Property page - LT - type - end
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
+//		3. Single Property page - A Block - type
+//------------------------------------------------------------------
+.single-property{
+	&.type-a{
+		#page-style{
+			@media(max-width:767px){
+				.single-item-tab-feature-bg-wrap{
+					height: 100%;
+					min-height: 100%;
+					.single-item-tab-bg{
+						padding: 37px 0 5px 3px;
+					}
+				}// .single-item-tab-feature-bg-wrap
+				.property{
+					>.container{
+						#javo-single-content{
+							.javo-detail-item-content{
+								>.col-xs-12{
+									&:first-child{
+										margin-top:0;
+									}
+								}
+							}
+						}
+					}
+				}// .property
+			}// max-width:767px
+		}// #page-style
+	}// &.mobile
+}// .single-property
+
+
+//------------------------------------------------------------------
+//		3. Single Property page - A Block - type - end
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
+//		4. Single Property page - B - type
+//------------------------------------------------------------------
+
+.single-property{
+	&.type-b{
+		@media (max-width: 767px){
+			.single-item-tab-feature-bg-wrap{
+				.single-item-tab-bg{
+					bottom: 21px;
+					.javo-core-single-featured-switcher{
+						top: 65px;
+					}//javo-core-single-featured-switcher
+				}
+				&.extend-meta-block-wrap{
+					.single-item-tab-bg{
+						padding-bottom:0;
+					}
+				}
+			}// single-item-tab-feature-bg-wrap
+			&.extend-meta-block{
+				.property{
+					>.container{
+						#javo-single-content{
+							.javo-detail-item-content{
+								>.col-xs-12{
+									&:first-child{
+										margin-top:0;
+									}
+								}
+							}
+						}
+					}
+				}// .property
+			}
+		}// max-width: 767px
+	}// type-b
+}// single-property
+//------------------------------------------------------------------
+//		4. Single Property page - B - type - end
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
+//		5. Single Property page - Half - type
+//------------------------------------------------------------------
+
+.single-property{
+	&.type-half{
+		@media (max-width: 1350px){
+			#header-one-line{
+				.javo-main-navbar{
+					.container{
+						.row{
+							.navbar-header{
+								min-width:auto;
+								width:40%;
+								#lv-header-search-container{
+									float:right !important;
+									width:230px;
+								}
+							}
+						}
+					}
+				}
+			}// #header-one-line
+			.half-right-wrap{
+				.single-item-tab{
+					.sticky-wrapper{
+						#javo-detail-item-header-wrap{
+							.container{
+								.row{
+									#javo-detail-item-header{
+										.nav-tabs{
+											.javo-single-nav{
+												a{
+													font-size: 11px;
+													margin-right: 20px;
+													i{
+														display:none;	
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}// #javo-detail-item-header-wrap
+					}// .sticky-wrapper
+				}// .single-item-tab
+			}// .half-right-wrap
+		}// max-width: 1750px
+		@media (max-width:1200px){
+			.half-wrap{
+				.half-left-wrap{
+					.single-item-tab-feature-bg-wrap{
+						.single-item-tab-bg{
+							>.container{
+								.javo-core-single-featured-switcher{
+									left:10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}// max-width:1200px
+		@media(max-width:1024px){
+			.half-left-wrap{	
+				.single-dynamic-header{
+					.single-item-tab-bg{
+						.container{
+							.header-inner{
+								.item-bg-left{
+									.single-header-terms{
+										font-size: 12px;
+									}
+									h1{
+										font-size: 28px;
+									}
+								}
+							}// .header-inner
+						}// .container
+					}// .single-item-tab-bg
+				}// .single-dynamic-header
+			}// .half-left-wrap
+			.half-right-wrap{
+				.single-item-tab{
+					.sticky-wrapper{
+						#javo-detail-item-header-wrap{
+							.container{
+								.row{
+									.jv-scrollspy-right-wrap{
+										.dropdown{
+											button{
+												i{
+													font-size: 15px !important;
+												}
+											}
+										}
+									}
+								}
+							}
+						}// #javo-detail-item-header-wrap
+					}// .sticky-wrapper
+					.half-right-content{
+						.container{
+							.row{
+								#javo-single-content{
+									.javo-detail-item-content{
+										#javo-item-condition-section{
+											.panel{
+												.panel-body{
+													.summary_items{
+														.col-md-6{
+															width:100%;
+														}
+													}
+												}
+											}
+										}// #javo-item-condition-section
+										#javo-item-review-section{
+											.panel{
+												.panel-body{
+													.lv-directory-review-wrap{
+														.javo-detail-item-review-wrap{
+															#javo-detail-item-review-container{
+																.javo-detail-item-review-inner{
+																	.review-left-wrap{
+																		padding-left: 0;
+																		padding-top: 15px;
+																		.javo-thb{
+																			width: 70px !important;
+																			height: 70px !important;
+																		}
+																	}
+																}// .javo-detail-item-review-inner
+															}// #javo-detail-item-review-container
+														}// .jv-rating-form-wrap
+													}// .lv-directory-review-wrap
+												}
+											}
+										}// #javo-item-review-section
+									}// .javo-detail-item-content
+								}// #javo-single-content
+							}
+						}
+					}// .half-right-content
+				}// .single-item-tab
+			}// .half-right-wrap
+		}// max-width:1024px
+		@media (max-width: 991px){
+			#header-one-line{
+				.javo-main-navbar{
+					.container{
+						.row{
+							.navbar-header{
+								width:auto;
+							}
+							#javo-navibar{
+								width:auto;
+								background-color:transparent !important;
+							}
+						}
+					}
+				}
+			}// #header-one-line
+			.half-wrap{
+				margin:0;
+				.half-left-wrap{
+					position:relative;
+					.single-item-tab-feature-bg-wrap{
+						.single-item-tab-bg{
+							.container{
+								.header-inner{
+									margin-left:35px !important;
+								}
+								.javo-core-single-featured-switcher{
+									left:35px;
+								}
+							}
+						}
+					}
+				}// .half-left-wrap
+				.half-right-wrap{
+					.property{
+						#javo-detail-item-header-wrap{
+							>.container{
+								#javo-detail-item-header{
+									width:90%;
+									float:left;
+								}
+							}
+						}
+					}
+				}
+			}
+		}// max-width:991px
+		@media (max-width: 767px){
+			#header-one-line{
+				.javo-main-navbar{
+					.container{
+						.row{
+							.navbar-header{
+								width:100%;
+							}
+							#javo-navibar{
+								width:100%;
+							}
+						}
+					}
+				}
+			}// #header-one-line
+			.half-wrap{
+				margin:0;
+				.half-left-wrap{
+					position:relative;
+					.single-item-tab-feature-bg-wrap{
+						.single-item-tab-bg{
+							.container{
+								.header-inner{
+									margin-left:15px !important;
+								}
+								.javo-core-single-featured-switcher{
+									left:15px;
+								}
+							}
+						}
+					}
+				}// .half-left-wrap
+				.half-right-wrap{
+					.half-right-content{
+						padding:0 !important;
+					}
+				}
+			}
+		}// max-width:991px
+	}
+}// single-property
+
+//------------------------------------------------------------------
+//		5. Single Property page - Half - type - end
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
+//		6. Single Property page - tap - menu
+//------------------------------------------------------------------
+
+.single-property{
+	#page-style{
+		.single-item-tab{
+			&.property{
+				@media (max-width: 767px){
+					.tab-singles{
+						#javo-single-content{
+							.nav-tabs{
+								.js-tab{
+									i{
+										font-size:16px;
+									}
+								}
+							}
+						}
+					}
+				}// max-width: 767px
+			}
+		}
+	}
+}
+
+//------------------------------------------------------------------
+//		6. Single Property page - tap - menu - end
+//------------------------------------------------------------------
+
+//------------------------------------------------------------------
+//		7. Single Property page - sidebar
+//------------------------------------------------------------------
+.single-property{
+	@media (max-width:767px){
+		#javo-single-sidebar{
+			display: block;
+			float: left;
+			width: 100%;
+			padding:0 !important;
+			.lava-single-sidebar{
+				.widget_lava_contact_single_page{
+					.lava-wg-author-contact-form{
+						.type-top-tab&{
+							top:50px !important;
+						}
+						#lv-single-contact-sticky-wrapper{
+							#lv-single-contact{
+								position:static !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//------------------------------------------------------------------
+//		8. Single Property page - TT - type
+//------------------------------------------------------------------
+.single-property.type-top-tab{
+	@media (max-width:767px){
+		.property{
+			.tab-singles{
+				#javo-single-content{
+					padding-left:0 !important;
+				}
+			}
+		}
+	}
+}

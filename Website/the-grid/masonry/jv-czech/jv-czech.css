@@ -1,0 +1,248 @@
+.jv-czech a,
+.jv-czech a:active,
+.jv-czech a:focus,
+.jv-czech .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease;
+	-o-transition: opacity 0.25s ease, color 0.25s ease;
+	transition: opacity 0.25s ease, color 0.25s ease;
+}
+.jv-czech .tg-media-button:hover,
+.jv-czech a:not(.mejs-volume-slider):hover {
+	opacity: 0.85;
+}
+.jv-czech .tg-center-holder {
+	text-align: center;
+}
+.jv-czech .tg-item-content-holder {
+	position: relative;
+	display: block;
+	padding: 22px 24px 14px 24px;
+	text-align: left;
+}
+.jv-czech .tg-item-info {
+	position: relative;
+	display: block;
+}
+.jv-czech .tg-item-date,
+.jv-czech .tg-cats-holder {
+	position: relative;
+	display: inline;
+    padding: 0 10px 0 0;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+}
+.jv-czech .tg-cats-holder:before {
+    position: relative;
+    display: inline-block;
+	padding: 0 10px 0 0;
+    content: '/';
+    line-height: 22px;
+}
+.jv-czech .tg-item-title,
+.jv-czech .tg-item-title a {
+	position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+	margin: 6px 0 0 0 !important;
+	padding: 0 !important;
+}
+.jv-czech .tg-item-title a {
+	margin: 0 !important;
+}
+.jv-czech .tg-item-excerpt {
+	position: relative;
+	display: inline-block;
+	margin: 18px 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 23px;
+}
+.jv-czech .tg-item-overlay-media,
+.jv-czech .tg-item-overlay-link {
+	position: relative;
+	display: inline-block;
+	height: 54px;
+	width: 54px;
+	margin: 10px;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 20px;
+	border-radius: 50%;
+}
+.jv-czech .tg-media-button,
+.jv-czech .tg-link-button,
+.jv-czech .tg-media-button i,
+.jv-czech .tg-link-button i {
+	position: absolute;
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    width: 54px;
+}
+.jv-czech .tg-icon-add {
+	font-size: 30px;
+}
+.jv-czech .tg-item-footer {
+	position: relative;
+    display: block;
+    width: 100%;
+	margin: 20px 0 0 0;
+	line-height: 25px;
+}
+.jv-czech .tg-item-footer:after {
+	content:'';
+    display:block;
+    clear: both;
+}
+.jv-czech .quote-format .tg-item-footer,
+.jv-czech .link-format .tg-item-footer {
+	margin: 38px 0 0 0;
+}
+.jv-czech .tg-item-author-holder {
+	position: relative;
+    display: inline-block;
+	float: left;
+}
+.jv-czech .tg-item-avatar,
+.jv-czech .tg-item-avatar img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+.jv-czech .tg-item-avatar {
+	top: -3px;
+}
+.jv-czech .tg-item-author {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 600;
+}
+.jv-czech .tg-quote-icon,
+.jv-czech .tg-link-icon {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    right: 20px;
+    bottom: 10px;
+    font-size: 60px;
+    opacity: 0.2;
+}
+.jv-czech .quote-format,
+.jv-czech .link-format {
+	overflow: hidden;
+}
+.jv-czech .tg-link-icon {
+    font-size: 50px;
+	bottom: 16px;
+}
+.jv-czech .tg-link-content a,
+.jv-czech .tg-quote-content a {
+	display: block;
+	margin: 18px 0 8px 0 !important;
+	text-transform: none;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+.jv-czech .tg-quote-author,
+.jv-czech .tg-link-url {
+	position: relative;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+	font-style: italic; 
+}
+.jv-czech .tg-quote-author:before {
+	content: "— ";
+	position: relative;
+    display: inline-block;
+    margin: 0;
+	padding: 0 5px 0 0;
+}
+.jv-czech .to-post-like {
+	position: relative;
+    display: inline-block;
+    float: right;
+	font-size: 13px;
+	margin: 0 0 0 12px;
+}
+.jv-czech .to-post-like .to-heart-icon {
+	margin: 2px 4px 0 0;
+}
+.jv-czech .tg-item-comment {
+	position: relative;
+    display: inline-block;
+	float: right;
+	font-size: 13px;
+}
+.jv-czech .tg-item-comment i {
+	position: relative;
+    padding: 0 4px 0 6px;
+    top: 2px;
+    font-size: 15px;
+}
+.jv-czech .tg-item-overlay-media,
+.jv-czech .tg-item-overlay-link {	
+	-webkit-transform: matrix3d(1.35,0,0,0,0,1.35,0,0,0,0,1,0,0,0,0,1);
+	-moz-transform: matrix3d(1.35,0,0,0,0,1.35,0,0,0,0,1,0,0,0,0,1);
+	-ms-transform: matrix3d(1.35,0,0,0,0,1.35,0,0,0,0,1,0,0,0,0,1);
+	-o-transform: matrix3d(1.35,0,0,0,0,1.35,0,0,0,0,1,0,0,0,0,1);
+	transform: matrix3d(1.35,0,0,0,0,1.35,0,0,0,0,1,0,0,0,0,1);
+}
+.jv-czech .tg-item-overlay-media,
+.jv-czech .tg-item-overlay-link {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.jv-czech .tg-item-media-holder:hover .tg-item-overlay-link {
+	-webkit-transition-delay: .15s;
+	transition-delay: .15s;
+}
+.jv-czech .tg-item-media-holder:hover .tg-item-overlay-media,
+.jv-czech .tg-item-media-holder:hover .tg-item-overlay-link {
+	opacity: 1;
+	-webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+	-moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+	-ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+	-o-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+	transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+.jv-czech.tg-is-playing .tg-item-overlay,
+.jv-czech.tg-force-play .tg-item-overlay {
+	pointer-events: none;
+	opacity: 0 !important;
+}
+/* jv css */
+.jv-czech .tg-jv-type, .jv-czech .tg-jv-location {color:#fff; font-size:11px; padding:5px 10px 5px 0; text-transform:uppercase;}
+.jv-czech .tg-jv-type i, .jv-czech .tg-jv-location i {padding-right:5px;}
+
+/** panel meta **/
+.jv-czech .jv-post-meta {padding : 10px 0px;}
+.jv-czech .jv-post-meta i {padding : 5px 10px 5px 0; font-size:1.2em;}
+.jv-czech .jv-post-meta .jv-postmeta-name {padding : 5px 10px;} 
+.jv-czech .jv-post-meta .jv-postmeta-value {text-align:center;}

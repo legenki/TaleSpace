@@ -1,0 +1,368 @@
+.javo-masonry-skin1 a,
+.javo-masonry-skin1 a:active,
+.javo-masonry-skin1 a:focus,
+.javo-masonry-skin1 .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+}
+.javo-masonry-skin1 a:not(.mejs-volume-slider):hover {
+	opacity: 0.85;
+}
+.javo-masonry-skin1 .tg-center-inner {
+	position: absolute;
+}
+.javo-masonry-skin1 .tg-item-overlay {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+	border-radius: 50%;
+	-webkit-transform: scale3d(0.8,0.8,0.8);
+	-moz-transform: scale3d(0.8,0.8,0.8);
+    -ms-transform: scale3d(0.8,0.8,0.8);
+    -o-transform: scale3d(0.8,0.8,0.8);
+    transform: scale3d(0.8,0.8,0.8);
+}
+.javo-masonry-skin1 .tg-media-button,
+.javo-masonry-skin1 .tg-link-button {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 75px;
+	width: 75px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.javo-masonry-skin1 .tg-item-overlay,
+.javo-masonry-skin1 .tg-media-button,
+.javo-masonry-skin1 .tg-link-button {
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-moz-transition: all 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-ms-transition: all 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-o-transition: all 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	transition: all 0.5s cubic-bezier(.39,1.89,.55,1.45);
+}
+.javo-masonry-skin1 .tg-media-button i,
+.javo-masonry-skin1 .tg-link-button i {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 75px;
+	font-size: 24px;
+	text-align: center;
+}
+.javo-masonry-skin1 .tg-media-button,
+.javo-masonry-skin1 .tg-link-button {	
+	-webkit-transform: scale3d(1.35,1.35,1.35);
+    -moz-transform: scale3d(1.35,1.35,1.35);
+    -ms-transform: scale3d(1.35,1.35,1.35);
+    -o-transform: scale3d(1.35,1.35,1.35);
+    transform: scale3d(1.35,1.35,1.35);
+}
+.javo-masonry-skin1 .tg-item-media-holder:hover .tg-item-overlay,
+.javo-masonry-skin1 .tg-item-media-holder:hover .tg-media-button,
+.javo-masonry-skin1 .tg-item-media-holder:hover .tg-link-button {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+    -moz-transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.javo-masonry-skin1 .tg-item-decoration {
+    position: absolute;
+    display: block;
+    width: 20%;
+    right: 0;
+    bottom: -1px;
+}
+.triangle-up-left {
+    width: 0;
+    height: 0;
+    padding-bottom: 100%;
+    padding-left: 100%;
+    overflow: hidden;
+}
+.triangle-up-left:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid;
+    border-left-color: inherit;
+}
+.triangle-down-right {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+}
+.triangle-down-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid;
+    border-right-color: inherit;
+}
+.javo-masonry-skin1 .tg-icon-reply {
+	position: absolute;
+    display: block;
+    top: 15%;
+    left: 12%;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.javo-masonry-skin1 .tg-item-decoration svg {
+	position: absolute;
+	display: block;
+    bottom: 0;
+    right: 0;
+}
+.javo-masonry-skin1 .tg-item-share-holder {
+    position: absolute;
+    display: block;
+    width: 20%;
+	min-width: 74px;
+    left: 0px;
+    top: 0;
+}
+.javo-masonry-skin1 .tg-share-icons {
+	position: absolute;
+    display: block;
+	z-index: 2;
+    width: 30px;
+    top: 30%;
+    left: 20%;
+	margin: 14px 0 0 -7px;
+    padding: 4px 0;
+	opacity: 0;
+	text-align: center;
+	visibility: hidden;
+	background-color: rgba(255,255,255,0.9); 
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+	-webkit-transform: translateY(14px);
+	-moz-transform: translateY(14px);
+	-ms-transform: translateY(14px);
+	-o-transform: translateY(14px);
+	transform: translateY(14px);
+	-webkit-transition: -webkit-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-moz-transition: -moz-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-ms-transition: -ms-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-o-transition: -o-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	transition: transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+}
+.javo-masonry-skin1 .tg-icon-reply:hover + .tg-share-icons,
+.javo-masonry-skin1 .tg-share-icons:hover {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-moz-transition: -moz-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-ms-transition: -ms-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-o-transition: -o-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	transition: transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+}
+.javo-masonry-skin1 .tg-share-icons:before {
+	position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: -5px;
+    margin-left: -5px;
+    border-bottom: 5px solid rgba(255,255,255,0.9);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.javo-masonry-skin1 .tg-share-icons a,
+.javo-masonry-skin1 .tg-share-icons i {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 24px;
+	font-size: 14px;
+    line-height: 24px;
+    color: #444444 !important;
+	cursor: pointer;
+}
+.javo-masonry-skin1 .tg-share-icons i.tg-icon-facebook:hover {
+	color: #3b5998 !important;
+}
+.javo-masonry-skin1 .tg-share-icons i.tg-icon-twitter:hover {
+	color: #55acee !important;
+}
+.javo-masonry-skin1 .tg-share-icons i.tg-icon-google-plus:hover {
+	color: #d34836 !important;
+}
+.javo-masonry-skin1 .tg-share-icons i.tg-icon-pinterest:hover {
+	color: #cb2027 !important;
+}
+.javo-masonry-skin1 .tg-item-content-holder {
+	position: relative;
+	display: block;
+	padding: 20px 9%;
+}
+.javo-masonry-skin1 .quote-format.tg-item-content-holder,
+.javo-masonry-skin1 .link-format.tg-item-content-holder {
+	z-index: auto;
+}
+.javo-masonry-skin1 h2 {
+	margin: 0 10px !important;
+	padding: 0 !important;
+	outline: none;
+}
+.javo-masonry-skin1 .tg-item-title,
+.javo-masonry-skin1 .tg-item-title a {
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+    font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.javo-masonry-skin1 .tg-item-title {
+	margin: 30px 0 0 0 !important;
+}
+.javo-masonry-skin1 h2.tg-quote-content,
+.javo-masonry-skin1 h2.tg-link-content {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 26px;
+}
+.javo-masonry-skin1 .tg-quote-author,
+.javo-masonry-skin1 .tg-link-url {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 8px 0 0 0;
+	text-align: center;
+    font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: italic;
+	text-transform: none;
+}
+.javo-masonry-skin1 .tg-quote-icon,
+.javo-masonry-skin1 .tg-link-icon {
+	font-size: 22px;
+}
+.javo-masonry-skin1 .tg-item-date {
+	position: relative;
+	display: block;
+	margin: 10px 30px 0 30px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 600;
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: 16px;
+}
+.javo-masonry-skin1 .quote-format .tg-item-date,
+.javo-masonry-skin1 .link-format .tg-item-date {
+	margin: 10px 30px 30px 30px;
+}
+.javo-masonry-skin1 .tg-cats-holder {
+	position: relative;
+	display: block;
+	padding: 0;
+    margin: 4px 0 0 0;
+	text-align: center;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.javo-masonry-skin1 .tg-cats-holder * {
+	position: relative;
+}
+.javo-masonry-skin1 .tg-item-excerpt {
+	font-size: 14px;
+    line-height: 28px;
+	margin: 0;
+	padding: 30px 0 0 0;
+}
+.javo-masonry-skin1 .tg-item-footer {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 30px 0 0 0;
+}
+.javo-masonry-skin1 .tg-item-comment {
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.javo-masonry-skin1 .to-post-like {
+	float: right;
+	font-size: 14px;
+}
+.javo-masonry-skin1 .mejs-overlay-play {
+	display: none !important;
+}
+
+
+/** Rating average **/
+.javo-masonry-skin1 .meta-rating-wrap {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 10px;
+    margin: 14px 10px;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.javo-masonry-skin1 .meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.javo-masonry-skin1 .meta-rating {
+    position: relative;
+    z-index: 1;
+	height: 100%;
+	background-position: -3px -15px;
+	background-image: url('http://javothemes.com/spot/demo4/wp-content/themes/javo-spot/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}

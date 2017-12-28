@@ -1,0 +1,76 @@
+/*------------------------------------------------------------------
+[Map.7. Switcher ]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Map Template Switcher Area
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+7. switcher part
+*/
+
+//-------------------------------------------------------------------
+// 7. switcher part
+//-------------------------------------------------------------------
+
+#javo-maps-listings-switcher {
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	background-color:#fff;
+
+	& > .switcher-left{}
+
+	& > .switcher-right{
+		& > .btn-group {
+			text-align:right;
+			padding: 10px 15px;
+			background: #fff;
+			label {
+				color:#646464;
+				background:#fff;
+				border:1px solid #e9e9e9;
+				margin-right: 0;
+				font-size: 13px;
+				padding: 7px 20px;
+				box-shadow: none;
+				&:hover {
+					background:darken(@main-color, 5%);
+					color:#fff;
+				}
+				&.active {
+					background:@main-color;
+					color:#fff;
+				}
+				&:first-child {
+					border-top-left-radius:3px;
+					border-bottom-left-radius:3px;
+				}
+				&:last-child {
+					border-top-right-radius:3px;
+					border-bottom-right-radius:3px;
+				}
+				i {
+					margin-right:5px;
+				}
+			}// label
+		}// .btn-group
+
+		@media only screen and( max-width:@xs-max ){
+			body.mobile-ajax-top &{
+				display:none;
+				visibility:hidden;
+			}
+		}
+
+	}
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}// #javo-maps-listings-switcherjavo-maps-listings-switcher

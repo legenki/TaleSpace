@@ -1,0 +1,449 @@
+/*------------------------------------------------------------------
+[16. IDX Plugin ]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	IDX Plugin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+16. dsIDX Styles
+-1. Listing part
+-2. Details page styles
+-3. Widget
+	--1 IDX Listings
+	--2 IDX Search
+*/
+
+//-------------------------------------------------------------------
+// 16. dsIDX Styles
+//-------------------------------------------------------------------
+#dsidx{
+	&.dsidx-results{
+		.dsidx-paging-control{
+			float: left;
+			text-align: left;
+			font-size: 12px;
+		}// .dsidx-paging-control
+
+		.dsidx-sorting-control {
+			font-size: 12px;
+			text-align: left;
+			form{
+				select{
+					-webkit-border-radius: 0;
+					-moz-border-radius: 0;
+					border-radius: 0;
+					border-color: #dedede;
+					margin-bottom: 2px;
+					margin-left: 5px;
+				}
+			}
+		}// .dsidx-sorting-control
+
+		#dsidx-map-control{
+			clear: both;
+			margin-top: 10px;
+		}// #dsidx-map-control
+
+		#dsidx-map {
+			border: none;
+		}// #dsidx-map
+
+		#dsidx-disclaimer {
+			clear: both;
+			font-size: 12px;
+			line-height: 20px;
+			margin-top: 65px;
+			display: none;
+		}// #dsidx-disclaimer
+
+//-------------------------------------------------------------------
+// -1 Listing part
+//-------------------------------------------------------------------
+		#dsidx-listings {
+			margin: 0;
+			li{
+				display:none;
+				&.dsidx-listing{
+					display: block;
+					margin: 0 0 30px;
+					border: 1px solid #dedede;
+					padding: 20px;
+					width: auto;
+				}// li.dsidx-listing
+				&.dsidx-prop-summary {
+					padding: 20px;
+					margin-bottom: 30px;
+					border: 1px solid #dedede;
+
+					.dsidx-prop-title {
+						background-color: #82AD1F;
+						color: #fff;
+						padding: 10px 15px;
+						font-family: "Roboto", Helvetica, Arial, sans-serif;
+						font-weight: normal;
+						text-transform: capitalize;
+						font-size: 20px;
+						b {
+							font-weight: normal;
+						}
+						a {
+							color: #fff;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}// .dsidx-prop-title
+
+					.dsidx-prop-features{
+						div {
+							background: url(@{themeurl}/asasets/images/icons/javo-favicon.ico) no-repeat 4px 6px;
+							padding-left: 25px;
+							float: left;
+							margin: 5px 10px;
+							width: 19%;
+							font-family: Helvetica, Arial, sans-serif;
+							font-size: 13px;
+							line-height: 30px;
+							color:#A99DA9;
+						}
+					}// .dsidx-prop-features
+				}// li.dsidx-prop-summary
+			}
+			.dsidx-media{
+				.dsidx-photo{
+					border: none;
+				}// .dsidx-photo
+			}// .dsidx-media
+			.dsidx-primary-data{
+				background-color: #82AD1F;
+				color: #fff;
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+			.dsidx-address {
+				display: inline;
+				margin-left: 10px;
+			}
+			 .dsidx-address a {
+				font-family: "Lato", Helvetica, Arial, sans-serif;
+				font-size: 18px;
+				font-weight: normal;
+				color: #fff;
+				float: left;
+			}
+			.dsidx-address a:hover {
+				color: #fff;
+			}
+			.dsidx-price {
+				font-family: "Lato", Helvetica, Arial, sans-serif;
+				color: #fff;
+				font-size: 18px;
+				font-weight: normal;
+				padding-left: 6px;
+				display: inline;
+				float: left;
+			}
+			.dsidx-secondary-data {
+				width: auto;
+				div {
+					background: url(@{themeurl}/assets/images/icons/javo-favicon.ico) no-repeat 4px 6px;
+					padding-left: 25px;
+					float: left;
+					margin: 5px 10px;
+					width: 40%;
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 13px;
+					line-height: 30px;
+					color:#A99DA9;
+				}
+			}
+		} // #dsidx-listings // listing part
+//-------------------------------------------------------------------
+// -1 Listing part - end
+//-------------------------------------------------------------------
+	}// #dsidx.dsidx-results
+
+//-------------------------------------------------------------------
+// -2 Details page styles
+//-------------------------------------------------------------------
+	&.dsidx-details{
+		#dsidx-secondary-data{
+			th{
+				a{
+					color:#fff;
+				}
+			}
+		}// #dsidx-secondary-data
+
+		#dsidx-actions {
+			margin: 0 0 15px;
+			font-family: "Roboto",Helvetica,Arial,sans-serif;
+			font-weight: normal;
+		}
+
+		#dsidx-description {
+			background: #fff;
+			border: 1px solid #dedede;
+			padding: 15px;
+			color: #8b9293;
+			font-size: 13px;
+			line-height: 23px;
+		}
+		#dsidx-secondary-data, .dsidx-supplemental-data{
+			border: 1px solid #dedede;
+			th{
+				background: #82AD1F;
+				color: #fff;
+				font-size: 13px;
+				line-height: 23px;
+				border: 1px solid #dedede;
+				text-align:center
+			}
+			td{
+				background: #fbfbfb;
+				color: #636464;
+				font-size: 13px;
+				line-height: 23px;
+				border: 1px solid #dedede;
+			}
+
+			tr{
+				&:hover{
+					th{
+						background: #649B1F;
+					}
+					td{
+						 background: #f1f1f1;
+					}
+				}
+			}
+		}// #dsidx-secondary-data, .dsidx-supplemental-data
+		#dsidx-secondary-data{
+			th{
+				background: #82AD1F;
+				color: #fff;
+			}
+		}// #dsidx-secondary-data
+
+		h3{
+			margin-top: 20px;
+		}
+		#dsidx-map {
+			border: none;
+		}
+
+		.dsidx-contact-form{
+			#dsidx-contact-form {
+				background: #fbfbfb;
+				border: 1px solid #dedede;
+				padding: 15px;
+
+				table{
+					border: none;
+					th, td{
+						background: transparent;
+						color: #636464;
+						font-size: 13px;
+						line-height: 23px;
+						border: none;
+					}
+					td{
+						&.column-one{
+							width:25%;
+						}
+					}
+					tr{
+						background: transparent;
+						&:hover{
+							th,td{
+								background: transparent;
+							}
+						}
+					}
+					input{
+						&.dsidx-text{
+							width:90%;
+							padding:5px 10px;
+						}
+					}
+					label{
+						 font-family: "Roboto",Helvetica,Arial,sans-serif;
+						margin-top: 5px;
+					}
+					input[type=button] {
+						padding: 10px 18px;
+						font-family: "Roboto",Helvetica,Arial,sans-serif;
+						font-size: 14px;
+						height: auto;
+						line-height: 18px;
+					}
+					textarea{
+						&.dsidx-contact-form-comments{
+							padding: 5px 10px;
+							width: 93%;
+						}
+					}
+					select{
+						 -webkit-border-radius: 0;
+						-moz-border-radius: 0;
+						border-radius: 0;
+					}
+				}// table
+			}// #dsidx-contact-form
+		}// .dsidx-contact-form
+		#dsidx-header {
+			background: #fbfbfb;
+			border: 1px solid #dedede;
+			padding: 15px;
+			margin-bottom: 20px;
+
+			table{
+				border:none;
+				td{
+					border:none;
+					background:transparent;
+				}
+				&#dsidx-primary-data{
+					margin-top:20px;
+					th{
+						text-align:center;
+						border: none;
+						background: transparent;
+						color: #636464;
+						font-family: "Roboto",Helvetica,Arial,sans-serif;
+						font-weight: normal;
+					}
+					td{
+						 text-align:left;
+						border: none;
+						color: #636464;
+						font-family: "Roboto",Helvetica,Arial,sans-serif;
+						font-weight: normal;
+					}
+				}// table#dsidx-primary-data
+			}// table
+
+			.dsidx-secondary-row{
+				background: transparent;
+			}
+		}// #dsidx-header
+	}// #dsidx.dsidx-details
+//-------------------------------------------------------------------
+// -2 Details page styles - end
+//-------------------------------------------------------------------
+}// #dsidx
+
+//-------------------------------------------------------------------
+// -3 Widget
+//-------------------------------------------------------------------
+// --1 IDX Listings
+.dsidx-results-widget{
+	&.dsidx-widget{
+		.dsidx-map{
+			.dsidx-results-widget-map-details{
+				height:auto;
+			}
+		}// .dsidx-map
+	}
+	.dsidx-slideshow {
+		height: auto;
+		ul{
+			height: 106px;
+			margin: 5px 0;
+		}
+		.featured-listing{
+			height: auto;
+			padding-top:0 !important;
+			h4{
+				background-color: #4dc7ec;
+				color: #fff;
+				font-family: "Roboto", Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				text-transform: capitalize;
+				margin: 0;
+				font-size: 14px;
+				a:hover{
+					 text-decoration: underline !important;
+				}
+			}
+			img{
+				margin: 0 5px 0 0;
+				border: none;
+			}
+		}// .featured-listing
+	}// .dsidx-slideshow
+
+	.dsidx-expanded{
+		background: white;
+		.featured-listing {
+			height: auto;
+			margin: 0 0 15px;
+			h4{
+				background-color: #4dc7ec;
+				color: #fff;
+				font-family: "Roboto", Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				text-transform: capitalize;
+				margin: 0;
+				font-size: 14px;
+				a:hover{
+					text-decoration: underline !important;
+				}
+			}// h4
+			img{
+				margin: 0 5px 0 0;
+				border: none;
+			}
+			ul{
+				padding: 0 0;
+				clear: both;
+				margin: 0;
+				li{
+					float: none;
+					display: block;
+					margin: 0;
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 12px;
+					line-height: 20px;
+				}
+			}
+		}// .featured-listing
+	}// .dsidx-expanded
+}// .dsidx-results-widget
+// --1 IDX Listings - end
+// --2 IDX Search
+.dsidx-resp-search-box{
+	&.dsidx-widget{
+	}//.dsidx-resp-search-box.dsidx-widget
+
+	.dsidx-resp-search-form{
+		.dsidx-resp-area{
+			select{
+				margin-left:0px;
+				margin-bottom:5px;
+				max-width:none;
+				height:32px;
+			}
+			input[type=text]{
+				padding-left:3px;
+			}
+			&.dsidx-resp-area-submit{
+				input{
+					 background-color: #454545;
+					color: #fff;
+					border: none;
+				}
+			}
+		}
+	}// .dsidx-resp-search-form
+}// .dsidx-resp-search-box
+// --2 IDX Search - end
+//-------------------------------------------------------------------
+// -3 Widget - end
+//-------------------------------------------------------------------

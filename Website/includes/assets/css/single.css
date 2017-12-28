@@ -1,0 +1,24 @@
+.single-item-tab-feature-bg-wrap{
+	position:relative;
+	height:550px;
+	min-height:550px;
+	margin-top:0px;
+	overflow:hidden;
+}
+.single-item-tab-feature-bg{
+	position:relative;
+	height:100%;
+}
+
+
+
+.header-inner h1 { color:#fff; font-size:20px;}
+.single-item-tab-feature-bg .dl-horizontal dt {width:auto;}
+.single-item-tab-feature-bg dl {margin-bottom:0;}
+.single-item-tab-feature-bg .dl-horizontal dd {margin-left: 100px;}
+.single-item-tab-feature-bg li {list-style-type: none;}
+.single-item-tab-bg {z-index:2;}
+
+.single-item-tab .author-info { padding: 10px; background-color: rgba(175, 175, 175, 0.5); border-radius: 50%; width:70px; margin:0 auto; display:inline-block; }
+.single-item-tab .author-info img{width:50px; height:50px;}
+.single-item-tab .author-name {color:#fff; margin-top:-14px;}

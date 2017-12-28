@@ -1,0 +1,68 @@
+.jv-lusaka a,
+.jv-lusaka a:active,
+.jv-lusaka a:focus,
+.jv-lusaka .tg-item-overlay,
+.jv-lusaka .tg-media-button {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.3s ease-in-out;
+}
+.jv-lusaka .tg-item-link {
+	position: absolute;
+	display: block;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/** Javo Rating average **/
+.jv-lusaka .tg-jv-meta-rating-wrap {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 8px 5px;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.jv-lusaka .tg-jv-meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.jv-lusaka .tg-jv-meta-rating {
+    position: relative;
+    z-index: 1;
+	height: 100%;
+	background-position: -3px -15px;
+	background-image: url('/wp-content/themes/javo-spot/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}
+
+/** Javo category icons **/
+.jv-lusaka .tg-jv-tax-wrap {
+	padding:10px 0 10px 15px; position:absolute; width:100%; bottom:0; left:0;
+	background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+    background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient(bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%);
+}
+.jv-lusaka .tg-jv-category i.glyphicon, .tg-jv-location i.glyphicon {font-size: 0.85em; color:#ffffff !important; letter-spacing:0.5em;}
+.jv-lusaka .tg-jv-category {margin-right:15px;}
+.jv-lusaka .tg-jv-category,
+.jv-lusaka .tg-jv-location{color:#fff !important; font-size:15px; line-height:18px;}

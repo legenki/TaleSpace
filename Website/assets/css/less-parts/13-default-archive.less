@@ -1,0 +1,212 @@
+/*------------------------------------------------------------------
+[13. Archive Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Archive Page
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Archive Wrap
+	1.1. Archive Page Header
+2. Date Archive
+	2.1. Archive Container
+	2.1.1. Archive Items
+3. Archive on Map Template
+*/
+
+body.archive{
+
+	/*------------------------------------------------------------------
+	[1. Archive Wrap]
+	*/
+	#page-style{
+		/*------------------------------------------------------------------
+		[1.1. Archive Page Header]
+		*/
+		& > header.archive-header{
+			text-align:center;
+			h3.archive-title{
+				margin:0;
+				color:#454545;
+				font-size:32px;
+				line-height:40px;
+				letter-spacing:1px;
+				& > i{
+					display:block;
+					&,
+					& > a{
+						font-style:normal;
+						font-weight:300;
+						font-size:10pt;
+						color:#999;
+					}
+					& > a{
+						display:inline-block;
+					}
+				}
+
+			}
+		}
+		
+		#javo-maps-listings-wrap{
+			background:#eaeaea;
+		}
+	}// #page-style
+
+	html & {
+		background:#fff !important;;
+	}
+
+	/*------------------------------------------------------------------
+	[2. Date Archive]
+	*/
+	&.tag,
+	&.date{
+		#page-style{
+			/*------------------------------------------------------------------
+			[2.1. Archive Container]
+			*/
+			.archive-main-container{
+
+				.main-content-wrap{
+
+					/*------------------------------------------------------------------
+					[2.1. Archive Items]
+					*/
+					.javo-archive-list-wrap{
+						h1{
+							margin-top:0px;
+						}
+						.javo-archive-items-content{
+							margin:0px;
+
+							//one post
+							article{
+								border:1px #ededed solid;
+								padding:20px;
+								border-radius:10px;
+								margin-bottom:20px;
+								background-color:#fff;
+							}
+						}// .javo-archive-items-content
+					}// .javo-archive-list-wrap
+				}// .main-content-wrap
+			}// .archive-main-container
+		}// #page-style
+	}// .archive.date
+
+	/*------------------------------------------------------------------
+	[3. Archive on Map Template]
+	*/
+	#javo-maps-listings-wrap{
+		#javo-listings-wrap{
+			#map-list-style-wrap{
+				#results{
+					margin-bottom:50px;
+					#spaces{
+						.jv-archive-top-bg{
+							position:relative;
+							background-color:#454545;
+							background-position:center center;
+							background-size:cover;
+							margin: -15px -15px 0 -15px;
+							min-height:300px;
+							border-top-left-radius:5px;
+							border-top-right-radius:5px;
+							background-repeat:no-repeat;
+							.jv-archive-container{
+								position:absolute;
+								left:0;
+								bottom:0;
+								margin:15px 15px 25px 40px;
+								h3.jv-archive-header{
+									color:#fff;
+									display:inline-block;
+									line-height:1;
+									margin:0;
+									text-transform:uppercase;
+									font-size:55px;
+									letter-spacing:0px;
+									font-weight:600;
+									border-style:solid;
+									border-width:1px 0 1px 0;
+									border-color:rgba( 255, 255, 255, .4 );
+									margin-bottom:13px;
+								}
+								i.jv-archive-header-position{
+									display:block;
+									font-style:normal;
+									padding-left:2px;
+									color: rgba(255,255,255,0.9);
+									font-size:17px;
+									a{
+										color:rgba( 255, 255, 255, .8 );
+										font-weight:600;
+										&,
+										&:actvie{ text-decoration:none; }
+										&:hover{
+											text-decoration:underline;
+										}
+									}
+								}
+							}
+							.jv-archive-describe{
+								position:absolute;
+								text-align:right;
+								right:0;
+								bottom:0;
+								width:40%;
+								line-height:1.1;
+								margin:15px;
+								color:#ccc;
+							}
+							&:before{
+								content:'';
+								position:absolute;
+								top:0;
+								bottom:0;
+								left:0;
+								right:0;
+								background-image:url( '@{themeurl}/assets/images/pattern-dots-archive.png' );
+								background-attachment: scroll;
+								opacity:.5;
+							}
+						}
+					}
+					#javo-listings-wrapType-container{
+						padding-top:35px;
+					}
+					.jv-archive-bottom-section{
+						margin:50px 0;
+						h3.jv-archive-bottom-header{
+							text-align:center;
+							text-transform:uppercase;
+							font-weight:600;
+							padding:0;
+							margin:30px 0 15px 0;
+
+						}
+						.javo-shortcode{
+							.shortcode-output{
+								.module{
+									.jv-thumb{
+										a{
+											display:block;
+											min-height:150px;
+										}
+									}
+								}// .module
+							}
+						}// .javo-shortcode
+					}
+				}
+			}
+		}
+	}
+
+}// .archive

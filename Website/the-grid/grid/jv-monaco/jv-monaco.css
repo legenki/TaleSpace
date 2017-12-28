@@ -1,0 +1,264 @@
+article.jv-monaco{}
+article.jv-monaco > .tg-item-inner{}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:120px;
+	height:auto;
+	display:block;
+	overflow:hidden;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-status,
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta{
+	position:absolute;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-status{
+	z-index: 1;
+	width: 120px;
+	height: 30px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: absolute;
+	left: -33px;
+	top: 12px;
+	text-align: center;
+	background-color:#ff7430;
+	-moz-transform: scale(1) rotate(-45deg) translate(0px);
+	-webkit-transform: scale(1) rotate(-45deg) translate(0px);
+	-o-transform: scale(1) rotate(-45deg) translate(0px);
+	transform: scale(1) rotate(-45deg) translate(0px);
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta{
+	left:0;
+	bottom:0;	
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta > .monaco-type,
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta > .monaco-price{
+	display:inline-block;
+	padding:5px;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta > .monaco-type{
+	background-color:#ffffff;
+	color:#000000;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta > .monaco-type:after{
+	content:'';
+	display:block;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .monaco-meta > .monaco-price{
+	background-color:#3498DB;	
+	color:#ffffff;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap{
+	display:table;
+	width:100%;
+	height:100%;
+}
+/*
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-item-overlay,
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-share-icons{
+	opacity:0;
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	transition:all .2s;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	-o-transition:all .2s;
+	-ms-transition:all .2s;
+}
+
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-share-icons{
+	transition:all .2s ease-in;
+	-webkit-transition:all .2s ease-in;
+	-moz-transition:all .2s ease-in;
+	-o-transition:all .2s ease-in;
+	-ms-transition:all .2s ease-in;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap:hover > .tg-item-overlay,
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap:hover > .tg-share-icons{
+	opacity:1;
+	transform:scale(1);
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+}
+
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-item-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;	
+	z-index:1;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-share-icons{
+	position:relative;
+	z-index:1;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-media-holder > .tg-item-overlay-wrap > .tg-share-icons > a{
+	display:inline-block;
+	background-color:rgba( 0, 0, 0, .5 );
+	padding:20px;
+	margin:10px;
+}*/
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:120px;
+	overflow:hidden;
+	border:solid 1px #ddd;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > div.row{
+	padding:0 10px;
+}
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > div.row:first-child{
+	padding:10px 10px 0 10px;	
+}
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > div.row:last-child{
+	padding:10px;
+	border-top:solid 1px #ddd;
+}
+
+/*
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder h2.tg-item-title{
+	margin:0;
+	line-height:1;
+}*/
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder h2.tg-item-title{
+	position: relative;
+	font-size: 16px !important;
+	line-height: 20px !important;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > .monaco-meta{}
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > .monaco-meta > .monaco-meta-field{ text-align:center; }
+article.jv-monaco > .tg-item-inner > .tg-item-content-holder > .monaco-meta > .monaco-meta-field > span{
+	display:block;
+	font-weight:600;
+}
+
+
+
+
+
+
+
+.jv-monaco .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+}
+
+.jv-monaco .tg-item-share-holder {
+    position: absolute;
+    display: block;
+    width: 20%;
+	min-width: 74px;
+    left: 0px;
+    top: 0;
+}
+
+.jv-monaco .tg-share-icons {
+	position: absolute;
+    display: block;
+	z-index: 2;
+    width: 30px;
+    top: 30%;
+    left: 20%;
+	margin: 14px 0 0 -7px;
+    padding: 4px 0;
+	opacity: 0;
+	text-align: center;
+	visibility: hidden;
+	background-color: rgba(255,255,255,0.9); 
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+	-webkit-transform: translateY(14px);
+	-moz-transform: translateY(14px);
+	-ms-transform: translateY(14px);
+	-o-transform: translateY(14px);
+	transform: translateY(14px);
+	-webkit-transition: -webkit-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-moz-transition: -moz-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-ms-transition: -ms-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	-o-transition: -o-transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+	transition: transform 0.15s ease, opacity 0.15s ease, visibility 0.15s step-end;
+}
+.jv-monaco .tg-icon-reply:hover + .tg-share-icons,
+.jv-monaco .tg-share-icons:hover {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-moz-transition: -moz-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-ms-transition: -ms-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	-o-transition: -o-transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+	transition: transform 0.15s ease, opacity 0.15s ease, visibility 0s step-end;
+}
+.jv-monaco .tg-share-icons:before {
+	position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: -5px;
+    margin-left: -5px;
+    border-bottom: 5px solid rgba(255,255,255,0.9);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.jv-monaco .tg-share-icons a,
+.jv-monaco .tg-share-icons i {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 24px;
+	font-size: 14px;
+    line-height: 24px;
+    color: #444444 !important;
+	cursor: pointer;
+}
+.jv-monaco .tg-share-icons i.tg-icon-facebook:hover {
+	color: #3b5998 !important;
+}
+.jv-monaco .tg-share-icons i.tg-icon-twitter:hover {
+	color: #55acee !important;
+}
+.jv-monaco .tg-share-icons i.tg-icon-google-plus:hover {
+	color: #d34836 !important;
+}
+.jv-monaco .tg-share-icons i.tg-icon-pinterest:hover {
+	color: #cb2027 !important;
+}

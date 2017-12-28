@@ -1,0 +1,314 @@
+/*------------------------------------------------------------------
+[7. Page Layout Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Common Page Layout Style
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+7. page layout
+	7-1. single content
+	- single post page css
+		- single post comment area
+	- Single post prev, next button
+
+*/
+
+// 7. page layout
+body.archive,
+body.search.search-results{
+	article.page{
+		img{
+			max-width:100%;
+			height:auto;
+		}
+	}
+}
+body.mobile{
+	.footer-bottom-full-wrap{
+		margin-bottom:70px;
+	}
+}
+body.archive{
+	div#page-style{
+		/* 	margin-top:30px; */
+		.archive-header{
+			.archive-title{
+				padding-top:50px;
+				margin:0;
+			}
+		}
+		.jv-archive-content-wrap,
+		.archive-main-container{
+			margin-top:50px;
+			>.col-md-3{
+				>.row{
+					margin-right:10px;
+					.sidebar-inner{
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+	}
+	&.boxed, &.wide-boxed{
+		div#page-style{
+			/*	margin-top:30px; */
+		}
+	}
+}
+
+body.page{
+	& > .container{
+		& > h3.custom-header{
+			margin:30px 0;
+			color:#454545;
+			font-size:32px;
+			line-height:40px;
+			letter-spacing:1px;
+		}
+	}
+}
+
+.blog-list-wrap-width{
+	.text-rb-meta{
+		display:none;
+	}
+	margin-top:30px;
+	.main-content-wrap{
+		.jvfrm_home_output{
+			#box-listing{
+				.col-sm-6{
+					.panel-default{
+						.javo-left-overlay{
+							  position: absolute;
+							left: 16px;
+							top: 25px;
+							.corner-wrap{
+								display:none;
+							}
+						}// .javo-left-overlay
+
+						.panel-body{
+							.main-box{
+								.blog-wrap-inner{
+									.col-md-7{
+										.detail{
+											min-height:147px;
+											a h3{
+												margin-top:0px;
+											}
+											 .expert{
+												line-height:19px;
+												height:80px;
+												overflow:hidden;
+											}
+										}
+									}
+								}// .blog-wrap-inner
+							}
+						}// .panel-body
+					}// .panel-default
+				}// .col-sm-6
+			}// #box-listing
+		}// .jvfrm_home_output
+	}// .main-content-wrap
+
+}// .blog-list-wrap-width
+
+// 7-1. single content
+.entry-meta{
+	clear: both;
+}// .entry-meta
+.entry-header{
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+}// .entry-header
+.main-content-wrap{
+	article{
+		border:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+		padding: 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		/* margin-bottom: 20px;*/
+		margin-bottom:0;
+
+		.entry-meta{
+			margin-top:10px;
+			position:relative;
+			height: 35px;
+			text-align:right;
+			margin-bottom:20px;
+			font-size: 0.928571429rem;
+			line-height: 1.846153846;
+			color: #757575;
+		}// .entry-meta
+	}// article
+}// .main-content-wrap
+
+.by-author{display:none;}
+.nav-previous, .previous-image {
+	float: left;
+	width: 50%;
+	margin-bottom:2.5rem;
+}
+.nav-next, .next-image {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+// single post page css
+.single-post{
+	.main-content-wrap{
+		width:70%;
+		background:#fff;
+		padding:20px 40px 20px 20px;
+		&.col-md-12{
+			width:100%;
+		}
+		.jv-single-post-pager{
+			.pager{
+				margin-bottom:0px;
+			}
+		}
+		article{
+			.entry-description-wrap{
+				.entry-description{
+					h3.entry-title{
+						font-size: 1.5em;
+						font-weight: 600;
+						line-height: 1;
+					}
+					.single-post-meta{
+						color: #777;
+						text-transform: uppercase;
+						border-top:1px solid #ddd;
+					}
+					// post description
+					.entry-content{
+						.post-meta-infor{
+							padding: 10px 0 0 20px;
+						}
+						img{max-width:100%; height:auto;}
+					}
+				}// .entry-description
+			}// .entry-description-wrap
+		}// article
+
+		// Single post prev, next button
+		.nav-single{
+			padding-bottom: 50px;
+			border-bottom: 1px solid #ddd;
+		}
+	}// .main-content-wrap
+
+	.sidebar-right{
+		float:right;
+		z-index:1;
+		width:30%;
+		margin-top:50px;
+		.sidebar-inner{
+			padding:30px 40px 0;
+			background-color: #f6f6f6;
+			.widgets-wraps{
+				.widget_posts_wrap{
+					.latest-posts{
+						>.col-md-12{
+							>a{
+								span{
+									width:170px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.sidebar-left{
+		z-index:1;
+		width:26%;
+		padding-top:20px;
+		.sidebar-inner{
+			border-left:1px solid #ddd;
+			padding-left:25px;
+		}
+	}
+	.sidebar-full{margin-top:50px;}
+}// .single-post
+.modal{
+	z-index:9999;
+}
+
+
+
+// style - lessstylesheet.less ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//color
+@main-color:#ff5a5f;
+@main-action-color:#e00007;
+@title-color:#666;
+@description-color:#999;
+@sub-title-color:#fff;
+@sub-description-color:#ccc;
+
+@border-bottom-color:5px solid #ff5a5f;
+// Media Query
+
+@xs-min: 320px;
+@sm-min: 480px;
+@md-min: 768px;
+@lg-min: 992px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (min-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+
+@mobile:		~"only screen and (min-width: @{xs-min}) and (max-width: @{sm-max})";
+.jv-scrollbar {
+		&::-webkit-scrollbar {
+			width: 5px;
+
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+			border-radius: 5px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color:@description-color;
+			border-radius: 5px;
+		}
+		&::-webkit-scrollbar-button {
+			display:none;
+		}
+
+}
+
+
+
+
+.jv_price_table .ult_pricing_table_wrap .ult_pricing_table {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+
+// style - lessstylesheet.less ////////////////////////////////////////////////////////////////////////////////////////////////////////////

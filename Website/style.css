@@ -1,0 +1,600 @@
+/*
+Theme Name: Javo Home
+Theme URI: http://wpjavo.com
+Author: Javo Team
+Author URI: http://wpjavo.com
+Version: 2.0.6
+Description: Javo Home is a premium WordPress theme for Directory and Magazine Websites. You can build so many types of directory websites with javo shortcodes
+Tags: one-column, two-columns, left-sidebar,right-sidebar, custom-header, custom-menu, editor-style, flexible-header, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: javohome
+*/
+
+@charset "utf-8";
+@import url("//fonts.googleapis.com/css?family=Raleway:100, 400,300,600,700,500,200|-1:200,300,400,600,800&amp;subset=latin,latin-ext");
+
+html, body{ font:13px/26px "Raleway",sans-serif; height:100%; letter-spacing: 0px;}
+body{
+	overflow-y:scroll !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+img{ border:none; }
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:none; color:#a1a1a1; }
+html, body, h1, h2, h3, h4, h5, h6 { color:#646464;}
+.h1, h1 {font-size: 20px; line-height:26px;}
+.h2, h2 {font-size: 18px; line-height:24px;}
+.h3, h3 {font-size: 16px; line-height:20px;}
+.h4, h4 {font-size: 13px; line-height:18px;}
+.h5, h5 {font-size: 13px; line-height:20px;}
+.h6, h6 {font-size: 13px; line-height:20px;}
+.wpb_row:after{ content:' '; display:table; clear:both; } /*  Compatibility Visual Composer ver4.3.2 */
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Lava Manager Map + WPML footer */
+body.lv-map-template #lang_sel_footer{ display:none; visibility:hidden; }
+
+/* Woocommerce Dashboard in Javo Home Dashboard, EDIT Button */
+body.javo-dashboard div.tab-content > div#jv-payment > div.address > header.title > a.edit{ display:none; visibility:hidden; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+.form-control {
+	font-size: 13px;
+}
+
+/* Blog & Archive Background Color Fixed */
+html body.blog,
+html body.tag,
+html body.archive,
+html body.search{
+	background-color:#fff !important;
+}
+
+.sticky,
+.bypostauthor{}
+
+/** widget top right **/
+.widget_top_menu_wrap{ display:block; margin:13px 0; }
+.widget_top_menu_wrap li {
+	display:inline-block;
+	line-height:20px;
+	list-style-type: none;
+	margin-right:5px;
+	font-weight: 600;
+}
+.widget_top_menu_wrap .right-menu-wrap {padding:4px 0 0 5px; }
+.widget_top_menu_wrap .right-menu-wrap i {font-size:14px;}
+.widget_top_menu button.right-menu {border:0; background:none;}
+
+/** widget right menu **/
+.right_menu_inner {background:red;}
+.right_menu_inner .navmenu {background:#222; padding:30px 0 0 20px; list-style-type: none;}
+.right_menu_inner .navmenu a {color:#fff;}
+.right_menu_inner .navmenu-default, .right_menu_inner .navbar-default .right_menu_inner .navbar-offcanvas {border-color:none;}
+
+.javo_somw_panel.row.mobile-display-panel form,
+.javo_somw_panel.row.mobile-display-panel .javo_somw_list_inner{ padding:0 15px; }
+
+/** temp : top margin **/
+body:not(.woocommerce-page) .main-content-wrap,
+body:not(.woocommerce-page) .pp-single-content, .sidebar-right {
+	/*margin-top:50px;*/
+}
+
+.lava-map-templates footer.footer-wrap{ display:none; }
+
+/* It's a patch for modal boostrap bug 3.4.4 */
+.modal-backdrop {
+    z-index: 1000;
+}
+
+/*ultimate vc addons*/
+.ult-carousel-wrapper .slick-slider{margin-bottom:0px;}
+.ult-carousel-wrapper .slick-slider .ult-item-wrap .wpb_single_image{margin-bottom:0px;}
+.jv-margin-bottom-0{margin-bottom:0 !important;}
+
+/********** Custom CSS by designer **************/
+/*http://wpjavo.com/home/demo11/home2*/
+.vc_row .jv-text-shadow-gray {
+	text-shadow:-2px 1px  #444;
+	margin:0;
+}
+
+/* temp css for single relative posts */
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-summary.meta-author-img {
+    min-width: 75px;
+    width: 75px;
+    height: 75px;
+}
+
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-summary.meta-author-img img {
+	width:65px;
+	height:65px;
+}
+
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-summary.meta-author-img {
+	top:0;
+}
+
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-category span, .jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-category i {
+	font-weight: 400;
+    color: #BFBFBF;
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-title {
+    text-transform: inherit !important;
+	color: #666666;
+	margin:-4px 10px 20px 10px;
+}
+
+.jv-single-footer-relative-posts .javo-shortcode .module.javo-module8 .thumb-wrap .meta-wrap .meta-wrap-container .meta-title a {
+    color: #888888;
+}
+
+
+span.amount{
+	display: block;
+}
+.wpb_content_element.wpb_revslider_element{margin-bottom:0;}
+
+
+
+
+
+
+
+
+
+/** temp tab (jin) **/
+
+/** tab body **/
+.jv-tab-v-style {
+font-family: "Roboto",Arial,Helvetica,"Nimbus Sans L",sans-serif !important;
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+font-style: normal;
+text-transform: none;
+text-decoration: none;
+}
+
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels {
+    background-color: transparent;
+	border:0;
+}
+
+.jv-tab-v-style .jv-tab-v-style-no-space {
+	margin:0;
+	padding:0;
+}
+
+.jv-tab-v-style-no-space .vc_col-sm-6 {
+	margin:0;
+	padding:0;
+
+}
+
+
+
+/** tabs **/
+
+.jv-tab-v-style .vc_tta.vc_general .vc_tta-tab > a {border:none;}
+
+.jv-tab-v-style .vc_tta.vc_tta-style-classic .vc_tta-tab > a {border-width:0;}
+.jv-tab-v-style .vc_tta.vc_tta-shape-rounded .vc_tta-tab > a {border-radius:0;}
+
+.jv-tab-v-style .vc_tta.vc_general .vc_tta-icon {
+    font-size: 2.15em;
+    line-height: 45px;
+    display: block;
+    text-align: center;
+	padding: 0 0 20px 0;
+}
+
+.jv-tab-v-style .vc_tta.vc_tta-spacing-1 .vc_tta-tab {
+    margin: 1px 0px 0px 1px;
+    text-align: center;
+	display: table-cell;
+}
+
+/* actived */
+
+/*.jv-tab-v-style .vc_tta.vc_general .vc_tta-tab>a { border:none; }*/ /* disable vc default css */
+
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a,
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a {
+    border-color: transparent;
+    background-color: transparent;
+    color: #999;
+}
+
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a {
+	/*   color: #BDA87F; */
+	color:#454545;
+}
+
+
+
+
+.jv-tab-v-style .vc_tta-tabs.vc_tta-tabs-position-top:not([class*="vc_tta-gap"]):not(.vc_tta-o-no-fill) .vc_tta-tab.vc_active > a::before {
+    top: unset;
+	bottom: 0;
+}
+
+.jv-tab-v-style .vc_tta-tabs-container > ul.vc_tta-tabs-list > li.vc_tta-tab.vc_active > a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 3px !important;
+    left: 50%;
+    width: 0px;
+    /* background-color: #BDA87F; */
+	color:#454545;
+    transition: all 0.5s ease 0s;
+}
+
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a > span {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight:900;
+}
+
+
+
+
+
+
+/*
+.jv-tab-v-style .vc_tta-tabs.vc_tta-tabs-position-top:not([class*="vc_tta-gap"]):not(.vc_tta-o-no-fill) .vc_tta-tab.vc_active > a {
+	border-bottom : 3px solid #4894D5;
+	transition: color 0.3s ease-in-out 0s;
+}
+*/
+
+.jv-tab-v-style .vc_tta-tabs.vc_tta-tabs-position-top .vc_tta-tabs-list {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #e9e9e9;
+	display: table;
+	width:100%;
+	list-style: outside none none;
+	}
+
+.jv-tab-v-style .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a:hover {
+	/* color: #BDA87F; */
+	color:#454545;
+	transition: color 0.3s ease-in-out 0s;
+	border-color: transparent;
+    background-color: transparent;
+}
+
+.jv-tab-v-style .vc_tta-tabs-container > ul.vc_tta-tabs-list > li.vc_tta-tab > a:before{
+	content:'';
+	position:absolute;
+	bottom:0;
+	height:3px !important;
+	left:50%;
+	width:0;
+	/* background-color:#BDA87F; */
+	background-color:#454545;
+	transition:all .5s;
+}
+.jv-tab-v-style .vc_tta-tabs-container > ul.vc_tta-tabs-list > li.vc_tta-tab.vc_active > a::before,
+.jv-tab-v-style .vc_tta-tabs-container > ul.vc_tta-tabs-list > li.vc_tta-tab:hover > a::before {
+	width: 100%;
+    left: 0px;
+	/* background-color:#BDA87F; */
+	background-color:#454545;
+}
+
+
+.jv-tab-v-style .vc_tta-tab.vc_active a::before {
+    transition: background-color 0.4s ease-in-out 0s, width 0.3s ease-in-out 0s, left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
+}
+
+
+/** Tab Body Panel */
+.vc_tta-panel.jv-tab-v-style > div.vc_tta-panel-heading{}
+.vc_tta-panel.jv-tab-v-style > div.vc_tta-panel-body{
+	padding:0;
+}
+.vc_tta-panel.jv-tab-v-style > div.vc_tta-panel-body .vc_row.jv-tab-v-style-no-space > .vc_column_container:last-child{ padding-left:30px; }
+.vc_tta-panel.jv-tab-v-style > div.vc_tta-panel-body .vc_row.jv-tab-v-style-no-space > .vc_column_container > .vc_column-inner{ padding-left:0; }
+
+
+/** header : blog.less **/
+#page-style > .jv-single-post-layout-1 .jv-single-post-title-container .jv-single-post-title-wrap .jv-single-post-meta-wrap{
+	position: absolute;
+	bottom: 30px;
+}
+@media( max-width:992px ){
+	#page-style > .jv-single-post-layout-1 .jv-single-post-title-container .jv-single-post-title-wrap .jv-single-post-meta-wrap{
+		position:static;
+	}
+}
+#page-style > .jv-single-post-layout-1 .jv-single-post-title-container .jv-single-post-title-wrap h1.jv-single-post-title{margin-bottom: 0px; text-transform:uppercase;}
+#page-style > .jv-single-post-layout-1 .jv-single-post-title-container .jv-single-post-title-wrap .jv-single-post-title-category{margin-bottom: 5px; color:#fff; text-transform:uppercase; font-size:11px; padding:4px 6px !important;}
+#page-style > .jv-single-post-layout-1 .jv-single-post-title-container div.jv-single-post-title-wrap div.jv-single-post-scroll-trigger-wrap{padding-top:20px;}
+.single-post article.post section.jv-single-post-contents p, .single-post article.page section.jv-single-post-contents p{color:#686868 !important; font-size:13px; line-height:26px; letter-spacing:1px;}
+article.post header.jv-single-post-header section.jv-single-post-meta ul.list-inline li, article.page header.jv-single-post-header section.jv-single-post-meta ul.list-inline li,
+article.post header.jv-single-post-header section.jv-single-post-meta ul.list-inline li a, article.page header.jv-single-post-header section.jv-single-post-meta ul.list-inline li a{color:#888 !important;}
+.widgets-wraps .widget_posts_wrap .posts .col-md-12 span.thumb,
+.widgets-wraps .widget_posts_wrap .posts .col-md-12 span.thumb a img{width:128px; height:70px;}
+.widgets-wraps .widget_posts_wrap .posts .col-md-12 span.thumb{width:auto; height:auto;}
+
+
+
+/* ultimate map margin bottom */
+.wpb_wrapper .ultimate-map-wrapper.ult-adjust-bottom-margin{margin-bottom:0}
+
+.body-logged-out div#comments #respond .comment-form button[type='submit'].btn.btn-primary{float:left; padding:8px 0; width:25%; margin-right:30px}
+
+/**
+.body-logged-out #comments .comment-respond .comment-form>.row{float:left; width:75%;}
+.body-logged-out #comments .comment-respond .comment-form>.row .col-md-4 .form-group{margin-bottom:20px;}
+*/
+
+.body-logged-out .jv-single-post-pager .pager li a{padding:5px 10px;}
+
+
+
+/***** *******/
+
+#header-one-line .javo-main-navbar .container .container-fluid #javo-navibar ul.navbar-left .menu-item a {
+    padding: 17px 21px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+
+/* Headings */
+.jv-letter-spacing-header-1px .uvc-main-heading {letter-spacing:1px;}
+.jv-letter-spacing-header-2px .uvc-main-heading {letter-spacing:2px;}
+.jv-letter-spacing-header-3px .uvc-main-heading {letter-spacing: 3px;}
+.jv-letter-spacing-sub-header-1px .uvc-sub-heading {letter-spacing:1px;}
+.jv-letter-spacing-sub-header-2px .uvc-sub-heading {letter-spacing:2px;}
+.jv-letter-spacing-sub-header-3px .uvc-sub-heading {letter-spacing:3px;}
+
+/* Info Box */
+.jv-letter-spacing-header-1px .aio-icon-header{letter-spacing:1px;}
+.jv-letter-spacing-header-2px .aio-icon-header{letter-spacing:2px;}
+.jv-letter-spacing-header-3px .aio-icon-header{letter-spacing:3px;}
+.jv-letter-spacing-sub-header-1px .aio-icon-description{letter-spacing:1px;}
+.jv-letter-spacing-sub-header-2px .aio-icon-description{letter-spacing:2px;}
+.jv-letter-spacing-sub-header-3px .aio-icon-description{letter-spacing:3px;}
+
+/* Counter */
+.jv-letter-spacing-header-1px .stats-number, .jv-letter-spacing-header-1px .counter_suffix{letter-spacing:1px;}
+.jv-letter-spacing-header-2px .stats-number, .jv-letter-spacing-header-2px .counter_suffix{letter-spacing:2px;}
+.jv-letter-spacing-header-3px .stats-number, .jv-letter-spacing-header-3px .counter_suffix{letter-spacing:3px;}
+.jv-letter-spacing-sub-header-1px .stats-text{letter-spacing:1px;}
+.jv-letter-spacing-sub-header-2px .stats-text{letter-spacing:2px;}
+.jv-letter-spacing-sub-header-3px .stats-text{letter-spacing:3px;}
+
+/* Tab */
+.jv-letter-spacing-header-1px .vc_tta-tab .vc_tta-title-text{letter-spacing:1px;}
+.jv-letter-spacing-header-2px .vc_tta-tab .vc_tta-title-text{letter-spacing:2px;}
+.jv-letter-spacing-header-3px .vc_tta-tab .vc_tta-title-text{letter-spacing:3px;}
+
+/* Button */
+.jv-letter-spacing-header-1px .ubtn-text{letter-spacing:1px;}
+.jv-letter-spacing-header-2px .ubtn-text{letter-spacing:2px;}
+.jv-letter-spacing-header-3px .ubtn-text{letter-spacing:3px;}
+.jv-letter-spacing-header-1px .btn{letter-spacing:1px;}
+.jv-letter-spacing-header-2px .btn{letter-spacing:2px;}
+.jv-letter-spacing-header-3px .btn{letter-spacing:3px;}
+
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+	background:#eee;
+}
+
+
+.javo-shortcode.shortcode-jvfrm_home_search1 .search-type-a-wrap form.search-type-a-form .search-type-a-inner .row.jv-search1-top-row .search-box-inline > .selectize-control > .selectize-dropdown {background: #fff;}
+.javo-shortcode.shortcode-jvfrm_home_search1 .search-type-a-wrap form.search-type-a-form .search-type-a-inner .row.jv-search1-top-row .search-box-inline > .selectize-control { background:#fff;}
+.javo-shortcode.shortcode-jvfrm_home_search1 .search-type-a-wrap form.search-type-a-form .search-type-a-inner .row.jv-search1-top-row .search-box-inline > .selectize-control > .selectize-dropdown .selectize-dropdown-content >div { background:#fff;}
+.selectize-dropdown-content {
+     background: #fff;
+}
+
+.tg-item-content-holder.dark .tg-item-title a,
+.tg-item-content-holder.dark span.tg-jv-category,
+.tg-item-content-holder.dark span.tg-jv-location{color:#454545;}
+.tg-item-content-holder.dark span.tg-jv-category i,
+.tg-item-content-holder.dark span.tg-jv-location i{color:#454545 !important;}
+.tg-item-content-holder.light .tg-item-title a,
+.tg-item-content-holder.light span.tg-jv-category,
+.tg-item-content-holder.light span.tg-jv-location{color:#fff;}
+.tg-item-content-holder.light span.tg-jv-category i,
+.tg-item-content-holder.light span.tg-jv-location i{color:#fff !important;}
+
+.tg-item-media-holder.dark .tg-item-title a,
+.tg-item-media-holder.dark span.tg-jv-category,
+.tg-item-media-holder.dark span.tg-jv-location{color:#454545;}
+.tg-item-media-holder.dark span.tg-jv-category i,
+.tg-item-media-holder.dark span.tg-jv-location i{color:#454545 !important;}
+.tg-item-media-holder.light .tg-item-title a,
+.tg-item-media-holder.light span.tg-jv-category,
+.tg-item-media-holder.light span.tg-jv-location{color:#fff;}
+.tg-item-media-holder.light span.tg-jv-category i,
+.tg-item-media-holder.light span.tg-jv-location i{color:#fff !important;}
+
+.tg-item-content.dark .tg-item-title a,
+.tg-item-content.dark span.tg-jv-category,
+.tg-item-content.dark span.tg-jv-location{color:#454545;}
+.tg-item-content.dark span.tg-jv-category i,
+.tg-item-content.dark span.tg-jv-location i{color:#454545 !important;}
+.tg-item-content.light .tg-item-title a,
+.tg-item-content.light span.tg-jv-category,
+.tg-item-content.light span.tg-jv-location{color:#fff;}
+.tg-item-content.light span.tg-jv-category i,
+.tg-item-content.light span.tg-jv-location i{color:#fff !important;}
+
+.tg-item-content-inner.dark .tg-item-title a,
+.tg-item-content-inner.dark span.tg-jv-category,
+.tg-item-content-inner.dark span.tg-jv-location{color:#454545;}
+.tg-item-content-inner.dark span.tg-jv-category i,
+.tg-item-content-inner.dark span.tg-jv-location i{color:#454545 !important;}
+.tg-item-content-inner.light .tg-item-title a,
+.tg-item-content-inner.light span.tg-jv-category,
+.tg-item-content-inner.light span.tg-jv-location{color:#fff;}
+.tg-item-content-inner.light span.tg-jv-category i,
+.tg-item-content-inner.light span.tg-jv-location i{color:#fff !important;}
+
+
+/* Portfilio */
+
+#page-style > .jv-single-post-layout-1 .jv-single-post-title-container .jv-single-post-title-wrap .jv-single-post-title-category {
+	background: #111 !important;
+    padding: 6px 8px !important;
+}
+
+.portfolio-meta h3 {
+	color:#303030;
+	font-size: 17px;
+    line-height: 1.304347826086957em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.portfolio-meta h4 {
+	color:#303030;
+    font-size: 13px;
+    line-height: 1.538461538461538em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+	margin-bottom:0;
+}
+
+.portfolio-meta p {
+	font-size: 14px;
+    line-height: 26px;
+    color: #818181;
+    font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.portfolio-meta .portfolio-right p {
+	margin-bottom:15px;
+}
+
+input.isNull{ border:solid red 2px; }
+.pagenation-inline-wrap {padding: 60px 20px;}
+.pagenation-inline-wrap .glyphicon {font-size:30px; color:#a6a6a6;}
+.pagenation-inline-wrap a:hover .glyphicon {font-size:30px; color:#454545;}
+/*********************/

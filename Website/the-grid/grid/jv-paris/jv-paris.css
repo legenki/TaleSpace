@@ -1,0 +1,238 @@
+.jv-paris a,
+.jv-paris a:active,
+.jv-paris a:focus {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.5s cubic-bezier(.39,1.89,.55,1.45);
+}
+.jv-paris .tg-item-content,
+.jv-paris .tg-item-media-holder,
+.jv-paris .tg-item-overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.jv-paris .tg-item-link {
+	position: absolute;
+	display: block;
+	top: -22px;
+    left: -28px;
+    right: -28px;
+    bottom: -22px;
+}
+.jv-paris .tg-item-content {
+	margin: 22px 28px;
+}
+.jv-paris .tg-item-content,
+.jv-paris .tg-item-overlay {
+	opacity: 0;
+}
+.jv-paris:hover .tg-item-content,
+.jv-paris:hover .tg-item-overlay {
+	opacity: 1;
+}
+.jv-paris .tg-cats-holder,
+.jv-paris .tg-item-title,
+.jv-paris .tg-item-footer {
+	-webkit-transition: -webkit-transform 0.25s ease;
+	-moz-transition: -moz-transform 0.25s ease;
+	-ms-transition: -ms-transform 0.25s ease;
+	-o-transition: -o-transform 0.25s ease;
+	transition: transform 0.25s ease;
+}
+.jv-paris .tg-item-title,
+.jv-paris .tg-item-title a {
+	position: relative;
+	display: inline-block;
+    font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.tg-layout-justified .jv-paris .tg-item-title,
+.tg-layout-justified .jv-paris .tg-item-title a {
+    font-size: 15px;
+	line-height: 18px;
+}
+.jv-paris .tg-item-title {
+	margin: 0 20px 0 0 !important;
+}
+.jv-paris .tg-item-title  {
+	-webkit-transform: translate3d(0,22px,0);
+	-moz-transform: translate3d(0,22px,0);
+	-ms-transform: translate3d(0,22px,0);
+	-o-transform: translate3d(0,22px,0);
+	transform: translate3d(0,22px,0);
+}
+.jv-paris .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+.jv-paris .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	line-height: 18px;
+	-webkit-transform: translate3d(0,-22px,0);
+	-moz-transform: translate3d(0,-22px,0);
+	-ms-transform: translate3d(0,-22px,0);
+	-o-transform: translate3d(0,-22px,0);
+	transform: translate3d(0,-22px,0);
+}
+.jv-paris .tg-item-footer {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.jv-paris:hover .tg-cats-holder,
+.jv-paris:hover .tg-item-title {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-paris .tg-item-author {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+    font-size: 13px;
+	line-height: 13px;
+	font-weight: 600;
+}
+.jv-paris .tg-media-button {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-paris h2 a:hover,
+.jv-paris .tg-cats-holder a:hover,
+.jv-paris .tg-media-button:hover {
+	opacity: 0.75;
+}
+.jv-paris .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+    font-size: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.jv-paris .tg-media-button .tg-icon-add {
+    font-size: 28px;
+}
+/* jv-css */
+/** jv-icon property **/
+.jv-meta-wrap .col-md-4 i {
+	padding-right: 10px;
+	font-size: 15px;
+}
+.jv-meta-wrap .col-md-4 span.jv-meta {
+	font-size: 16px;
+}
+.jv-price {
+	font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+/** social **/
+.jv-paris .tg-dark .tg-share-icons i,
+.jv-paris .tg-dark .tg-media-button,
+.jv-paris .tg-dark .tg-link-button {
+	background: rgba(255,255,255,0.5);
+}
+.jv-paris .tg-dark .tg-share-icons i:hover,
+.jv-paris .tg-dark .tg-media-button:hover,
+.jv-paris .tg-dark .tg-link-button:hover {
+	background: rgba(255,255,255,0.85);
+}
+.jv-paris .tg-light .tg-share-icons i,
+.jv-paris .tg-light .tg-media-button,
+.jv-paris .tg-light .tg-link-button {
+	background: rgba(0,0,0,0.15);
+}
+.jv-paris .tg-light .tg-share-icons i:hover,
+.jv-paris .tg-light .tg-media-button:hover,
+.jv-paris .tg-light .tg-link-button:hover {
+	background: rgba(0,0,0,0.35);
+}
+.jv-paris .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+    padding: 0 0 130px 100px;
+}
+.jv-paris .tg-share-icons a,
+.jv-paris .tg-share-icons i {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+	font-size: 14px;
+    line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+	padding-left: 10px;
+}
+.jv-paris:hover .tg-share-icons a:nth-child(2){
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.jv-paris:hover .tg-share-icons a:nth-child(3){
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.jv-paris:hover .tg-share-icons a:nth-child(4){
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.jv-paris .tg-share-icons a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,30px,0);
+	-moz-transform: translate3d(0,30px,0);
+	-ms-transform: translate3d(0,30px,0);
+	-o-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+.jv-paris .tg-share-icons a,
+.jv-paris .tg-share-icons i {
+	-webkit-transition: -webkit-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-moz-transition: -moz-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-ms-transition: -ms-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-o-transition: -o-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	transition: transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+}
+.jv-paris:hover .tg-share-icons a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

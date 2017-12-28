@@ -1,0 +1,255 @@
+.jv-sydney a,
+.jv-sydney a:active,
+.jv-sydney a:focus,
+.jv-sydney .tg-item-title,
+.jv-sydney .tg-item-media-holder,
+.jv-sydney .tg-item-content-holder,
+.jv-sydney .tg-share-icons i{
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+.jv-sydney.tg-item,
+.jv-sydney .tg-center-holder {
+	overflow: hidden;
+}
+.jv-sydney .tg-center-holder {
+	text-align: center;
+}
+.jv-sydney .tg-item-media-holder {
+	bottom: 60px;
+	height: auto;
+}
+.tg-layout-justified .jv-sydney .tg-item-media-holder {
+	bottom: 0;
+}
+.jv-sydney .tg-item-link {
+	position: absolute;
+    display: block;
+    top: -1000%;
+    left: 0;
+    width: 100%;
+    height: 2000%;
+}
+.jv-sydney .tg-item-content-holder,
+.jv-sydney .tg-item-overlay {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.tg-layout-justified .jv-sydney .tg-center-holder {
+	padding-bottom: 60px;
+}
+.tg-layout-justified .jv-sydney .tg-item-content-holder,
+.jv-sydney .tg-item-overlay {
+	opacity: 0;
+	visibility: hidden;
+}
+.tg-layout-justified .jv-sydney:not(.tg-is-playing):not(.tg-force-play):hover .tg-item-content-holder,
+.jv-sydney:not(.tg-is-playing):not(.tg-force-play):hover .tg-item-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.jv-sydney .tg-item-content-holder {
+	height: 60px;
+	padding: 10px 14px;
+	background: #ffffff;
+}
+.jv-sydney .tg-item-title,
+.jv-sydney .tg-item-title a {
+	position: relative;
+    font-size: 16px !important;
+	line-height: 20px !important;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.jv-sydney .tg-item-title {
+	padding: 0 2px !important;
+	margin: 0 40px 2px 0 !important;
+}
+.jv-sydney .tg-cats-holder {
+	position: relative;
+	display: block;
+	margin: 0 40px 0 0;
+	padding: 0 2px;
+	font-size: 13px;
+	line-height: 18px;
+	font-style: italic;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.jv-sydney .tg-cats-holder * {
+	position: relative;
+}
+.jv-sydney .tg-link-button,
+.jv-sydney .tg-media-button {
+    position: relative;
+    display: inline-block;
+	vertical-align: top;
+    margin: 10px !important;
+	padding: 0 !important;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height:35px;
+    cursor: pointer;
+    text-align: center;
+	opacity: 0;
+}
+.jv-sydney .tg-link-button i,
+.jv-sydney .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 35px;
+    font-size: 22px;
+	line-height: 35px;
+	cursor: pointer;
+}
+.jv-sydney .tg-media-button .tg-icon-add {
+    font-size: 28px;
+}
+.jv-sydney .tg-media-button {	
+	-webkit-transform: translate3d(-40px,0,0);
+	-moz-transform: translate3d(-40px,0,0);
+	-ms-transform: translate3d(-40px,0,0);
+	-o-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
+}
+.jv-sydney .tg-link-button {
+	-webkit-transform: translate3d(40px,0,0);
+	-moz-transform: translate3d(40px,0,0);
+	-ms-transform: translate3d(40px,0,0);
+	-o-transform: translate3d(40px,0,0);
+	transform: translate3d(40px,0,0);
+}
+.jv-sydney:hover .tg-link-button,
+.jv-sydney:hover .tg-media-button {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-sydney .tg-item-title:hover,
+.jv-sydney .tg-link-button:hover,
+.jv-sydney .tg-cats-holder a:hover,
+.jv-sydney .tg-media-button:hover {
+	opacity: 0.75;
+}
+.jv-sydney .to-post-like {
+	position: absolute;
+    display: block;
+    right: 14px;
+    top: 12px;
+	margin: 0;
+    font-size: 14px;
+    line-height: 14px;   
+}
+
+/* jv css */
+/** Social **/
+.jv-sydney .tg-dark .tg-share-icons i,
+.jv-sydney .tg-dark .tg-media-button,
+.jv-sydney .tg-dark .tg-link-button {
+	background: rgba(255,255,255,0.5);
+}
+.jv-sydney .tg-dark .tg-share-icons i:hover,
+.jv-sydney .tg-dark .tg-media-button:hover,
+.jv-sydney .tg-dark .tg-link-button:hover {
+	background: rgba(255,255,255,0.85);
+}
+.jv-sydney .tg-light .tg-share-icons i,
+.jv-sydney .tg-light .tg-media-button,
+.jv-sydney .tg-light .tg-link-button {
+	background: rgba(0,0,0,0.15);
+}
+.jv-sydney .tg-light .tg-share-icons i:hover,
+.jv-sydney .tg-light .tg-media-button:hover,
+.jv-sydney .tg-light .tg-link-button:hover {
+	background: rgba(0,0,0,0.35);
+}
+
+.jv-sydney .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+}
+.jv-sydney .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+}
+.jv-sydney .tg-share-icons a,
+.jv-sydney .tg-share-icons i {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+	font-size: 14px;
+    line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-sydney:hover .tg-share-icons a:nth-child(2){
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.jv-sydney:hover .tg-share-icons a:nth-child(3){
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.jv-sydney:hover .tg-share-icons a:nth-child(4){
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.jv-sydney .tg-share-icons a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,30px,0);
+	-moz-transform: translate3d(0,30px,0);
+	-ms-transform: translate3d(0,30px,0);
+	-o-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+.jv-sydney .tg-share-icons a,
+.jv-sydney .tg-share-icons i {
+	-webkit-transition: -webkit-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-moz-transition: -moz-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-ms-transition: -ms-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-o-transition: -o-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	transition: transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+}
+.jv-sydney:hover .tg-share-icons a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* meta text */
+.jv-sydney .jv-price {position: absolute; right: 10px; bottom: 5px;}
+.jv-sydney .jv-meta-wrap {padding: 2px 0 5px 5px;}
+.jv-sydney .jv-meta {color:#454545; padding: 0 0 0 5px;}
+.jv-sydney i {font-size:16px;}

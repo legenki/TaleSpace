@@ -1,0 +1,97 @@
+.jv-apia a,
+.jv-apia a:active,
+.jv-apia a:focus,
+.jv-apia .tg-item-overlay,
+.jv-apia .tg-media-button {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.3s ease-in-out;
+}
+.jv-apia .tg-item-content,
+.jv-apia .tg-item-overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.jv-apia .tg-item-content {
+	opacity: 0;
+}
+.jv-apia .tg-media-button {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-apia .tg-media-button i {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	width: 4px;
+	height: 40px;
+	font-size: 40px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-apia:hover .tg-item-content {
+	opacity: 1;
+}
+.jv-apia .tg-media-button:hover {
+	opacity: 0.75;
+}
+
+/** Javo Tax Wrap**/
+.jv-apia .tg-jv-tax-wrap{
+	position:absolute;
+	top:30%;
+	width:100%;
+	z-index:1;
+}
+
+/** Javo Rating average **/
+.jv-apia .tg-jv-meta-rating-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px 10px;	
+	z-index: 1;
+	width: 75px;
+	height: 15px;
+}
+
+.jv-apia .tg-jv-meta-rating-wrap::before {
+	position: absolute;
+	content: '';
+    top: -4px;
+    left: -4px;
+    right: 0px;
+    bottom: -4px;
+    border-radius: 0;
+	z-index: 1;
+}
+
+.jv-apia .tg-jv-meta-rating {
+    position: relative;
+    z-index: 1;
+	height: 100%;
+	background-position: -3px -15px;
+	background-image: url('/wp-content/themes/javo-directory/assets/images/star-all.png');
+	background-repeat: no-repeat;
+}
+
+/** Javo category icons **/
+.jv-apia .tg-jv-category i.glyphicon, .tg-jv-location i.glyphicon {font-size: 0.85em; color:#fff !important; letter-spacing:0.5em;}
+.jv-apia .tg-jv-category {margin-right:15px;}

@@ -1,0 +1,192 @@
+/*------------------------------------------------------------------
+[Map Template Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Map Template Styles
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+	// 1. color & media query & default
+	// 2. Info window
+	// 3. Map list part style - use listing switcher
+	// 4. search wrap
+	// 5. Map Panel
+	// 6. maps wrap - map area
+	// 7. switcher part
+
+*/
+
+// 1. color & media query & default
+// 2. Info window
+@import "less-parts/maps02-info-window";
+// 3. Map list part style - use listing switcher
+@import  "less-parts/maps03-map-list-part-style";
+// 4. search wrap
+@import "less-parts/maps04-search-wrap";
+// 5. Map Panel
+@import "less-parts/maps05-map-panel-wrap";
+// 6. maps wrap - map area
+@import "less-parts/maps06-maps-area";
+// 7. switcher part
+@import "less-parts/maps07-switcher-part";
+
+
+//-------------------------------------------------------------------
+// 1. color & media query & default
+//-------------------------------------------------------------------
+	@main-color:#ff5a5f;
+	@main-action-color:#e00007;
+	@title-color:#666;
+	@description-color:#999;
+	@sub-title-color:#fff;
+	@sub-description-color:#ccc;
+
+	@border-bottom-color:5px solid #ff5a5f;
+
+	.border-radius (@radius:3px;) {
+	 border-radius:@radius;
+	 -moz-border-radius:@radius;
+	 -webkit-border-radius:@radius;
+	}
+	@xs-min: 320px;
+	@sm-min: 768px;
+	@md-min: 992px;
+	@lg-min: 1250px;
+	@xlg-min: 1401px;
+
+	@xs-max: (@sm-min - 1);
+	@sm-max: (@md-min - 1);
+	@md-max: (@lg-min - 1);
+	@lg-max: (@xlg-min - 1);
+
+	@phone:          ~"only screen and (min-width: @{xs-min})";
+	@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+	@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+	@desktop:        ~"only screen and (min-width: @{md-min})";
+	@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+	@large:          ~"only screen and (min-width: @{lg-min})";
+
+	@mobile:		~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+
+	@tablet-mini:		~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+	@tablet:			 ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+	@notebook:		~"only screen and (min-width: @{lg-min}) and (max-width: @{lg-max})";
+
+	.jv-button-transition {
+		position:relative;
+		&:hover {
+			background-color:darken(@main-color,10%) !important;
+			border-color:darken(@main-color,10%) !important;
+			-webkit-transition: all 01.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+			&:after{
+				border-color:transparent;
+				background-color: transparent;
+				-webkit-transition: all 01.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+				color:#fff !important;
+				width:100%;
+			}
+		}
+		&:after {
+			content: '';
+			position:absolute;
+			top:0;
+			left:0;
+			height:100%;
+			width:0%;
+			border-color:rgba(255,255,255,.4);
+			background-color: rgba(255,255,255,.4);
+			.border-radius;
+			z-index:1;
+			-webkit-transition:all 0.3s;
+			-moz-transition:all 0.3s;
+			-ms-transition:all 0.3s;
+			-o-transition:all 0.3s;
+			transition:all 0.3s ease-out;;
+
+		}
+	}
+	.javo-noUISlider(){
+		.noUi-horizontal {
+			.noUi-background {
+				background: transparent;
+				box-shadow:none;
+				position:absolute;
+				.noUi-handle {
+					width: 20px;
+					height: 20px;
+					left: -17px;
+					top: -6px;
+					border-radius: 50px;
+					position: absolute;
+					box-shadow:none;
+					cursor:pointer;
+					background:#E65F4A;
+					border:0;
+					&:after, &:before{ background:transparent; }
+
+					.javo-slider-tooltip{
+						display: block;
+						position: absolute;
+						border: 0px solid #D9D9D9;
+						font: 400 12px/12px Arial;
+						border-radius: 3px;
+						background: red;
+						color:#fff;
+						top: -26px;
+						padding: 5px;
+						left: 50%;
+						margin:0 0 0 -26px;
+						text-align: center;
+						z-index:9998;
+						strong { display: block; padding: 2px; }
+					}
+				}
+			}// .noUi-background
+			.noUi-base {
+				width:100%;
+				height:100%;
+				position:reative;
+			}
+		}// .noUi-horizontal
+		.noUi-connect{ background:#55606E; height:6px; }
+		.noUi-target{ height:8px; }
+		.javo-slider-tooltip{ top: 27px; }
+	}
+	.btn-circle{
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		padding: 6px 0;
+		font-size: 12px;
+		line-height: 1.428571429;
+		border-radius: 100% !important;
+	}
+	.btn.btn-xxs{
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+	}
+//-------------------------------------------------------------------
+// 1. color & media query & default - end
+//-------------------------------------------------------------------
+
+
+
+//Map page wrap
+#javo-maps-listings-wrap {
+
+
+}//Map page wrap(#javo-maps-listings-wrap)

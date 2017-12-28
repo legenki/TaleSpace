@@ -1,0 +1,241 @@
+.javo-skin2 a,
+.javo-skin2 a:hover,
+.javo-skin2 .tg-media-button,
+.javo-skin2 a:active,
+.javo-skin2 a:focus,
+.javo-skin2 .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease;
+	-o-transition: opacity 0.25s ease, color 0.25s ease;
+	transition: opacity 0.25s ease, color 0.25s ease;
+}
+.javo-skin2 .tg-media-button:hover,
+.javo-skin2 a:not(.mejs-volume-slider):hover {
+	opacity: 0.85;
+}
+.javo-skin2 .tg-center-inner {
+	position: absolute;
+}
+.javo-skin2 .tg-item-content-holder {
+	position: relative;
+	display: block;
+	padding: 22px 24px 14px 24px;
+	text-align: left;
+}
+.javo-skin2 .tg-item-info {
+	position: relative;
+	display: block;
+}
+.javo-skin2 .tg-item-date,
+.javo-skin2 .tg-cats-holder {
+	position: relative;
+	display: inline;
+    padding: 0 10px 0 0;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+}
+.javo-skin2 .tg-cats-holder:before {
+    position: relative;
+    display: inline-block;
+	padding: 0 10px 0 0;
+    content: '/';
+    line-height: 22px;
+}
+.javo-skin2 .tg-item-title,
+.javo-skin2 .tg-item-title a {
+	position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+	margin: 6px 0 0 0 !important;
+	padding: 0 !important;
+}
+.javo-skin2 .tg-item-title a {
+	margin: 0 !important;
+}
+.javo-skin2 .tg-item-excerpt {
+	position: relative;
+	display: inline-block;
+	margin: 18px 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 23px;
+}
+.javo-skin2 .tg-item-overlay-media,
+.javo-skin2 .tg-item-overlay-link {
+	position: relative;
+	display: inline-block;
+	height: 54px;
+	width: 54px;
+	margin: 10px;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 20px;
+	border-radius: 50%;
+}
+.javo-skin2 .tg-media-button,
+.javo-skin2 .tg-link-button,
+.javo-skin2 .tg-media-button i,
+.javo-skin2 .tg-link-button i {
+	position: absolute;
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    width: 54px;
+}
+.javo-skin2 .tg-icon-add {
+	font-size: 30px;
+}
+.javo-skin2 .tg-item-footer {
+	position: relative;
+    display: block;
+    width: 100%;
+	margin: 20px 0 0 0;
+	line-height: 25px;
+}
+.javo-skin2 .tg-item-footer:after {
+	content:'';
+    display:block;
+    clear: both;
+}
+.javo-skin2 .quote-format .tg-item-footer,
+.javo-skin2 .link-format .tg-item-footer {
+	margin: 38px 0 0 0;
+}
+.javo-skin2 .tg-item-author-holder {
+	position: relative;
+    display: inline-block;
+	float: left;
+}
+.javo-skin2 .tg-item-avatar,
+.javo-skin2 .tg-item-avatar img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+.javo-skin2 .tg-item-avatar {
+	top: -3px;
+}
+.javo-skin2 .tg-item-author {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 600;
+}
+.javo-skin2 .tg-quote-icon,
+.javo-skin2 .tg-link-icon {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    right: 20px;
+    bottom: 10px;
+    font-size: 60px;
+    opacity: 0.2;
+}
+.javo-skin2 .quote-format,
+.javo-skin2 .link-format {
+	overflow: hidden;
+}
+.javo-skin2 .tg-link-icon {
+    font-size: 50px;
+	bottom: 16px;
+}
+.javo-skin2 .tg-link-content a,
+.javo-skin2 .tg-quote-content a {
+	display: block;
+	margin: 18px 0 8px 0 !important;
+	text-transform: none;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+.javo-skin2 .tg-quote-author,
+.javo-skin2 .tg-link-url {
+	position: relative;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+	font-style: italic; 
+}
+.javo-skin2 .tg-quote-author:before {
+	content: "— ";
+	position: relative;
+    display: inline-block;
+    margin: 0;
+	padding: 0 5px 0 0;
+}
+.javo-skin2 .to-post-like {
+	position: relative;
+    display: inline-block;
+    float: right;
+	font-size: 13px;
+	margin: 0 0 0 12px;
+}
+.javo-skin2 .tg-item-comment {
+	position: relative;
+    display: inline-block;
+	float: right;
+	font-size: 13px;
+}
+.javo-skin2 .tg-item-comment i {
+	position: relative;
+    padding: 0 4px 0 6px;
+    top: 2px;
+    font-size: 15px;
+}
+.javo-skin2 .tg-item-overlay-media,
+.javo-skin2 .tg-item-overlay-link {	
+	-webkit-transform: scale3d(1.35,1.35,1.35);
+    -moz-transform: scale3d(1.35,1.35,1.35);
+    -ms-transform: scale3d(1.35,1.35,1.35);
+    -o-transform: scale3d(1.35,1.35,1.35);
+    transform: scale3d(1.35,1.35,1.35);
+}
+.javo-skin2 .tg-item-overlay-media,
+.javo-skin2 .tg-item-overlay-link {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.javo-skin2 .tg-item-media-holder:hover .tg-item-overlay-link {
+	-webkit-transition-delay: .15s;
+	transition-delay: .15s;
+}
+.javo-skin2 .tg-item-media-holder:hover .tg-item-overlay-media,
+.javo-skin2 .tg-item-media-holder:hover .tg-item-overlay-link {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+    -moz-transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.javo-skin2.tg-is-playing .tg-item-overlay,
+.javo-skin2.tg-force-play .tg-item-overlay {
+	pointer-events: none;
+	opacity: 0 !important;
+}
+.javo-skin2 .mejs-overlay-play {
+	display: none !important;
+}

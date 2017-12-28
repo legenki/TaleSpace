@@ -1,0 +1,37 @@
+.jvfrm-notice{
+	background-color: #fff;
+	border-left: 4px solid #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	margin: 10px 0;
+	padding: 1px 12px;
+}
+
+.jvfrm-notice.notice-error{ border-left-color: #dc3232; }
+.jvfrm-notice.notice-warning{ border-left-color: #ffb900; }
+.jvfrm-notice.notice-warning-lg{
+	border-left-color: #ffb900;
+	background-color: #ffb900;
+	color:#fff;
+}
+.jvfrm-notice.notice-warning-lg a{
+	color:#fff;
+}
+.jvfrm-notice.notice-success{ border-left-color: #46b450; }
+.jvfrm-notice.notice-info{ border-left-color: #00a0d2; }
+
+
+/** admin-potofilio **/
+#poststuff #jvfrm-post-custom-fields h2 {
+	background: #454545;
+	color:#fff;
+	letter-spacing:1px;
+}
+
+.page-option-portfolio .form-wrap .form-field{margin:0 0 10px;padding:8px 0;}
+.page-option-portfolio .form-wrap .form-field .jvfrm_ctm_label{float:left;width:25%;}
+.page-option-portfolio .form-wrap .form-field .jvfrm_ctm_label label{text-transform: uppercase; }
+.page-option-portfolio .form-wrap .form-field .jvfrm_ctm_field{float:left;width:75%;}
+
+/** theme setting button blue color from wp **/
+.button.button-primary {text-shadow:none;}

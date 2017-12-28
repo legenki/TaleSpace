@@ -1,0 +1,109 @@
+.jv-thailand a,
+.jv-thailand a:active,
+.jv-thailand a:focus,
+.jv-thailand .tg-cats-holder,
+.jv-thailand .tg-item-title {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.25s ease, color 0.25s ease, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.25s ease, color 0.25s ease, transform 0.3s ease-in-out;
+}
+.jv-thailand.tg-item {
+    overflow: hidden;
+}
+.jv-thailand .tg-center-holder {
+	text-align: center;
+}
+.jv-thailand .tg-item-content,
+.jv-thailand .tg-item-media-holder,
+.jv-thailand .tg-item-overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.jv-thailand:hover .tg-item-overlay {
+	opacity: 0.1;
+}
+.jv-thailand .tg-item-content {
+	margin: 22px;
+}
+.jv-thailand .tg-item-link {
+    position: absolute;
+    display: block;
+    top: -500%;
+    left: -22px;
+    right: -22px;
+    height: 1000%;
+}
+.jv-thailand .tg-item-title,
+.jv-thailand .tg-item-title a {
+	position: relative;
+	display: block;
+    font-size: 20px;
+	line-height: 26px;
+	font-weight: 600;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-transform: uppercase;
+}
+.tg-layout-justified .jv-thailand .tg-item-title,
+.tg-layout-justified .jv-thailand .tg-item-title a {
+    font-size: 14px;
+	line-height: 18px;
+}
+.jv-thailand .tg-item-title  {
+	margin: 10px 0 0 0!important;
+}
+.jv-thailand .tg-item-date {
+	position: relative;
+	display: block;
+    font-size: 14px;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+}
+.tg-layout-justified .jv-thailand .tg-item-date {
+    font-size: 12px;
+	line-height: 16px;
+}
+.jv-thailand .tg-media-button {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.jv-thailand .tg-cats-holder a:hover,
+.jv-thailand .tg-media-button:hover {
+	opacity: 0.75;
+}
+.jv-thailand .tg-media-button i {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+    font-size: 18px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.jv-thailand .tg-media-button .tg-icon-add {
+    font-size: 28px;
+}
+.jv-thailand .mejs-overlay-play {
+	display: none !important;
+}
+/* jv css */
+.jv-thailand .tg-jv-type, .jv-thailand .tg-jv-location {color:#fff; font-size:11px; padding:5px 10px; text-transform:uppercase;}
+.jv-thailand .tg-jv-type i, .jv-thailand .tg-jv-location i {padding-right:5px;}

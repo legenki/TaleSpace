@@ -1,0 +1,908 @@
+/*------------------------------------------------------------------
+[15. Widgets]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	10/15/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Widgets
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Contact Us
+2. Full Cover Category
+3. Booking
+4. Sidebar default
+5. Widget default
+6. Quick Buttons
+7. Woocommerce
+8. Featured Listing Slider
+*/
+
+/*------------------------------------------------------------------
+[1. Contact Us]
+*/
+.widget,
+.widgets-wraps{
+	.foot-sns-icons{
+		a{
+			display:inline-block;
+			i.jv-contact-widget-icon{
+				background-image: url( '@{themeurl}/assets/images/jv-common-icon.png' );
+				background-position:0 -1px;
+				width:33px;
+				height:33px;
+				display:inline-block;
+				&.facebook{ /* Do Nothing */ }
+				&.twitter{ background-position:-38px -1px; }
+				&.forrst{ background-position:-76px -1px; }
+				&.google{ background-position:-112px -1px; }
+				&.pinterest{ background-position:-148px -1px; }
+				&.dribbble{ background-position:-186px -1px; }
+				&.instagram{ background-position:-223px -1px; }
+			}
+		}
+	}
+	.javo-shortcode{
+		&.shortcode-jv_slider1,
+		&.shortcode-jv_slider2,
+		&.shortcode-jv_slider3,
+		&.shortcode-jv_slider4{
+			.shortcode-output{
+				.slider-wrap.flexslider{
+					min-height:200px;
+				}
+			}
+		}
+	}
+}
+
+
+.widget_posts_wrap .latest-posts .thumb{
+	&,
+	a,
+	a:after,
+	img{ border-radius:0 !important; }
+}
+.widgets-wraps .widget_posts_wrap .posts .col-md-12 .thumb:hover img{ border-radius:0 !important; }
+
+#javo-single-sidebar{
+	.widget{
+		border: 1px solid #f1f0f0;
+		border-radius: 3px;
+		padding: 15px;
+		padding-top:25px;
+		h2.widgettitle{
+			line-height:1;
+			margin:0;
+			padding:0 0 10px 0;
+			font-size:16px;
+			text-transform:uppercase;
+			font-weight:600;
+			border-width:0 0 1px;
+			border-style:solid;
+			border-color:#eee;
+		}
+		&.widget_lava_contact_single_page{
+			border:none;
+			padding:0;
+			margin:0;
+			.lava-wg-author-contact-form{
+				.panel-heading{
+					border:1px solid transparent !important;
+					border-top:0 !important;
+					border-bottom:0 !important;
+					body:not(.type-a) & {
+						border:1px solid #f1f0f0 !important;
+						border-bottom:0 !important;
+					}
+				}
+				.panel-body{
+					border: 1px solid #f1f0f0;
+					border-top:0;
+				}
+			}
+		}
+	}
+	.lava-single-sidebar{
+
+	>li{
+			margin-bottom:30px;
+			position:relative;
+			top:-40px;
+			&.widget_lava_contact_single_page{
+				margin-bottom:0px;
+				position:static;
+			}
+			&.widget_jvfrm_home_single_post_slider{
+				background-color:#fff;
+			}
+			&.widget_lava_realestate_booking_widget{
+				background-color:#fff;
+			}
+			&.widget_jvfrm_home_contact_us{
+				.contact_us_detail{
+					img{max-width:100%;}
+				}
+			}// contact us widget
+		}
+		.shortcode-jv_slider2{
+			.slides{
+				.javo-module3{
+					.more-meta{
+						.meta-category{
+							.meta-location{
+								padding-left:5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/*------------------------------------------------------------------
+[2. Full Cover Category]
+*/
+#javo-sitemap,
+.jv-full-conver-container{
+	display: table;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.95);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+	opacity: 0;
+	z-index: 999999;
+
+	li{
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	.javo-sitemap-form{
+		padding-top: 60px;
+		display: table-cell;
+		vertical-align: middle;
+		margin: auto;
+		width: 100%;
+		.javo-terms{
+			.javo-terms-item{
+				font-size: 17px;
+				font-weight: 600;
+				width: 20%;
+				margin-bottom: 2%;
+				margin-top: 2%;
+				overflow: hidden;
+				.javo-terms-item-title{
+					color: #9E8348;
+					font-size: 24px;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					&:hover{
+						color: #fff;
+					}
+				}
+				ul{
+					margin-top: 15%;
+					li{
+						line-height: 24px;
+						a{
+							color: #fff;
+							&:hover{ color: #9E8348; }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.jv-fullcover-search-inner{
+		position:absolute;
+		top:50%;
+		left:50%;
+		.javo-shortcode.shortcode-jv_search1{
+			.search-type-a-wrap{
+				.jv-search1-search-fields.search-type-a-inner{
+					.row.jv-search1-top-row{
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+
+	&.open{
+		-webkit-transform: translate(0px, 0px) scale(1, 1);
+		-moz-transform: translate(0px, 0px) scale(1, 1);
+		-o-transform: translate(0px, 0px) scale(1, 1);
+		-ms-transform: translate(0px, 0px) scale(1, 1);
+		transform: translate(0px, 0px) scale(1, 1);
+		opacity: 1;
+	}
+	&.close{
+		position: fixed;
+		top: 15px;
+		right: 15px;
+		color: #fff;
+		background-color: none;
+		border-color: #357ebd;
+		opacity: 1;
+		padding: 10px 17px;
+		font-size: 27px;
+	}
+}
+
+/*------------------------------------------------------------------ 
+[3. Booking]
+*/
+
+
+.widget_lava_realestate_booking_widget{
+	.cart{
+		#wc-bookings-booking-form{
+			border:0px;
+			padding:0;
+		}
+		.wc-bookings-date-picker{
+			legend{display:none;}
+			.picker{
+				.ui-datepicker-calendar{
+					tr{
+						td{
+							a{background-color: #D45454!important;}
+						}
+					}
+				}
+			}
+		}
+		.wc-bookings-booking-form-button{
+			border:1px solid;
+		}
+	}
+}
+
+.widget_lava_realestate_booking_widget{
+	.cart{
+		.wc-bookings-booking-form-button{
+		    border: 1px solid;
+		    font-size: 13px;
+		    font-weight: 600;
+		    letter-spacing: 1px;
+		    text-transform: uppercase;
+		    padding: 5px 15px;
+		    border-radius: 3px;
+		    width: 100%;
+		}
+	}
+}
+
+
+
+/*------------------------------------------------------------------ 
+[4. Sidebar default]
+*/
+//sidebar
+.sidebar-inner{
+	background:#fff;
+	padding-bottom:10px;
+	.widgets-wraps{
+		.widgettitle_wrap{
+			.widgettitle{
+				/* 	span{ */
+				color:#333;
+				/* } */
+			}
+		}
+		.lava-featured-widget{
+			.lava-featured-widget-title{
+				h3{
+					color:#333;
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------ 
+[5. Widget Default]
+*/
+// widget
+.widgets-wraps{
+	padding:0 15px;
+	margin-bottom:30px;
+	&:last-of-type{margin-bottom:30px;}
+	.widgettitle_wrap{
+		padding:0;
+		margin:0;
+		float:none;
+		.widgettitle{
+			font-size: 15px;
+			line-height: 1.571428571428571em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 600;
+			margin:0 0 22px;
+			color: #e7e7e7;
+			&:after{
+				content:'';
+				border-bottom:1px solid #dbdbdb;
+				position:relative;
+				top:7px;
+				z-index:0;
+				display:block;
+			}			
+		}
+	}// .widgettitle_wrap
+
+	// recent photos widget
+	.widget_posts_wrap{
+		.latest-posts{
+			li{
+				padding: 0 10px 10px 0px;
+				.thumb{
+					a{
+						// recent photos widget thumbnail
+						.img-wrap-shadow{
+							position:relative;
+							width:80px;
+							overflow:hidden;
+
+							&:after{
+								content:"";
+								position:absolute;
+								top:0;
+								left:0;
+								width:100%;
+								height:100%;
+								background:rgba(0,0,0,0);
+								-webkit-transition:all 0.5s;
+								-moz-transition:all 0.5s;
+								-ms-transition:all 0.5s;
+								-o-transition:all 0.5s;
+								transition:all 0.5s;
+								z-index:1;
+							}// .img-wrap-shadow:after
+
+							&:hover{
+								&:after{
+									background:rgba(0,0,0,0.3);
+									-webkit-transition:all 0.5s;
+									-moz-transition:all 0.5s;
+									-ms-transition:all 0.5s;
+									-o-transition:all 0.5s;
+									transition:all 0.5s;
+								}//  .img-wrap-shadow:hover:after
+
+								img{
+									-webkit-transform:scale(1.1);
+									-webkit-transition:all 0.5s;
+									-moz-transition:all 0.5s;
+									-ms-transition:all 0.5s;
+									-o-transition:all 0.5s;
+									transition:all 0.5s;
+								}
+							}//  .img-wrap-shadow:hover
+
+							img{
+								-webkit-transition:all 0.5s;
+								-moz-transition:all 0.5s;
+								-ms-transition:all 0.5s;
+								-o-transition:all 0.5s;
+								transition:all 0.5s;
+							}
+						}// .img-wrap-shadow
+					}
+				}
+			}
+			.col-md-12{
+				a{
+					div.jv-post-des{
+						max-height:45px;
+						overflow:hidden;
+						line-height: 26px;
+						color: #818181;
+						font-size: 14px;
+						letter-spacing: 1px;
+						font-weight: 400;
+					}
+				}
+			}
+		}// .latest-posts
+
+		//recent post widget
+		.posts{
+			margin-bottom:20px;
+			& > div{
+				& > span.thumb{
+					width:56px;
+					height:70px;
+					padding:3px;
+					background:#eee;
+					float:left;
+					margin: 6px 25px 0 0;
+					-webkit-border-radius:100%;
+					-moz-border-radius:100%;
+					border-radius:100%;
+					overflow:hidden;
+					position:relative;
+					& > a{
+						& > img{
+							-webkit-transition:all 0.5s;
+							border-radius:100%;
+							width:50px;
+							height:70px;
+							display:block;
+						}
+						.jv-recent-posts-thumbnail{
+							width: 100px;
+							height: 52px;
+							background-size: 100% auto;
+						}
+						&:after{
+							content:'';
+							position:absolute;
+							top:0;
+							left:0;
+							width:100%;
+							height:100%;
+							background:rgba(0,0,0,0);
+							border-radius:100%;
+							-webkit-transition:all 0.5s;
+							transition:all 0.5s;
+						}// a:after
+					}
+					&:hover{
+						background: #eee;
+						padding: 0;
+						-webkit-animation: pulse ease-in-out 1 normal 500ms;
+						-moz-animation: pulse ease-in-out 1 normal 500ms;
+						-ms-animation: pulse ease-in-out 1 normal 500ms;
+						-o-animation: pulse ease-in-out 1 normal 500ms;
+						animation: pulse ease-in-out 1 normal 500ms;
+						border: 3px solid #aaaaa1;
+						a:after{
+							-webkit-transition:all 0.5s;
+							background:rgba(0,0,0,0.3);
+						}
+						img{
+							-webkit-transition:all 0.5s;
+							/* border-radius:100% !important; */
+						}
+					}// .thumb:hover
+				}
+				& > h3{
+					// Footer
+					.jv-footer-column &{
+						margin:5px 0 6px 0;
+					}
+
+					font-size:15px;
+					line-height:1;
+					font-weight:bold;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					margin:3px 0 6px;
+					& > a{
+						color:#646464;
+						font-size:14px;
+						font-weight:600;
+						line-height:1;
+						letter-spacing:1px;
+					}
+				}
+				& > a{
+					display:block;
+					margin:5px 0 0 0;
+
+					// Footer
+					.jv-footer-column &{
+						margin:5px 0 0 0;
+					}
+
+					& > span{
+						& > .javo-shortcode{
+							& > .module{
+								& > .meta-rating-wrap{
+									margin:2px 0 3px;
+								}
+								& > .meta-moreinfo{
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									& > span{
+										position:static;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}//.posts
+		&.type-post{
+			.latest-posts{
+				min-height:55px;
+			}
+		}
+	}// .widget_posts_wrap
+
+	select{
+		margin-left:10px;
+		max-width:250px;
+	}
+
+	.textwidget{
+		width: 260px;
+		overflow:hidden;
+	}
+	#calendar_wrap{
+		margin-left:10px;
+		#wp-calendar{
+			margin: 0;
+			width: 100%;
+			font-size: 0.928571429rem;
+			line-height: 1.846153846;
+			color: #686868;
+
+			#next{
+				padding-right: 1.714285714rem;
+				text-align: right;
+			}
+		}// #wp-calendar
+	}// #calendar_wrap
+
+	// Tag cloud widget
+	.tagcloud {margin-left:20px;}
+
+	// Search widget
+	.searchform{
+		margin-left:20px;
+		label{display:none;}
+	}
+
+	//contact info widget
+	ul{
+		padding-left:3px;
+		font-size:1.1em;
+		&.latest-posts-photo{
+			padding-left:0;
+		}
+		li{
+			line-height: 26px;   
+			color: #818181;
+			font-size: 14px;
+			letter-spacing: 1px;
+			font-weight: 400;
+			list-style:none; // default widget list style
+			i{margin-right:5px;}
+		}
+	}
+	.foot-sns-icons{
+		a{
+			padding:2px;
+			img{width:33px;}
+		}
+	}
+	// lava featured widget
+	.lava-featured-widget{
+		.lava-featured-widget-title{
+			h3{
+				letter-spacing:1px;
+				margin-top:3px;
+			}
+		}
+	}// .lava-featured-widget
+	// lava featured widget - end
+	// rss widget
+	ul{
+		li{
+			.rsswidget{
+				font-size:16px;
+				font-weight:600;
+				display:block;
+				line-height:22px;
+				margin-bottom:5px;
+			}
+			.rss-date{
+				display:block;
+			}
+			.rssSummary{
+				margin:5px auto;
+				padding-left:10px;
+			}
+			cite{
+				display:block;
+				margin-bottom:10px;
+				border-bottom:1px solid #ddd;
+				padding-bottom:5px;
+				padding-left:10px;
+				font-weight:600;
+			}
+		}
+	}// ul
+	// rss widget - end
+	// text widget
+	.textwidget{
+		img{
+			max-width:100%;
+			height:auto;
+		}
+		select{
+			max-width:200px;
+			option{
+				max-width:200px;
+			}
+		}
+	}
+	// text widget - end
+
+	#recentcomments{
+		.recentcomments{
+			.comment-author-link{
+				a{font-weight:bold;}
+			}
+		}
+	}
+
+	ul.menu{
+		li{
+			&>a{font-weight:600;}
+			ul.sub-menu{
+				padding-left:20px;
+				a{font-weight:normal;}
+			}
+		}
+	}
+}// .widgets-wraps
+
+
+// site left back to top button
+#back-to-top{
+	cursor: pointer;
+	position: fixed;
+	bottom: 30px;
+	right:30px;
+	display:none;
+	z-index:100;
+	font-size: 22px;
+	padding: 7px 15px 8px;
+	border-radius: 3px;
+}
+
+/*------------------------------------------------------------------ 
+[6. Quick Buttons]
+*/
+// site contact button
+.javo-quick-contact-us{
+	cursor: pointer;
+	position: fixed;
+	bottom: 30px;
+	right:30px;
+	z-index:100;
+	right: 83px;
+	font-size:22px !important;
+	padding: 6px 14px 9px !important;
+	border-radius: 3px !important;
+}// .javo-quick-contact-us
+.javo-quick-contact-us-content{
+	display:none;
+	top:580px;
+	position:fixed;
+	right:0px;
+	background:#fff;
+	border:solid 1px #eee;
+	border-radius:5px;
+	min-width:300px;
+	min-height:300px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	padding:20px;
+	transform: rotate(-240deg) scale(0);
+	-webkit-transform: rotateX(-240deg) rotateY(-180deg) scale(0);
+	-moz-transform: rotate(-240deg) rotateY(-180deg) scale(0);
+	-ms-transform: rotate(-240deg) rotateY(-180deg) scale(0);
+	-o-transform: rotate(-240deg) rotateY(-180deg) scale(0);
+	transition:all 0.5s;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-o-transition:all 0.4s;
+	-ms-transition:all 0.4s;
+	opacity:0;
+	z-index:9999;
+	max-width:350px;
+
+	&.active{
+		  display: block;
+		  transform: rotateX(0deg) rotateY(0deg) scale(1);
+		  -webkit-transform: rotateX(0deg) rotateY(0deg) scale(1);
+		  -moz-transform: rotate(0deg) rotateY(0deg) scale(1);
+		  -ms-transform: rotate(0deg) rotateY(0deg) scale(1);
+		  -o-transform: rotate(0deg) rotateY(0deg) scale(1);
+		  opacity: 1;
+	}//.javo-quick-contact-us-content.active
+
+
+}// .javo-quick-contact-us-content
+
+
+
+
+
+//color
+@main-color:#ff5a5f;
+@main-action-color:#e00007;
+@title-color:#666;
+@description-color:#999;
+@sub-title-color:#fff;
+@sub-description-color:#ccc;
+
+/*------------------------------------------------------------------ 
+[7. Woocommerce]
+*/
+// widget-woocommerce-currency-switcher
+.widget-woocommerce-currency-switcher {
+	form {
+		.chosen-container {
+			.chosen-single {
+				background: #fff;
+				color:@title-color;
+				border: 1px solid #ccc;
+				-webkit-appearance: none;
+				border-radius: 3px;
+				line-height: 32px;
+				height: 32px;
+				font-size: 13px;
+				vertical-align: middle;
+				box-shadow: none;
+				span {
+					font-size:13px;
+				}
+				b {
+					background:none;
+					border-right:none;
+					&:after {
+						font-family: FontAwesome;
+						content: "\f078";
+						position: absolute;
+						font-size: 12px;
+						line-height: 13px;
+						text-align: center;
+						width: 13px;
+						top: 9px;
+						right: 12px;
+						color:@main-color;
+					}
+				}
+			}
+			.chosen-drop {
+				border: 1px solid #e9e9e9;
+				margin-top: 10px;
+				.border-radius;
+				.chosen-results {
+					margin: 10px 5px;
+					li {
+						padding: 0 0 10px 0 !important;
+						font-size: 13px;
+						line-height: 20px;
+						color:@title-color;
+						font-weight: 500;
+						&:last-child {
+							padding:0 !important;
+						}
+						&:hover, &.highlighted {
+							color:@main-color !important;
+						}
+					}
+				}
+				&:after {
+					border-color: transparent transparent #e9e9e9;
+					border-style: solid;
+					border-width: 7px;
+					content: "";
+					height: 0;
+					position: absolute;
+					left: 40%;
+					top: -14px;
+					width: 0;
+					z-index: 0;
+				}
+			}
+		}
+	}
+}
+// widget-woocommerce-currency-switcher
+
+/*------------------------------------------------------------------ 
+[8. Featured Listing Slider]
+*/
+.widget_jvfrm_home_single_post_slider{
+	.javo-shortcode{
+		.shortcode-container{
+			.flexslider{
+				ul.slides{
+					li{
+						.more-meta{
+							.meta-category{
+								.lava_favorite{
+									display:none;
+									position:absolute;
+									bottom:0;
+									right:0;
+								}
+							}// .meta-category
+						}
+					}
+				}
+			}// .flexslider
+		}
+	}
+}// .widget_jvfrm_home_single_post_slider
+
+.widgets-wraps{
+	.lava-featured-widget{
+		.lava-featured-widget-title{
+			h3{
+				color:#aaaaa1;
+				font-size:14px;
+				font-weight:600;
+				position:relative;
+				bottom:5px;
+				margin-bottom:6px;
+			}
+		}
+	}
+}
+// featured widget
+	.lava-featured-widget{
+		.lava-featured-widget-title{
+			h3{
+				letter-spacing:1px;
+			}
+		}
+		.latest-posts{
+			.lava-featured-widget-content{
+				h3{
+					a{
+						color:#454545;
+					}
+				}
+				span{
+					color:#646464;
+				}
+			}
+		}
+	}
+
+//featured widget in text widget
+.sidebar-right{
+	.lava-single-sidebar{
+		.textwidget{
+			.shortcode-jv_slider4{
+				.flex-direction-nav{
+					position:relative;
+					z-index:1;
+				}
+			}
+		}
+	}
+}

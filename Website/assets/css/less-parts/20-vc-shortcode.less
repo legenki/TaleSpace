@@ -1,0 +1,305 @@
+/*------------------------------------------------------------------
+[20. Visual Composer Shortcode Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	01/14/16 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. accordion
+2. just_icon in vc_row
+3. accordion 2
+4. Column Background Image
+5. InfoBox Padding
+6. Post grid
+7. Contact Form
+8. Advanced Carousel
+-------------------------------------------------------------------*/
+.upb-background-text-wrapper{z-index:2;}
+/*------------------------------------------------------------------
+[1. accordion]
+*/
+.jv-vc-accordion{
+	.vc_tta-accordion{
+		& > .vc_tta-panels-container{
+			& > .vc_tta-panels{
+				& > .vc_tta-panel{
+					& > .vc_tta-panel-heading{
+						& > .vc_tta-panel-title{
+							& > a{
+								display:table;
+								width:100%;
+								& > i,
+								& > span{
+									display:table-cell;
+									vertical-align:middle;
+									padding:0;
+								}
+								& > span{
+									padding:0 0 0 15px;
+									line-height:25px;
+								}
+								& > i:last-child{
+									display:none;
+									visibility:hidden;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------
+[2. just_icon in vc_row]
+*/
+.jv-background-icon-right-bottom{
+    position: absolute;
+    bottom: -60px;
+    right: -50px;
+}
+.jv-overflow-hidden{ overflow:hidden; }
+.jv-float-right{float:right !important;}
+.jv-float-left{float:left !important;}
+/*------------------------------------------------------------------
+[3. accordion 2]
+*/
+
+/****** Javo accordion for VC *******/
+/** background setup **/
+.jv-vc-accordion .vc_tta .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading, .jv-vc-accordion .vc_tta .vc_tta-panel.vc_active .vc_tta-panel-heading {
+    border-color: #F0F0F0;
+    background-color: #FFF;
+    border: none;
+}
+
+
+/** icon setup **/
+.jv-vc-accordion .vc_tta.vc_general .vc_tta-icon {
+    display: inline-block;
+}
+.jv-vc-accordion .vc_tta.vc_general .vc_tta-icon {
+/*     padding: 27px 15px 26px; */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #aaa;
+    background: #FFF none repeat scroll 0% 0%;
+    font-size: 25px;
+    border: 3px solid #aaa;
+	text-align:center;
+	vertical-align: middle;
+	padding-top: 22px;
+	padding-left: 3px;
+}
+
+.jv-vc-accordion .vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-title > a:hover > .vc_tta-icon {
+	background: #37ADF2 none repeat scroll 0% 0%;
+	color: #fff;
+}
+
+/** active **/
+
+.jv-vc-accordion .vc_tta-panel.vc_active .vc_tta-panel-heading h4.vc_tta-panel-title .vc_tta-icon {
+color: #FFFFFF;
+background:#37ADF2;
+border: 3px solid #37ADF2;
+}
+
+.jv-vc-accordion .vc_tta .vc_tta-panel.vc_active .vc_tta-panel-heading .vc_tta-panel-title > a {
+color: #37ADF2;
+}
+
+/** hover, focus **/
+.jv-vc-accordion .vc_tta .vc_tta-panel .vc_tta-panel-heading:focus, .jv-vc-accordion .vc_tta .vc_tta-panel .vc_tta-panel-heading:hover .vc_tta-panel-title > a {
+	color: #37ADF2;
+}
+
+.jv-vc-accordion .vc_tta .vc_tta-panel .vc_tta-panel-heading:focus, .jv-vc-accordion .vc_tta .vc_tta-panel .vc_tta-panel-heading:hover .vc_tta-panel-title > a > .vc_tta-icon {
+	color: #37ADF2;
+	border-color:#37ADF2;
+}
+
+
+
+
+
+
+
+/** inner **/
+.jv-vc-accordion .vc_tta-shape-rounded:not(.vc_tta-o-no-fill) .vc_tta-panel.vc_active .vc_tta-panel-body {
+     margin-left: 43px;
+	 margin-top: -17px;
+}
+
+.jv-vc-accordion .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+	border:none;
+}
+
+.jv-vc-accordion .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+    background-color: transparent;
+}
+
+/* hide vc +,- icon for javo style */
+.jv-vc-accordion .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-left .vc_tta-controls-icon {
+	display:none;
+}
+
+.jv-vc-accordion .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-left.vc_tta-panel-title > a {
+    padding-left: 0px;
+}
+
+
+.jv-vc-accordion .vc_tta.vc_general .vc_tta-panel-body {
+    padding: 0px 20px 14px 20px;
+}
+
+.jv-vc-accordion .vc_tta-panel-body {
+	font-size: 15px;
+	color: #aaa;
+}
+
+
+/*------------------------------------------------------------------
+[4. Column Background Image]
+*/
+div.jv-column-image-bg-left , div.jv-column-image-bg-left>.vc_column-inner{
+		position: absolute;
+		left:0;
+		height: 100%;
+		background-position: 50% 50% !important;
+}
+
+/*------------------------------------------------------------------
+[4. Column Background Image] - end
+*/
+
+/*------------------------------------------------------------------
+[5. InfoBox Padding]
+*/
+.vc_row{
+	&.jv-vc-info-box-padding{
+		.aio-icon-component{
+			& > .aio-icon-box{
+				&.left-icon{
+					& > .aio-icon-left{
+						& > .ult-just-icon-wrapper{
+							& > .align-icon{
+								& > .aio-icon{
+									margin:0 45px 0 30px;
+								}
+							}
+						}
+					}
+				}
+				&.right-icon{
+					& > .aio-icon-right{
+						& > .ult-just-icon-wrapper{
+							& > .align-icon{
+								& > .aio-icon{
+									margin:0 30px 0 45px;
+								}
+							}
+						}
+					}
+				}
+				& > .aio-ibd-block{
+					& > .aio-icon-header > h3,
+					& > .aio-icon-description{
+						letter-spacing:1px;
+					}
+				}
+			}
+		}
+	}
+}
+/*------------------------------------------------------------------
+[5. InfoBox Padding] - end
+*/
+
+/*------------------------------------------------------------------
+[6. Post grid]
+*/
+html{
+	body{
+		h1,h2,h3,h4,h5,h6{
+			a.vc_gitem-link{
+				font-family:inherit;
+			}
+		}
+		
+		.vc_gitem-post-data-source-post_title h3 {text-transform: uppercase;}
+		.vc_grid-item-mini {box-shadow: 1px 1px 2px rgba(0,0,0,0.08);}
+		.vc_grid-filter > .vc_grid-filter-item > span, .vc_grid-filter.vc_grid-filter-color-grey > .vc_grid-filter-item.vc_active > span {
+		    color: #222222;
+		    font-size: 15px;
+		    font-weight: 600;
+		    line-height: 26px;
+		    height: 26px;
+		    padding: 0 14px;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		}
+
+		.jv_vc_gi_property_status, .jv_vc_gi_property_type {
+		    text-transform: uppercase;
+		    font-weight: 600;
+		    color:#fff;
+		    background:#454545;
+		    font-size:0.85em;
+		    display: inline;
+		    padding: 5px 7px;
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+[6. Post grid] - end
+*/
+
+/*------------------------------------------------------------------
+[7. Contact Form]
+*/
+
+/* contact form */
+.wpcf7-form .form-control {
+    height: 53px;
+    padding: 6px 12px;
+    color: #C3C3C3;
+    border: 1px solid #F3EEEE;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0) inset;
+margin-bottom:20px;
+}
+.wpcf7 .col-md-6.form-group input{margin-bottom:5px;}
+.wpcf7-form textarea.form-control{height:auto;}
+.wpcf7-submit{border-radius:0; padding:15px 30px; font-size:16px; font-weight:700; letter-spacing:1px; font-family: 'Montserrat';}/* support desk send button */
+/* contact us page */
+.page-id-7786 .wpcf7 .wpcf7-submit,
+.page-id-7786 .wpcf7 .wpcf7-submit:hover{background-color:#353535 !important; border-color:#242424 !important;}
+
+
+
+/*------------------------------------------------------------------
+[7. Contact Form] - end
+*/
+
+/*------------------------------------------------------------------
+[8. Advanced Carousel]
+*/
+.ult-carousel-wrapper{
+	*{
+		&:focus{outline:none;}
+	}
+}
+/*------------------------------------------------------------------
+[8. Advanced Carousel] - end
+*/

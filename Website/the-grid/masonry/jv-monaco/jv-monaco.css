@@ -1,0 +1,383 @@
+.jv-monaco a,
+.jv-monaco a:active,
+.jv-monaco a:focus,
+.jv-monaco .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease;
+	-o-transition: opacity 0.25s ease, color 0.25s ease;
+	transition: opacity 0.25s ease, color 0.25s ease;
+}
+.jv-monaco a:not(.mejs-volume-slider):hover {
+	opacity: 0.85;
+}
+.jv-monaco .tg-center-holder {
+	text-align: center;
+}
+.jv-monaco .tg-item-content-holder {
+	position: relative;
+	display: block;
+	padding: 22px 24px 14px 24px;
+	text-align: left;
+	border:solid 1px #ececec;
+	border-top:none;
+}
+.jv-monaco .tg-item-content-holder.no-media-before {
+	padding: 6px 24px 14px 24px;
+}
+.jv-monaco .tg-item-date,
+.jv-monaco .tg-cats-holder {
+	position: relative;
+	display: inline;
+    padding: 0 10px 0 0;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+}
+.jv-monaco .quote-format .tg-item-date,
+.jv-monaco .link-format .tg-item-date {
+	display: inline-block;
+	margin: 12px 0 6px 0;
+}
+.jv-monaco .tg-cats-holder:before {
+    position: relative;
+    display: inline-block;
+	padding: 0 10px 0 0;
+    content: '|';
+    line-height: 22px;
+}
+.jv-monaco .tg-item-title{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.jv-monaco .tg-item-title a{
+	display:inline;
+}
+.jv-monaco .tg-item-title,
+.jv-monaco .tg-item-title a {
+	position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+	margin: 6px 0 !important;
+	padding: 0 !important;
+}
+.jv-monaco .tg-item-title a {
+	margin: 0 !important;
+}
+.jv-monaco .tg-item-excerpt {
+	margin: 0 0 22px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 26px;
+}
+.jv-monaco .tg-item-overlay {
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;	
+	z-index:3;
+}
+.jv-monaco .tg-media-button,
+.jv-monaco .tg-link-button {
+	position: relative;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0;
+	padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.jv-monaco .tg-dark .tg-share-icons i,
+.jv-monaco .tg-dark .tg-media-button,
+.jv-monaco .tg-dark .tg-link-button {
+	background: rgba(255,255,255,0.5);
+}
+.jv-monaco .tg-dark .tg-share-icons i:hover,
+.jv-monaco .tg-dark .tg-media-button:hover,
+.jv-monaco .tg-dark .tg-link-button:hover {
+	background: rgba(255,255,255,0.85);
+}
+.jv-monaco .tg-light .tg-share-icons i,
+.jv-monaco .tg-light .tg-media-button,
+.jv-monaco .tg-light .tg-link-button {
+	background: rgba(0,0,0,0.15);
+}
+.jv-monaco .tg-light .tg-share-icons i:hover,
+.jv-monaco .tg-light .tg-media-button:hover,
+.jv-monaco .tg-light .tg-link-button:hover {
+	background: rgba(0,0,0,0.35);
+}
+.jv-monaco .tg-media-button i,
+.jv-monaco .tg-link-button i {
+	position: absolute;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.jv-monaco .tg-item-media-holder{
+	overflow:hidden;
+}
+.jv-monaco .tg-monaco-featured-status{
+	background-color: #ff7430;
+	z-index: 1;
+	width: 120px;
+	height: 30px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: absolute;
+	left: -33px;
+	top: 12px;
+	text-align: center;
+	-moz-transform: scale(1) rotate(-45deg) translate(0px);
+	-webkit-transform: scale(1) rotate(-45deg) translate(0px);
+	-o-transform: scale(1) rotate(-45deg) translate(0px);
+	transform: scale(1) rotate(-45deg) translate(0px);
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+.jv-monaco ul.tg-monaco-featured-meta{
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:0;
+	margin:0;
+	list-style:none;
+	z-index:1;	
+}
+.jv-monaco ul.tg-monaco-featured-meta > li.tg-monaco-featured-type > span,
+.jv-monaco ul.tg-monaco-featured-meta > li.tg-monaco-featured-price > span{
+	display:inline-block;
+	line-height:1;
+	padding:10px;
+	font-size:1.5em;
+}
+.jv-monaco ul.tg-monaco-featured-meta > li.tg-monaco-featured-type > span{
+	background-color:#ffffff;
+	color:#000000;
+}
+.jv-monaco ul.tg-monaco-featured-meta > li.tg-monaco-featured-price > span{
+	background-color:#3498db;
+	color:#ffffff;
+}
+.jv-monaco .tg-item-footer {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 0;
+	line-height: 25px;
+}
+.jv-monaco .quote-format .tg-item-footer,
+.jv-monaco .link-format .tg-item-footer {
+	margin: 18px 0 0 0;
+}
+.jv-monaco .tg-item-author {
+	position: relative;
+    display: inline-block;
+	float: left;
+	font-size: 13px;
+	font-style: italic;
+}
+.jv-monaco .tg-item-author * {
+	position: relative;
+}
+.jv-monaco .tg-quote-icon,
+.jv-monaco .tg-link-icon {
+	position: absolute;
+    display: block;
+    font-size: 24px;
+    margin: 0;
+    top: -24px;
+    right: 20px;
+    font-size: 80px;
+    opacity: 0.14;
+}
+.jv-monaco .quote-format,
+.jv-monaco .link-format {
+	overflow: hidden;
+}
+.jv-monaco .tg-link-content a,
+.jv-monaco .tg-quote-content a {
+	display: block;
+	margin: 18px 0 !important;
+	text-transform: none;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+}
+.jv-monaco .tg-quote-author,
+.jv-monaco .tg-link-url {
+	position: relative;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    font-style: italic;
+    text-align: right; 
+}
+.jv-monaco .tg-quote-author:before {
+	content: '\2012';
+	position: relative;
+    display: inline-block;
+    margin: 0;
+	padding: 0 5px 0 0;
+}
+.jv-monaco .tg-item-comment {
+	position: relative;
+    display: inline-block;
+	float: right;
+	font-size: 13px;
+}
+.jv-monaco .tg-item-comment i {
+	position: relative;
+    padding: 0 4px 0 6px;
+    top: 2px;
+    font-size: 15px;
+}
+.jv-monaco .to-post-like {
+	position: relative;
+    display: inline-block;
+    float: right;
+	font-size: 13px;
+	margin: 0 0 0 12px;
+}
+.jv-monaco .to-post-like span {
+	font-size: 13px;
+}
+.jv-monaco .to-post-like .to-heart-icon {
+	margin: 2px 4px 0 0;
+}
+.jv-monaco .to-heart-icon svg {
+    width: 14px;
+    height: 13px;
+}
+.jv-monaco .tg-link-button,
+.jv-monaco .tg-media-button {
+	transform-origin: 50% 100% 0px;
+    transform-style: flat;
+	-webkit-transform: matrix3d(0.8, 0, 0, 0, 0, 0, 0.8, -0.0007, 0, -1, 0, 0, 0, 0, 0, 1);
+	-moz-transform: matrix3d(0.8, 0, 0, 0, 0, 0, 0.8, -0.0007, 0, -1, 0, 0, 0, 0, 0, 1);
+	-ms-transform: matrix3d(0.8, 0, 0, 0, 0, 0, 0.8, -0.0007, 0, -1, 0, 0, 0, 0, 0, 1);
+	-o-transform: matrix3d(0.8, 0, 0, 0, 0, 0, 0.8, -0.0007, 0, -1, 0, 0, 0, 0, 0, 1);
+	transform: matrix3d(0.8, 0, 0, 0, 0, 0, 0.8, -0.0007, 0, -1, 0, 0, 0, 0, 0, 1);
+}
+.jv-monaco .tg-item-overlay,
+.jv-monaco .tg-media-button,
+.jv-monaco .tg-link-button {
+	opacity: 0;
+	-webkit-transition: background 0.15s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: background 0.15s ease-in-out, opacity 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+	-ms-transition: background 0.15s ease-in-out, opacity 0.3s ease-in-out, -ms-transform 0.3s ease-in-out;
+	-o-transition: background 0.15s ease-in-out, opacity 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	transition: background 0.15s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.jv-monaco .tg-item-media-holder:hover .tg-item-overlay,
+.jv-monaco .tg-item-media-holder:hover .tg-media-button,
+.jv-monaco .tg-item-media-holder:hover .tg-link-button {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-monaco.tg-is-playing .tg-item-overlay,
+.jv-monaco.tg-force-play .tg-item-overlay {
+	pointer-events: none;
+	opacity: 0 !important;
+}
+.jv-monaco .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+	margin: 0;
+	z-index:5;
+}
+.jv-monaco .tg-share-icons a,
+.jv-monaco .tg-share-icons i {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+	font-size: 14px;
+    line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-monaco .tg-item-media-holder:hover .tg-share-icons a:nth-child(2){
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.jv-monaco .tg-item-media-holder:hover .tg-share-icons a:nth-child(3){
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.jv-monaco .tg-item-media-holder:hover .tg-share-icons a:nth-child(4){
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.jv-monaco .tg-share-icons a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,30px,0);
+	-moz-transform: translate3d(0,30px,0);
+	-ms-transform: translate3d(0,30px,0);
+	-o-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+.jv-monaco .tg-share-icons a,
+.jv-monaco .tg-share-icons i {
+	-webkit-transition: -webkit-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-moz-transition: -moz-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-ms-transition: -ms-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-o-transition: -o-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	transition: transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+}
+.jv-monaco .tg-item-media-holder:hover .tg-share-icons a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.jv-monaco .tg-item-meta-holder{
+	position:relative;
+	display:table;
+	width:100%;
+	border:solid 1px #ececec;
+	border-top:none;
+}
+
+.jv-monaco .tg-item-meta-holder > .tg-item-meta-field{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	padding:10px 0;
+	font-weight:300;
+	font-size:1em;
+}
+.jv-monaco .tg-item-meta-holder > .tg-item-meta-field > span.tg-item-meta-value{
+	display:block;
+	font-weight:600;
+	font-size:1.5em;
+}

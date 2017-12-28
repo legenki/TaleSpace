@@ -1,0 +1,318 @@
+.jv-kathmandu a,
+.jv-kathmandu a:active,
+.jv-kathmandu a:focus,
+.jv-kathmandu .tg-share-icons i {
+	text-decoration: none;
+    border: none;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: opacity 0.25s ease, color 0.25s ease;
+	-moz-transition: opacity 0.25s ease, color 0.25s ease;
+	-ms-transition: opacity 0.25s ease, color 0.25s ease;
+	-o-transition: opacity 0.25s ease, color 0.25s ease;
+	transition: opacity 0.25s ease, color 0.25s ease;
+}
+.jv-kathmandu a:not(.mejs-volume-slider):hover {
+	opacity: 0.85;
+}
+.jv-kathmandu .tg-item-inner{
+	border:solid 1px #ebebeb;
+}
+.jv-kathmandu .tg-center-holder {
+	text-align: center;
+}
+.jv-kathmandu .tg-item-content-holder {
+	position: relative;
+	display: block;
+	padding: 22px 24px 14px 24px;
+	text-align: left;
+}
+.jv-kathmandu .tg-cats-holder:before {
+    position: relative;
+    display: inline-block;
+	padding: 0 10px 0 0;
+    content: '/';
+    line-height: 22px;
+}
+.jv-kathmandu .tg-item-title{
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.jv-kathmandu .tg-item-title a{
+	display:inline;
+}
+.jv-kathmandu .tg-item-title,
+.jv-kathmandu .tg-item-title a {
+	position: relative;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+	margin: 6px 0 0 0 !important;
+	padding: 0 !important;
+    text-transform: uppercase;
+}
+.jv-kathmandu .tg-item-title a {
+	margin: 0 !important;
+}
+.jv-kathmandu .tg-item-excerpt {
+	margin:0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 23px;
+}
+.jv-kathmandu .tg-item-read-more,
+.jv-kathmandu .tg-item-read-more * {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+	padding: 0;
+}
+.jv-kathmandu .tg-item-read-more i {
+	padding: 0 0 0 4px;
+}
+.jv-kathmandu .tg-item-overlay {
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;	
+}
+.jv-kathmandu .tg-media-button,
+.jv-kathmandu .tg-link-button {
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 22px;
+	line-height: 40px;
+}
+.jv-kathmandu .tg-media-button i,
+.jv-kathmandu .tg-link-button i {
+	position: absolute;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.jv-kathmandu .tg-icon-add {
+	font-size: 30px;
+}
+.jv-kathmandu .tg-item-footer {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 20px 0 0 0;
+	line-height: 25px;
+}
+.jv-kathmandu .quote-format .tg-item-footer,
+.jv-kathmandu .link-format .tg-item-footer {
+	margin: 38px 0 0 0;
+}
+.jv-kathmandu .tg-item-author {
+	position: relative;
+    display: inline-block;
+	float: left;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: 600;
+}
+.jv-kathmandu .tg-item-comment {
+	position: relative;
+    display: inline-block;
+	float: right;
+	font-size: 13px;
+}
+.jv-kathmandu .tg-item-comment i {
+	position: relative;
+    padding: 0 6px;
+    top: 2px;
+    font-size: 15px;
+}
+.jv-kathmandu .tg-quote-icon,
+.jv-kathmandu .tg-link-icon {
+	position: relative;
+	display: block;
+	font-size: 24px;
+    margin: 0 0 28px 0;	
+}
+.jv-kathmandu .tg-link-content a,
+.jv-kathmandu .tg-quote-content a {
+	display: block;
+	margin: 18px 0 8px 0 !important;
+	text-transform: none;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+.jv-kathmandu .tg-quote-author,
+.jv-kathmandu .tg-link-url {
+	position: relative;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+	font-style: italic; 
+}
+.jv-kathmandu .tg-quote-author:before {
+	content: '\2012';
+	position: relative;
+    display: inline-block;
+    margin: 0;
+	padding: 0 5px 0 0;
+}
+.jv-kathmandu .tg-media-button {	
+	-webkit-transform: translate3d(-40px,0,0);
+	-moz-transform: translate3d(-40px,0,0);
+	-ms-transform: translate3d(-40px,0,0);
+	-o-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
+}
+.jv-kathmandu .tg-link-button {
+	-webkit-transform: translate3d(40px,0,0);
+	-moz-transform: translate3d(40px,0,0);
+	-ms-transform: translate3d(40px,0,0);
+	-o-transform: translate3d(40px,0,0);
+	transform: translate3d(40px,0,0);
+}
+.jv-kathmandu .tg-item-overlay,
+.jv-kathmandu .tg-media-button,
+.jv-kathmandu .tg-link-button {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out, -ms-transform 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.jv-kathmandu .tg-item-media-holder .tg-item-featured-meta,
+.jv-kathmandu .tg-item-media-holder .tg-item-featured-status{
+	position:absolute;
+	line-height:1;
+	display:block;
+	color:#fff;
+}
+.jv-kathmandu .tg-item-media-holder .tg-item-featured-meta{
+	right:0;
+	bottom:0;	
+	background-color:rgba( 129, 219, 84, 0.8 );
+	font-size:16px;
+	padding:10px 15px;
+	font-weight:bold;	
+}
+.jv-kathmandu .tg-item-media-holder .tg-item-featured-status{
+	top:0;
+	left:0;
+	margin:10px;
+	padding:6px 8px;
+	background-color:#243549;
+	text-transform:uppercase;
+	border-radius:20px;
+}
+.jv-kathmandu .tg-item-media-holder:hover .tg-item-overlay,
+.jv-kathmandu .tg-item-media-holder:hover .tg-media-button,
+.jv-kathmandu .tg-item-media-holder:hover .tg-link-button {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-kathmandu .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+	z-index:5;
+}
+.jv-kathmandu .tg-share-icons {
+	position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+	margin: 0;
+}
+.jv-kathmandu .tg-share-icons a,
+.jv-kathmandu .tg-share-icons i {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+	font-size: 14px;
+    line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+.jv-kathmandu .tg-item-media-holder:hover .tg-share-icons a:nth-child(2){
+	-webkit-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.jv-kathmandu .tg-item-media-holder:hover .tg-share-icons a:nth-child(3){
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.jv-kathmandu .tg-item-media-holder:hover .tg-share-icons a:nth-child(4){
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.jv-kathmandu .tg-share-icons a {
+	opacity: 0;
+	-webkit-transform: translate3d(0,30px,0);
+	-moz-transform: translate3d(0,30px,0);
+	-ms-transform: translate3d(0,30px,0);
+	-o-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+.jv-kathmandu .tg-share-icons a,
+.jv-kathmandu .tg-share-icons i {
+	-webkit-transition: -webkit-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-moz-transition: -moz-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-ms-transition: -ms-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	-o-transition: -o-transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+	transition: transform 0.15s ease-out, background 0.15s ease-out, opacity 0.15s ease-out;
+}
+.jv-kathmandu .tg-item-media-holder:hover .tg-share-icons a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.jv-kathmandu.tg-is-playing .tg-item-overlay,
+.jv-kathmandu.tg-force-play .tg-item-overlay {
+	pointer-events: none;
+	opacity: 0 !important;
+}
+
+.jv-kathmandu .tg-item-meta-holder{
+	position:relative;
+	display:table;
+	width:100%;
+	border:none;
+	border-top:solid 1px #ececec;	
+}
+.jv-kathmandu .tg-item-meta-holder > .tg-item-meta-field{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	padding:10px 0;
+	font-weight:300;
+	font-size:1em;
+	width:25%;
+}
+.jv-kathmandu .tg-item-meta-holder > .tg-item-meta-field{}
+.jv-kathmandu .tg-item-meta-holder > .tg-item-meta-field i.fa{ color:#aaaaaa; }
+.jv-kathmandu .tg-item-meta-holder > .tg-item-meta-field span.tg-item-meta-suffix{ display:none; }

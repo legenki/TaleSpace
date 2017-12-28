@@ -1,0 +1,265 @@
+/*------------------------------------------------------------------
+[3. Login Modal Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Login Modal
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+15. login modal
+*/
+
+// 15. login modal
+#login_panel{
+	.modal-dialog {
+		margin: 100px auto;
+		.modal-content {
+			.modal-header {
+				.modal-title {
+					font-size: 14px;
+					font-weight: 600;
+					letter-spacing: 1px;
+				}
+			}
+			.modal-body {
+				padding: 25px;
+				.social_login {
+					border-right:1px solid #e9e9e9;
+					.facebook_connect {
+						background-color:#3b5998;
+						border-color:#3b5998;
+						position:relative;
+						&:hover {
+							background-color:#8b9dc3 !important;
+							border-color:#8b9dc3 !important;
+							-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+							&:after{
+								border-color:transparent;
+								background-color: transparent;
+								-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+								color:#fff !important;
+								width:100%;
+							}
+						}
+						&:after {
+							content: '';
+							position:absolute;
+							top:0;
+							left:0;
+							height:100%;
+							width:0%;
+							border-color:rgba(255,255,255,.4);
+							background-color: rgba(255,255,255,.4);
+							border-radius:3px;
+							z-index:1;
+							-webkit-transition:all 0.3s;
+							-moz-transition:all 0.3s;
+							-ms-transition:all 0.3s;
+							-o-transition:all 0.3s;
+							transition:all 0.3s ease-out;;
+
+						}
+
+					}
+					.google_connect {
+						margin-top:15px;
+						background-color:#d34836;
+						border-color:#d34836;
+						position:relative;
+						&:hover {
+							background-color:#d2d2d2 !important;
+							border-color:#d2d2d2 !important;
+							-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+							&:after{
+								border-color:transparent;
+								background-color: transparent;
+								-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+								color:#fff !important;
+								width:100%;
+							}
+						}
+						&:after {
+							content: '';
+							position:absolute;
+							top:0;
+							left:0;
+							height:100%;
+							width:0%;
+							border-color:rgba(255,255,255,.4);
+							background-color: rgba(255,255,255,.4);
+							border-radius:3px;
+							z-index:1;
+							-webkit-transition:all 0.3s;
+							-moz-transition:all 0.3s;
+							-ms-transition:all 0.3s;
+							-o-transition:all 0.3s;
+							transition:all 0.3s ease-out;;
+
+						}
+					}
+					.remember-and-forgot {
+						.col-md-12 {
+							line-height:17px;
+						}
+					}
+					.control-label {
+						margin-bottom: 0px;
+						input {
+							vertical-align: middle;
+							margin: 0;
+						}
+					}
+				}
+				.lava_login_wrap {
+
+					input {
+						border-radius: 3px;
+						border-color: #ddd;
+						&:-webkit-autofill {
+							-webkit-box-shadow: 0 0 0px 1000px white inset;
+							-webkit-text-fill-color: rgb(102, 102, 102);
+						}
+					}
+					.form-group {
+						&:last-child {
+							margin-bottom:0;
+						}
+					}
+					.lava_login {
+						button {
+							&:hover {
+								background-color:#e00007 !important;
+								border-color:#e00007 !important;
+								-webkit-transition: all 01.3s ease-out;
+									-moz-transition: all 0.3s ease-out;
+									-ms-transition: all 0.3s ease-out;
+									-o-transition: all 0.3s ease-out;
+									transition: all 0.3s ease-out;
+								&:after{
+									border-color:transparent;
+									background-color: transparent;
+									-webkit-transition: all 01.3s ease-out;
+									-moz-transition: all 0.3s ease-out;
+									-ms-transition: all 0.3s ease-out;
+									-o-transition: all 0.3s ease-out;
+									transition: all 0.3s ease-out;
+									color:#fff !important;
+									width:100%;
+								}
+							}
+							&:after {
+								content: '';
+								position:absolute;
+								top:0;
+								left:0;
+								height:100%;
+								width:0%;
+								border-color:rgba(255,255,255,.4);
+								background-color: rgba(255,255,255,.4);
+								border-radius:3px;
+								z-index:1;
+								-webkit-transition:all 0.3s;
+								-moz-transition:all 0.3s;
+								-ms-transition:all 0.3s;
+								-o-transition:all 0.3s;
+								transition:all 0.3s ease-out;;
+
+							}
+						}
+					}
+				}
+				.bottom_row {
+					.required {
+						background: #ff5a5f;
+						color: #fff;
+						padding: 3px 9px;
+						border-radius: 3px;
+						font-size: 11px;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						position:relative;
+
+
+						&:hover {
+							background-color:#e00007 !important;
+							border-color:#e00007 !important;
+							-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+							&:after{
+								border-color:transparent;
+								background-color: transparent;
+								-webkit-transition: all 01.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								-ms-transition: all 0.3s ease-out;
+								-o-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+								color:#fff !important;
+								width:100%;
+							}
+						}
+						&:after {
+							content: '';
+							position:absolute;
+							top:0;
+							left:0;
+							height:100%;
+							width:0%;
+							border-color:rgba(255,255,255,.4);
+							background-color: rgba(255,255,255,.4);
+							border-radius:3px;
+							z-index:1;
+							-webkit-transition:all 0.3s;
+							-moz-transition:all 0.3s;
+							-ms-transition:all 0.3s;
+							-o-transition:all 0.3s;
+							transition:all 0.3s ease-out;;
+
+						}
+					}
+				}
+
+
+			}
+		}
+	}
+}
+@media (min-width:320px) and (max-width:991px) {
+		#login_panel{
+			.modal-dialog {
+				.modal-content {
+					.modal-body {
+						form {
+							.social_login {
+								border-right:none;
+								margin-bottom: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

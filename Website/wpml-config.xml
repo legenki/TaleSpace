@@ -1,0 +1,31 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">lv_listing</custom-type>
+    <custom-type translate="1">portfolio</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">listing_amenities</taxonomy>
+    <taxonomy translate="1">listing_category</taxonomy>
+    <taxonomy translate="1">listing_location</taxonomy>
+    <taxonomy translate="1">listing_keyword</taxonomy>
+    <taxonomy translate="1">portfolio_category</taxonomy>
+    <taxonomy translate="1">portfolio_tag</taxonomy>
+  </taxonomies>
+  <admin-texts>
+    <key name="jvfrm_spot_themes_settings">
+      <key name="modal_contact_form_id"/>
+      <key name="pm_contact_form_id"/>
+      <key name="footer_info_text_title"/>
+      <key name="footer_text"/>
+      <key name="footer_info_image_title"/>
+      <key name="copyright"/>
+      <key name="address"/>
+      <key name="phone"/>
+      <key name="mobile"/>
+      <key name="fax"/>
+      <key name="email"/>
+      <key name="working_hours"/>
+      <key name="additional_info"/>
+    </key>
+  </admin-texts>
+</wpml-config>

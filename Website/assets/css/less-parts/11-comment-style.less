@@ -1,0 +1,353 @@
+/*------------------------------------------------------------------
+[11. Comment Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/10/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Comment Style in Post, Page, Custom Post
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Comment Wrap
+	1.1. Comment Form
+	1.2. Comment Reply
+2. Comments Lists
+3. Comment Submit Button
+*/
+
+/*------------------------------------------------------------------
+[1. Comment Wrap]
+*/
+div#comments{
+	/*------------------------------------------------------------------
+	[1.1. Comment Form]
+	*/
+	body.single.single-post &{
+		.comment-reply-title{ display:none; visibility:hidden; }
+	}
+
+	#respond {
+		margin:20px 0;
+		& > p, p.comment-notes, p.logged-in-as{ margin-bottom: 10px; }
+		p.logged-in-a{ padding-bottom: 0px; }
+		h3 {
+			&#comments {
+				text-transform: none;
+				letter-spacing: -0.5px;
+				text-align: center;
+				margin-bottom: 20px;
+			}// &#comments
+		}// h3
+
+		/*------------------------------------------------------------------
+		[1.2. Comment Reply]
+		*/
+		.cancel-comment-reply,
+		#cancel-comment-reply-link {
+			display: inline-block;
+			margin-left: 10px;
+			padding-left: 10px;
+			position: relative;
+			border-left: 1px solid #dddddd;
+		}
+		h3{ font-size:15px; }
+		.comment-form{
+			@comment-field-border-color:#e8e8e8;
+			margin: 20px 0 100px;
+
+			& > div{
+				.form-control{
+					height:52px;
+					border-radius:3px;
+					border-color:@comment-field-border-color;
+					border-style:solid;
+					border-width:1px;
+					box-shadow:none;
+					letter-spacing:1px;
+					background-color:#fafafa;
+					font-size:12px;
+					transition:all .3s;
+					-webkit-transition:all .3s;
+					-moz-transition:all .3s;
+					-o-transition:all .3s;
+
+					padding:0 30px;
+
+					&,
+					&:focus{
+						box-shadow:none;
+					}
+
+					&:focus{
+						background-color:#fff;
+					}
+
+					/**
+					&:focus{
+						-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,0,0,.2);
+						box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,0,0,.2);
+					} */
+				}
+
+				&.comment-form-comment{
+					margin-bottom:10px;
+					& > textarea{
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						font-size: 13px;
+						line-height:20px;
+						padding: 20px 30px;
+						width: 100%;
+						border-color:@comment-field-border-color;
+						resize:vertical;
+						height:auto;
+					}
+				}
+
+				&.jv-comment-author-fields{
+					display:table;
+					width:100%;
+					& > div{
+						display:table-cell;
+						vertical-align:middle;
+						padding-right:10px;
+
+						& > .form-group{
+							margin:0;
+						}
+
+						&:last-child{
+							padding-right:0px;
+						}
+					}
+					@media( max-width:768px ){
+						&{
+							display:block;
+							width:auto;
+							& > div{
+								display:block;
+								padding:0;
+								margin:0 0 10px 0;
+							}
+						}
+					}
+				}
+			}
+
+			[type='submit'].btn.btn-primary{
+				margin: 10px 0 0;
+				line-height:1;
+				letter-spacing:1px;
+				background-color:#454545;
+				text-transform:uppercase;
+				border-radius:3px;
+				font-size:13px;
+				padding:20px 30px;
+				font-weight:600;
+				min-width:265px;
+				border:none;
+				@media( max-width:768px ){
+					width:100%;
+				}
+			}
+
+			& > p{
+				&.comment-notes{
+					letter-spacing:1px;
+					font-size:13px;
+				}
+				&.form-submit{
+					text-align:right;
+					margin:0;
+				}
+			}
+
+		}
+	}// #respond
+
+	/* After Replace */
+	h3#jv-single-post-comment-title{
+		text-align:center;
+		margin:20px 0;
+	}
+	ul.jv-single-post-comments{
+		li.jv-single-post-comment-item{
+			.media{
+				.media-left{
+					padding-right:20px;
+					img{
+						border-radius:50%;
+						height:45px;
+						border:solid 1px #eee;
+					}
+				}
+				.media-body{
+					border:solid 1px #eee;
+					padding:10px 20px;
+					position:relative;
+					overflow:visible;
+					box-shadow:1px 1px 2px rgba( 0, 0, 0, .08 );
+					.border-radius( 10px );
+					background-color:#eee;
+					.comment-author{
+						overflow:hidden;
+						line-height:40px;
+						margin-top:-8px;
+						a{ color:#AAA; }
+						.author-meta{
+							color:#666;
+							a{ color:#666; }
+							& > *{
+								margin-right:15px;
+								text-transform:uppercase;
+								letter-spacing:1px;
+							}
+						}
+						.btn-edit{}
+						&:after{
+							content:'';
+							display:table;
+							clear:both;
+						}
+					}
+					.comment-content{
+						/* color:#AAA; */
+						color: #737373;
+					}
+					&:before{
+						content:'';
+						display:block;
+						position:absolute;
+						top:18.5px;
+						left:-5px;
+						background-color:#fff;
+						border:0;
+						border-color:#E6E6E6;
+						border-style:solid;
+						border-width:0 0 1px 1px;
+						width:10px;
+						height:10px;
+						transform: rotate( 50deg);
+						-webkit-transform: rotate( 50deg );
+						background-color:#eee;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+[2. Comments Lists]
+*/
+.commentlist {
+	/*
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #eee;
+	*/
+	li {
+		ul {
+			padding-left: 65px;
+			padding-top: 25px;
+			list-style: none;
+		}// ul
+		&.comment{
+			margin-top:25px;
+			&:first-child{margin-top:0;}
+		}
+		&.comment>article{
+			.comment-inner-wrap{
+				.comment-meta{
+					.comment-title-wrap{
+						cite{
+							padding: 10px 0 0 10px;
+						}
+					}// .comment-title-wrap
+
+					.comment-content{
+						display:inline-block;
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+[3. Comment Submit button]
+*/
+#comments.comments-area{
+	& > h3{
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 600;
+		color: #999;
+	}
+	.form-submit{
+		/*
+		input{
+			display:none;
+			visibility:hidden;
+		}*/
+	}
+	.commentlist{
+		.comment{
+			article{
+				margin-bottom:0px;
+				.comment-inner-wrap{
+					header{
+						img{
+							float: left;
+							padding: 0;
+							line-height: 0;
+						}
+						.comment-title-wrap{
+							cite{
+								display: block;
+								margin-left: 0;
+								font-size: 10px;
+								color: #aaa;
+								font-style: normal;
+
+								b{
+									font-weight: normal;
+									text-transform: capitalize;
+									font-size: 13px;
+									margin-right: 10px;
+									color: #aaa;
+
+									a{
+										color:#777;
+										&:hover{
+											text-decoration: underline;
+										}
+									}
+								}
+							}// cite
+							.pull-right{
+								a{
+									font-size: 11px;
+									color: #aaa;
+								}
+							}// .pull-right
+						}// .comment-title-wrap
+					}// header
+				}// .comment-inner-wrap
+
+				//reply button
+				.reply{
+					.comment-reply-link{
+						color: #aaa;
+						font-size:12px;
+					}
+				}// .reply
+			}
+		}// .comment
+	}// .commentlist
+}
