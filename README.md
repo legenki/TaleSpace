@@ -1,5 +1,5 @@
 # City of Tales
-## Urban Infrastructure of Saint-Petersburg in the 19th Centur
+## Urban Infrastructure of Saint-Petersburg in the 19th Century
 
 ![Current Project Preview](https://github.com/legandy/TaleSpace/blob/master/Primary%20sources/Images/mockup.gif)
 
