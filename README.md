@@ -1,6 +1,7 @@
-## talespace.org
 # City of Tales
-## Urban Infrastructure of Saint-Petersburg in the 19th Century
+## Urban Infrastructure of Saint-Petersburg in the 19th Centur
+
+![Current Project Preview](https://github.com/legandy/TaleSpace/blob/master/Primary%20sources/Images/mockup.gif)
 
 The Project aims to give a view on the system of different types of organizations existed in Saint-Petersburg in the 19th century. The map developed under the Project gives an opportunity to reconstruct the daily life of the pre-revolutionary Saint-Petersburg embodied into governmental and private institutions. By playing with filters, professionals and those who are interested in history are able to see the areas of artistic market, restaurants, taverns and also areas of enlightening activities represented by libraries and museums. The map demonstrates overlaps and relations between different actors of the urban infrastructure.
 
